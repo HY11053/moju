@@ -6,16 +6,9 @@
     <div class="mainbox">
         <div class="hangyepd">
             <ul>
-                <li><a href="http://canyin.xiangmu.com/" target="_self">注射成型模</a></li>
-                <li><a href="http://fuzhuang.xiangmu.com/" target="_self">冲压成型模</a></li>
-                <li><a href="http://jiaoyu.xiangmu.com/" target="_self">热成型模</a></li>
-                <li><a href="http://jiudian.xiangmu.com/" target="_self">吹塑成型模</a></li>
-                <li><a href="http://ganxi.xiangmu.com/" target="_self">冲裁模</a></li>
-                <li><a href="http://muying.xiangmu.com/" target="_self">压注成型模</a></li>
-                <li><a href="http://meirong.xiangmu.com/" target="_self">压塑成型模</a></li>
-                <li><a href="http://xiuxian.xiangmu.com/" target="_self">挤压成型模</a></li>
-                <li><a href="http://jiaju.xiangmu.com/" target="_self">拉伸模</a></li>
-                <li><a href="http://auto.xiangmu.com/" target="_self">翻砂铸造模</a></li>
+                @foreach($tradeTypes as $tradeType)
+                <li><a href="/{{$tradeType->real_path}}/" target="_self">{{$tradeType->typename}}</a></li>
+                @endforeach
                 <li><a href="http://food.xiangmu.com/" target="_self">食品特产</a></li>
                 <li><a href="http://shipin.xiangmu.com/" target="_self">礼品饰品</a></li>
                 <li><a href="http://lingshou.xiangmu.com/" target="_self">零售专卖</a></li>

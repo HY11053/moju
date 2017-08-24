@@ -30,6 +30,19 @@ class CreateAddonarticlesTable extends Migration
             $table->string('companyopt')->nullable();
             $table->string('companypay')->nullable();
             $table->string('companylsno')->nullable();
+            $table->string('companyinfotitle')->nullable();
+            $table->string('companyavtitle')->nullable();
+            $table->string('companyareatitle')->nullable();
+            $table->string('processtitle')->nullable();
+            $table->string('productiontitle')->nullable();
+            $table->string('teamtitle')->nullable();
+            $table->string('credittitle')->nullable();
+            $table->text('companyadvantage')->nullable();
+            $table->text('companyareacontent')->nullable();
+            $table->text('processcontent')->nullable();
+            $table->text('productioncontent')->nullable();
+            $table->text('teamcontent')->nullable();
+            $table->text('creditcontent')->nullable();
             $table->timestamps();
         });
     }

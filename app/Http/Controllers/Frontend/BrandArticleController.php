@@ -30,11 +30,6 @@ class BrandArticleController extends Controller
                 $xgsearchs=Archive::where('ismake','1')->where('shorttitle','like','%'.$thisarticleinfos->article->brandname.'%')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $published=$thisarticleinfos['attributes']['published_at'];
                 DB::table('archives')->where('id',$id)->update(['click'=>$thisarticleinfos->click+1,'published_at'=>$published]);
-                Addonarticle::where('id',$id)->update([
-                    'brandattch'=>intval($thisarticleinfos->article->brandattch)+1,
-                    'brandapply'=>intval($thisarticleinfos->article->brandapply)+1,
-                    'brandchat'=>intval($thisarticleinfos->article->brandchat)+1,
-                ]);
                 return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments','latesnews','xgsearchs'));
             }else{
                 $thisarticleinfos=Archive::findOrFail($id);

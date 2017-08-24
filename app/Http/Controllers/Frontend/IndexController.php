@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\AdminModel\Archive;
+use App\AdminModel\Arctype;
 use App\AdminModel\Ask;
 use App\AdminModel\flink;
 use Carbon\Carbon;
@@ -21,8 +22,10 @@ class IndexController extends Controller
 
         $zhbrands=Archive::latest()->whereIn('typeid',[8])->where('published_at','<=',Carbon::now())->orderBy('published_at','desc')->take(8)->get();
         //友情链接
+        //行业频道
+        $tradeTypes=Arctype::where('topid',9)->get();
         $flinks=flink::latest()->orderBy('created_at','desc')->take(30)->get();
-        return view('frontend.index');
+        return view('frontend.index',compact('flinks','tradeTypes'));
     }
     function demo()
     {

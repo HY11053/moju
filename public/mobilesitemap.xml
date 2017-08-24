@@ -2,50 +2,248 @@
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/"> 
         <url> 
-        <loc>http://m.ucccms.com</loc> 
+        <loc>http://m.moju.com</loc> 
         <mobile:mobile type="mobile"/>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         </url> 
         <url> 
-        <loc>http://www.ucccms.com</loc>
+        <loc>http://www.moju.com</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
         </url>
         <url> 
-            <loc>http://m.ucccms.com/lirun/</loc> 
+            <loc>http://m.moju.com/mojuchang/</loc> 
             <mobile:mobile type="mobile"/>
             <changefreq>daily</changefreq>
             <priority>1.0</priority>
             </url> 
             <url>
-                <loc>http://www.ucccms.com/lirun/</loc>
+                <loc>http://www.moju.com/mojuchang/</loc>
                 <changefreq>daily</changefreq>                
                 <priority>1.0</priority>
             </url>          
             <url> 
-            <loc>http://m.ucccms.com/lirun/1.shtml</loc> 
+            <loc>http://m.moju.com/mojusheji/</loc> 
             <mobile:mobile type="mobile"/>
-            <lastmod>2017-07-29</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojusheji/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/mojujia/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojujia/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/mojugang/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojugang/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/gongqiu/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/gongqiu/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/zhanhui/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zhanhui/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/zixun/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zixun/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/paihangbang/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/paihangbang/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/mojufenlei/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojufenlei/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/zscxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/cycxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/cycxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/rcxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/rcxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/cscxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/cscxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/ccm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/ccm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/yzcxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/yzcxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/yscxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/yscxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/jycxm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/jycxm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/lsm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/lsm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/fszzm/</loc> 
+            <mobile:mobile type="mobile"/>
+            <changefreq>daily</changefreq>
+            <priority>1.0</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/fszzm/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url>          
+            <url> 
+            <loc>http://m.moju.com/mojuchang/1.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-08-24</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.8</priority>
             </url> 
             <url>
-                <loc>http://www.ucccms.com/lirun/1.shtml</loc>
-                <lastmod>2017-07-29</lastmod>
+                <loc>http://www.moju.com/mojuchang/1.shtml</loc>
+                <lastmod>2017-08-24</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
             <url> 
-            <loc>http://m.ucccms.com/lirun/3.shtml</loc> 
+            <loc>http://m.moju.com/mojuchang/2.shtml</loc> 
             <mobile:mobile type="mobile"/>
-            <lastmod>2017-07-29</lastmod>
+            <lastmod>2017-08-24</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.8</priority>
             </url> 
             <url>
-                <loc>http://www.ucccms.com/lirun/3.shtml</loc>
-                <lastmod>2017-07-29</lastmod>
+                <loc>http://www.moju.com/mojuchang/2.shtml</loc>
+                <lastmod>2017-08-24</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
