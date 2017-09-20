@@ -113,101 +113,56 @@
                 <div class="f_title">
                     <h2>模具品牌企业</h2>
                     <p>
-                        <a target="_blank" title="3D颗粒漆！招商" data-ad="780829" stat="ad-780829" href="http://www.7808.cn/xiangmu/shengmate.html">3D颗粒漆！招商</a>
-                        <a target="_blank" title="金牌项目，开店就赚" data-ad="780831" stat="ad-780831" href="http://www.7808.cn/xiangmu/ruiyu.html">金牌项目，开店就赚</a>
-                        <a target="_blank" title="四季火的冰淇淋" data-ad="780832" stat="ad-780832" href="http://www.7808.cn/xiangmu/sifulei.html">四季火的冰淇淋</a>
-                        <a target="_blank" title="快速翻台 快速赚钱" data-ad="780833" stat="ad-780833" href="http://www.7808.cn/xiangmu/ahong.html">快速翻台 快速赚钱</a>
-                        <a target="_blank" title="再不加盟就晚了！" data-ad="780834" stat="ad-780834" href="http://www.7808.cn/xiangmu/beiershuang.html">再不加盟就晚了！</a>
+                    @foreach($hotMjcompanys as $hotMjcompany )
+                        <a target="_blank" title="{{$hotMjcompany->article->companyname}}"  href="/{{$hotMjcompany->arctype->real_path}}/{{$hotMjcompany->id}}.shtml">{{$hotMjcompany->article->companyname}}</a>
+                    @endforeach
                     </p>
                 </div>
                 <div class="f_rellcontent">
-                    <div target="_blank" title="泸州老窖健康养生酒天之圣液" data-ad="1410" stat="ad-1410" href="http://www.7808.cn/xiangmu/tianzhishengye.html" class="fcl_box">
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/tianzhishengye.html"><img class="lazy" data-url="http://source.7808.cn/item_ads/20170426/14931747609407.gif" src="http://source.7808.cn/item_ads/20170426/14931747609407.gif" width="143" height="86" alt="名酒典范 精品佳酿" title="名酒典范 精品佳酿"></a>
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/tianzhishengye.html"><span>泸州老窖健康养生酒天之圣液</span></a>
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/tianzhishengye.html"><strong>名酒典范 精品佳酿</strong></a>
+                    @foreach($picMjcompanys as $picMjcompany)
+                    <div target="_blank" title="{{$picMjcompany->title}}" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml" class="fcl_box">
+                        <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtmll"><img class="lazy" data-url="{{$picMjcompany->litpic}}" src="{{$picMjcompany->litpic}}" width="143" height="86" alt="{{$picMjcompany->article->companyname}}" title="{{$picMjcompany->article->companyname}}"></a>
+                        <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml"><span>{{$picMjcompany->article->companyname}}</span></a>
+                        <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml"><strong>{{$picMjcompany->shorttitle}}</strong></a>
                     </div>
-                    <div target="_blank" title="阿宏砂锅饭快餐" data-ad="1411" stat="ad-1411" href="http://www.7808.cn/xiangmu/ahong.html" class="fcl_box">
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/ahong.html"><img class="lazy" data-url="http://source.7808.cn/item_ads/20151106/14467776178354.gif" src="http://source.7808.cn/item_ads/20151106/14467776178354.gif" width="143" height="86" alt="做快餐就选 砂锅饭" title="做快餐就选 砂锅饭"></a>
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/ahong.html"><span>阿宏砂锅饭快餐</span></a>
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/ahong.html"><strong>做快餐就选 砂锅饭</strong></a>
-                    </div>
-                    <div target="_blank" title="池田屋日料" data-ad="1412" stat="ad-1412" href="http://www.7808.cn/xiangmu/chitianwuriliao.html" class="fcl_box">
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/chitianwuriliao.html"><img class="lazy" data-url="http://source.7808.cn/item_ads/20170503/14937757482204.gif" src="http://source.7808.cn/item_ads/20170503/14937757482204.gif" width="143" height="86" alt="新鲜体验 食尚生活" title="新鲜体验 食尚生活"></a>
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/chitianwuriliao.html"><span>池田屋日料</span></a>
-                        <a target="_blank" href="http://www.7808.cn/xiangmu/chitianwuriliao.html"><strong>新鲜体验 食尚生活</strong></a>
-                    </div>
+                    @endforeach
+
 
                     <div class="clear"></div>
                 </div>
                 <div class="f_middlecontent">
                     <div class="tbox_a">
                         <ul class="Tul Tul_bg">
-                            <li><a href="http://zixun.3158.cn/20170802/n971699112107952.html" title="2017有什么适合创业的项目吗？" target="_blank">2017有什么适合创业的项目吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n971134106513579.html" title="电子烟市场怎么样？投资挣钱吗？" target="_blank">电子烟市场怎么样？投资挣钱吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970753150792129.html" title="农村在家创业干什么好？农村处处都是商机" target="_blank">农村在家创业干什么好？农村处处都是</a></li>
-                            <li><a href="http://zixun.3158.cn/20170731/n969502110298617.html" title="如何开一家有特色的日本料理店？" target="_blank">如何开一家有特色的日本料理店？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
+                            @foreach($mjCompany1s as $mjCompany1)
+                            <li><a href="/{{$mjCompany1->arctype->real_path}}/{{$mjCompany1->id}}.shtml" title="{{$mjCompany1->title}}" target="_blank">{{$mjCompany1->title}}</a></li>
+                            @endforeach
                         </ul>
                         <ul class="Tul">
-                            <li><a href="http://zixun.3158.cn/20170730/n969214150793745.html" title="五万开个小美容院够吗？" target="_blank">五万开个小美容院够吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970657111517556.html" title="激光戒烟免费体验 亿万家助你开店" target="_blank">激光戒烟免费体验 亿万家助你开店</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970120109476675.html" title="选择哪个品牌的便当合作比较有前景？" target="_blank">选择哪个品牌的便当合作比较有前景</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971218109478583.html" title="湖南味视这个小吃品牌适合在哪里开店？" target="_blank">湖南味视这个小吃品牌适合在哪里开</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
+                            @foreach($mjCompany2s as $mjCompany2)
+                                <li><a href="/{{$mjCompany2->arctype->real_path}}/{{$mjCompany2->id}}.shtml" title="{{$mjCompany2->title}}" target="_blank">{{$mjCompany2->title}}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                     <div class="tbox_b">
                         <ul class="Tul Tul_bg">
-                            <li><a href="http://zixun.3158.cn/20170802/n971699112107952.html" title="2017有什么适合创业的项目吗？" target="_blank">2017有什么适合创业的项目吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971699112107952.html" title="2017有什么适合创业的项目吗？" target="_blank">2017有什么适合创业的项目吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n971134106513579.html" title="电子烟市场怎么样？投资挣钱吗？" target="_blank">电子烟市场怎么样？投资挣钱吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970753150792129.html" title="农村在家创业干什么好？农村处处都是商机" target="_blank">农村在家创业干什么好？农村处处都是</a></li>
-                            <li><a href="http://zixun.3158.cn/20170731/n969502110298617.html" title="如何开一家有特色的日本料理店？" target="_blank">如何开一家有特色的日本料理店？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                        </ul>
+                            @foreach($mjCompany3s as $mjCompany3)
+                                <li><a href="/{{$mjCompany3->arctype->real_path}}/{{$mjCompany3->id}}.shtml" title="{{$mjCompany3->title}}" target="_blank">{{$mjCompany3->title}}</a></li>
+                            @endforeach  </ul>
                         <ul class="Tul">
-                            <li><a href="http://zixun.3158.cn/20170730/n969214150793745.html" title="五万开个小美容院够吗？" target="_blank">五万开个小美容院够吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170730/n969214150793745.html" title="五万开个小美容院够吗？" target="_blank">五万开个小美容院够吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970657111517556.html" title="激光戒烟免费体验 亿万家助你开店" target="_blank">激光戒烟免费体验 亿万家助你开店</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970120109476675.html" title="选择哪个品牌的便当合作比较有前景？" target="_blank">选择哪个品牌的便当合作比较有前景</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971218109478583.html" title="湖南味视这个小吃品牌适合在哪里开店？" target="_blank">湖南味视这个小吃品牌适合在哪里开</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                        </ul>
+                            @foreach($mjCompany4s as $mjCompany4)
+                                <li><a href="/{{$mjCompany4->arctype->real_path}}/{{$mjCompany4->id}}.shtml" title="{{$mjCompany4->title}}" target="_blank">{{$mjCompany4->title}}</a></li>
+                            @endforeach </ul>
                     </div>
                     <div class="tbox_a">
                         <ul class="Tul Tul_bg">
-                            <li><a href="http://zixun.3158.cn/20170802/n971699112107952.html" title="2017有什么适合创业的项目吗？" target="_blank">2017有什么适合创业的项目吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971699112107952.html" title="2017有什么适合创业的项目吗？" target="_blank">2017有什么适合创业的项目吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n971134106513579.html" title="电子烟市场怎么样？投资挣钱吗？" target="_blank">电子烟市场怎么样？投资挣钱吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970753150792129.html" title="农村在家创业干什么好？农村处处都是商机" target="_blank">农村在家创业干什么好？农村处处都是</a></li>
-                            <li><a href="http://zixun.3158.cn/20170731/n969502110298617.html" title="如何开一家有特色的日本料理店？" target="_blank">如何开一家有特色的日本料理店？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971635111983239.html" title="想创业无从下手怎么办？什么项目适合创业？" target="_blank">想创业无从下手怎么办？什么项目适合</a></li>
-                        </ul>
+                            @foreach($mjCompany5s as $mjCompany5)
+                                <li><a href="/{{$mjCompany5->arctype->real_path}}/{{$mjCompany5->id}}.shtml" title="{{$mjCompany5->title}}" target="_blank">{{$mjCompany5->title}}</a></li>
+                            @endforeach  </ul>
                         <ul class="Tul">
-                            <li><a href="http://zixun.3158.cn/20170730/n969214150793745.html" title="五万开个小美容院够吗？" target="_blank">五万开个小美容院够吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170730/n969214150793745.html" title="五万开个小美容院够吗？" target="_blank">五万开个小美容院够吗？</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970657111517556.html" title="激光戒烟免费体验 亿万家助你开店" target="_blank">激光戒烟免费体验 亿万家助你开店</a></li>
-                            <li><a href="http://zixun.3158.cn/20170801/n970120109476675.html" title="选择哪个品牌的便当合作比较有前景？" target="_blank">选择哪个品牌的便当合作比较有前景</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n971218109478583.html" title="湖南味视这个小吃品牌适合在哪里开店？" target="_blank">湖南味视这个小吃品牌适合在哪里开</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                            <li><a href="http://zixun.3158.cn/20170802/n970361112082497.html" title="开一家食必思黄焖鸡加盟店多久能回本？" target="_blank">开一家食必思黄焖鸡加盟店多久能回</a></li>
-                        </ul>
+                            @foreach($mjCompany6s as $mjCompany6)
+                                <li><a href="/{{$mjCompany6->arctype->real_path}}/{{$mjCompany6->id}}.shtml" title="{{$mjCompany6->title}}" target="_blank">{{$mjCompany6->title}}</a></li>
+                            @endforeach  </ul>
                     </div>
-
-
                 </div>
 
             </div>

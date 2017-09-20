@@ -449,7 +449,7 @@
                             <div class="ibox-content no-padding">
 
                                 <script type="text/javascript">
-                                    var ue5 = UE.getEditor('container7',{
+                                    var ue7 = UE.getEditor('container7',{
                                         toolbars: [
                                             ['bold', 'italic', 'underline', 'strikethrough', 'blockquote','forecolor','backcolor',
                                                 'insertunorderedlist', 'insertorderedlist', 'justifyleft','justifycenter', 'justifyright',  'link', 'unlink', 'insertimage',

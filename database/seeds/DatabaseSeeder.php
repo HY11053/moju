@@ -16,11 +16,11 @@ class DatabaseSeeder extends Seeder
         //DB::table('addonarticles')->truncate();
         //DB::table('flinks')->truncate();
         //$this->call(UsersTableSeeder::class);
-        $this->call(AdminsTableSeeder::class);
+        //$this->call(AdminsTableSeeder::class);
         //$this->call(PhoneManageTableSeeder::class);
         //$this->call(ArctypesTableSeeder::class);
-        //$this->call(ArchivesTableSeeder::class);
-        //$this->call(AddonarticlesTableSeeder::class);
+        $this->call(ArchivesTableSeeder::class);
+        $this->call(AddonarticlesTableSeeder::class);
         //$this->call(FlinksTableSeeder::class);
     }
 }
