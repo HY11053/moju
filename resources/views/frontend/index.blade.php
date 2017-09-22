@@ -111,7 +111,7 @@
         <div class="f_content">
             <div class="fc_left">
                 <div class="f_title">
-                    <h2>模具品牌企业</h2>
+                    <h2  class="rw2_h2"><i class="line_red"></i>模具品牌企业</h2>
                     <p>
                     @foreach($hotMjcompanys as $hotMjcompany )
                         <a target="_blank" title="{{$hotMjcompany->article->companyname}}"  href="/{{$hotMjcompany->arctype->real_path}}/{{$hotMjcompany->id}}.shtml">{{$hotMjcompany->article->companyname}}</a>
@@ -121,7 +121,7 @@
                 <div class="f_rellcontent">
                     @foreach($picMjcompanys as $picMjcompany)
                     <div target="_blank" title="{{$picMjcompany->title}}" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml" class="fcl_box">
-                        <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtmll"><img class="lazy" data-url="{{$picMjcompany->litpic}}" src="{{$picMjcompany->litpic}}" width="143" height="86" alt="{{$picMjcompany->article->companyname}}" title="{{$picMjcompany->article->companyname}}"></a>
+                        <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml"><img class="lazy" data-url="{{$picMjcompany->litpic}}" src="{{$picMjcompany->litpic}}" width="143" height="86" alt="{{$picMjcompany->article->companyname}}" title="{{$picMjcompany->article->companyname}}"></a>
                         <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml"><span>{{$picMjcompany->article->companyname}}</span></a>
                         <a target="_blank" href="/{{$picMjcompany->arctype->real_path}}/{{$picMjcompany->id}}.shtml"><strong>{{$picMjcompany->shorttitle}}</strong></a>
                     </div>
@@ -221,78 +221,22 @@
             <div class="space10 clear"></div>
             <div class="rwn_l_lubo">
                 <div class="div_dls border_b">
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/165779/jiameng.html"><img alt="百变泥匠" src="http://img.liansuo.com/html/images/20170712/59657c8488286.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/165779/jiameng.html">百变泥匠</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/201533/jiameng.html"><img alt="优粮生活外卖" src="http://img.liansuo.com/html/images/20170712/5965ec42b69fb.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/201533/jiameng.html">优粮生活外卖</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/202071/jiameng.html"><img alt="壹点壹炸鸡汉堡" src="http://img.liansuo.com/html/images/20170726/597865a03756d.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/202071/jiameng.html">壹点壹炸鸡汉堡</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/199933/jiameng.html"><img alt="欧页奶茶" src="http://img.liansuo.com/html/images/20170605/59350f0da39a1.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/199933/jiameng.html">欧页奶茶</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/200979/jiameng.html"><img alt="睦记重庆小面" src="http://img.liansuo.com/html/images/20170626/5950831bf2ad4.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/200979/jiameng.html">睦记重庆小面</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/145881/jiameng.html"><img alt="天然空间" src="http://img.liansuo.com/html/images/20170706/595dfbdacd8a2.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/145881/jiameng.html">天然空间</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/190561/jiameng.html"><img alt="玛努卡甜品" src="http://img.liansuo.com/html/images/20170718/596d85e814857.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/190561/jiameng.html">玛努卡甜品</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/148493/jiameng.html"><img alt="易视康" src="http://img.liansuo.com/html/images/20170704/595b4f323f4f7.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/148493/jiameng.html">易视康</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/194483/jiameng.html"><img alt="魔力玛卡水晶冒菜" src="http://img.liansuo.com/html/images/20170517/591bc8c89c117.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/194483/jiameng.html">魔力玛卡水晶冒菜</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/197739/jiameng.html"><img alt="东方易经生" src="http://img.liansuo.com/html/images/20170503/590951a801eaf.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/197739/jiameng.html">东方易经生</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/163677/jiameng.html"><img alt="鱼火火烤鱼" src="http://img.liansuo.com/html/images/20170726/5978651a9f12e.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/163677/jiameng.html">鱼火火烤鱼</a>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt><a href="http://www.liansuo.com/p/201319/jiameng.html"><img alt="0.8的故事" src="http://img.liansuo.com/html/images/20170724/5975670a0eeff.jpg"></a></dt>
-                        <dd>
-                            <a href="http://www.liansuo.com/p/201319/jiameng.html">0.8的故事</a>
-                        </dd>
-                    </dl>
+                    @foreach($jiaProductions as $jiaProduction)
+                        <dl>
+                            <dt><a href="/{{$jiaProduction->arctype->real_path}}/{{$jiaProduction->id}}.shtml"><img alt="{{$jiaProduction->shorttitle}}" src="{{$jiaProduction->litpic}}"></a></dt>
+                            <dd>
+                                <a href="/{{$jiaProduction->arctype->real_path}}/{{$jiaProduction->id}}.shtml">{{$jiaProduction->title}}</a>
+                            </dd>
+                        </dl>
+                    @endforeach
+                        @foreach($gangProductions as $gangProduction)
+                            <dl>
+                                <dt><a href="/{{$gangProduction->arctype->real_path}}/{{$gangProduction->id}}.shtml"><img alt="{{$gangProduction->shorttitle}}" src="{{$gangProduction->litpic}}"></a></dt>
+                                <dd>
+                                    <a href="/{{$gangProduction->arctype->real_path}}/{{$gangProduction->id}}.shtml">{{$gangProduction->title}}</a>
+                                </dd>
+                            </dl>
+                        @endforeach
                 </div>
             </div>
         </div>
@@ -301,17 +245,9 @@
             <div class="space10 clear"></div>
             <div class="rwn_r_news">
                 <ul>
-                    <li><a href="http://www.liansuo.com/top10/153429.html" title="合肥鱼还是鱼餐饮管理有限公司">合肥鱼还是鱼餐饮管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/194483.html" title="成都市魔力玛卡餐饮管理有限公司">成都市魔力玛卡餐饮管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/202593.html" title="安徽景城环保科技有限公司">安徽景城环保科技有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/202105.html" title="山东积膳佳餐饮管理有限公司">山东积膳佳餐饮管理有限公司</a>
-                    </li><li><a href="http://www.liansuo.com/top10/197299.html" title="安徽众化企业管理有限公司">安徽众化企业管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/197739.html" title="合肥梦成生物科技有限公司">合肥梦成生物科技有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/163673.html" title="济南瓦罐香沸酒店管理有限公司">济南瓦罐香沸酒店管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/202297.html" title="山东积膳佳餐饮管理有限公司">山东积膳佳餐饮管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/163677.html" title="山东积膳佳餐饮管理有限公司">山东积膳佳餐饮管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/145881.html" title="合肥梦成投资管理有限公司">合肥梦成投资管理有限公司</a></li>
-                    <li><a href="http://www.liansuo.com/top10/138940.html" title="山西航鹰药业有限公司">山西航鹰药业有限公司</a></li>
+                    @foreach($productionNews as $productionNew)
+                    <li><a href="/{{$productionNew->arctype->real_path}}/{{$productionNew->id}}.shtml" title="{{$productionNew->title}}">{{$productionNew->title}}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -324,61 +260,39 @@
             <h2>模具生产制造</h2>
             <div class="left_one">
                 <div class="one_top">
+                    @foreach($hytjNews as $hytjNew )
                     <div class="li_d">
-                        <a href="http://xiaobenchuangye.qudao.com/" title="2017年小本创业加盟项目精选" target="_blank"><img src="http://images.qudao.com/temp/2016-09-02/57c909f5c74fb.jpg" alt="2017年小本创业加盟项目精选"></a>
-                        <div class="d_wz"><h3><a href="http://xiaobenchuangye.qudao.com/" target="_blank">2017年小本创业加盟项目精选</a></h3><p>小本创业加盟网为广大创业者提供更为全面的小本创业项目大全，无本创业项目，千元投资项目，万元投资创业项目。</p></div>
+                        <a href="/{{$hytjNew->arctype->real_path}}/{{$hytjNew->id}}.shtml" title="{{$hytjNew->title}}" target="_blank"><img src="{{$hytjNew->litpic}}" alt="{{$hytjNew->title}}"></a>
+                        <div class="d_wz"><h3><a href="/{{$hytjNew->arctype->real_path}}/{{$hytjNew->id}}.shtml" target="_blank">{{$hytjNew->title}}</a></h3><p>{{str_limit($hytjNew->description,47,'...')}}</p></div>
                     </div>
-                    <div class="li_d">
-                        <a href="http://cy.qudao.com/" title="创业加盟什么项目好 创业加盟投资项目推荐" target="_blank"><img src="http://images.qudao.com/temp/2016-09-02/57c90a0035185.jpg" alt="创业加盟什么项目好 创业加盟投资项目推荐"></a>
-                        <div class="d_wz"><h3><a href="http://cy.qudao.com/" target="_blank">创业加盟什么项目好 创业加盟投资项目推荐</a></h3><p>投资创业什么好?投资创业项目很多，创业项目招商加盟频道为广大创业者提供全面的招商加盟信息及投资创业好项目。</p></div>
-                    </div>
+                    @endforeach
+
                 </div>
                 <div class="one_cen">
                     <ul>
-                        <li><a href="http://jiaoyu.qudao.com/news/4106104.shtml" title="作文培训加盟前景怎么样？" target="_blank">作文培训加盟前景怎么 </a></li>
-                        <li><a href="http://baojian.qudao.com/news/4105959.shtml" title="护眼世家加盟利润高吗?" target="_blank">护眼世家加盟利润高吗 </a></li>
-                        <li><a href="http://zhubao.qudao.com/news/4105454.shtml" title="珠宝加盟店利润相关分析" target="_blank">珠宝加盟店利润相关分 </a></li>
-                        <li><a href="http://meirong.qudao.com/news/4105918.shtml" title="美容院加盟经营指南" target="_blank">美容院加盟经营指南 </a></li>
-                        <li><a href="http://canyin.qudao.com/news/4105788.shtml" title="淡季怎样经营餐饮加盟店?" target="_blank">淡季怎样经营餐饮加盟 </a></li>
-                        <li><a href="http://canyin.qudao.com/news/4105881.shtml" title="北京开猪排加盟店要多少钱?" target="_blank">北京开猪排加盟店要多 </a></li>
+                        @foreach($hyNews as $hyNew)
+                        <li><a href="/{{$hyNew->arctype->real_path}}/{{$hyNew->id}}.shtml" title="{{$hyNew->title}}" target="_blank">{{$hyNew->title}} </a></li>
+                        @endforeach
                     </ul>
                 </div>
-                <div class="one_bot">
-                    <dl>
-                        <dt>人群解读</dt>
-                        <dd><a href="http://balinghou.qudao.com/news/4113670.shtml" target="_blank"><font color="#ff7300">[80后创业]</font>韩国小吃饮品雪帝雪冰在中</a></dd>
-                        <dd><a href="http://daxuesheng.qudao.com/news/4113669.shtml" target="_blank"><font color="#ff7300">[大学生创业]</font>大学生创业加盟雪地雪冰店</a></dd>
-                        <dd><a href="http://nvxing.qudao.com/news/4112254.shtml" target="_blank"><font color="#ff7300">[女性投资]</font>在合肥开超市需要哪些条件</a></dd>
-                        <dd><a href="http://nongmin.qudao.com/news/4112735.shtml" target="_blank"><font color="#ff7300">[农民致富]</font>韩国的雪冰有哪家做的好吃</a></dd>
-                    </dl>
-                </div>
             </div>
             <div class="left_two">
-                <h4>创业风向标</h4>
+                <h4>模具供求信息</h4>
                 <dl>
-                    <dd><span>07/31</span><i class="ye">1.</i><a href="http://huanbao.qudao.com/news/4114425.shtml" target="_blank" title="4114425">环保加盟连锁项目有市</a></dd>
-                    <dd><span>07/31</span><i class="ye">2.</i><a href="http://canyin.qudao.com/news/4114411.shtml" target="_blank" title="4114411">做小吃生意需要关注哪</a></dd>
-                    <dd><span>07/31</span><i class="ye">3.</i><a href="http://shipin.qudao.com/news/4114348.shtml" target="_blank" title="4114348">怎么装修银饰品加盟店</a></dd>
-                    <dd><span>07/31</span><i>4.</i><a href="http://shipin.qudao.com/news/4114347.shtml" target="_blank" title="4114347">开一家民族饰品加盟店</a></dd>
-                    <dd><span>07/31</span><i>5.</i><a href="http://shipin.qudao.com/news/4114346.shtml" target="_blank" title="4114346">开一家民族饰品加盟店</a></dd>
-                    <dd><span>07/31</span><i>6.</i><a href="http://shipin.qudao.com/news/4114344.shtml" target="_blank" title="4114344">开一家民族饰品加盟店</a></dd>
-                    <dd><span>07/27</span><i>7.</i><a href="http://lipin.qudao.com/news/4114305.shtml" target="_blank" title="4114305">关于礼品加盟店消费群</a></dd>
-                    <dd><span>07/27</span><i>8.</i><a href="http://canyin.qudao.com/news/4114266.shtml" target="_blank" title="4114266">开川菜中餐加盟店怎样</a></dd>
-                    <dd><span>07/27</span><i>9.</i><a href="http://baojian.qudao.com/news/4114199.shtml" target="_blank" title="4114199">老年保健品招商加盟项</a></dd>
-                    <dd><span>07/27</span><i>10.</i><a href="http://shipin.qudao.com/news/4114180.shtml" target="_blank" title="4114180">开一家民族饰品店有发</a></dd>
-                </dl>
+                    @foreach($gongqiuNews as $index=>$gongqiuNew)
+                    <dd><span>{{date('m/d',strtotime($gongqiuNew->created_at))}}</span><i @if($index+1<4)class="ye" @endif>{{$index+1}}.</i><a href="/{{$gongqiuNew->arctype->real_path}}/{{$gongqiuNew->id}}.shtml" target="_blank" title="{{$gongqiuNew->title}}">{{$gongqiuNew->title}}</a></dd>
+                   @endforeach
             </div>
             <div class="left_two">
-                <h4>地区潮流</h4>
+                <h4>地区分类</h4>
                 <dl>
-                    <dt><a href="http://guangdong.qudao.com/news/4113513.shtml" title="雪帝雪冰加盟怎么样？如何获得高的利润？" target="_blank"><img src="http://images.qudao.com/article/2017-07-19/596eb730cbefc.jpg"></a><span>雪帝雪冰加盟怎么样？如何获得高的利润？韩流来袭【<a href="http://guangdong.qudao.com/news/4113513.shtml" style="color:#ff7300;" target="_blank">阅读</a>】</span></dt>
-                    <dd><span>07/31</span><a href="http://beijing.qudao.com/news/4114356.shtml" target="_blank" title="在北京开足疗店赚钱吗？开店需要哪些准备"><font color="#ff7300">[北京]</font>在北京开足疗店赚钱吗</a></dd>
-                    <dd><span>07/31</span><a href="http://shanghai.qudao.com/news/4114357.shtml" target="_blank" title="想在上海开一家奶茶店如何做到利润最大化"><font color="#ff7300">[上海]</font>想在上海开一家奶茶店</a></dd>
-                    <dd><span>07/31</span><a href="http://tianjin.qudao.com/news/4114358.shtml" target="_blank" title="在天津开火锅店利润有多大 市场怎么样"><font color="#ff7300">[天津]</font>在天津开火锅店利润有</a></dd>
-                    <dd><span>07/31</span><a href="http://guangdong.qudao.com/news/4114361.shtml" target="_blank" title="在广东开水果加盟店需要知道选址经营技巧"><font color="#ff7300">[广东]</font>在广东开水果加盟店需</a></dd>
-                    <dd><span>07/31</span><a href="http://anhui.qudao.com/news/4114360.shtml" target="_blank" title="在安徽加盟早餐市场大，实现小本创业"><font color="#ff7300">[安徽]</font>在安徽加盟早餐市场大</a></dd>
-                    <dd><span>07/31</span><a href="http://shandong.qudao.com/news/4114362.shtml" target="_blank" title="在山东教育项目加盟如何开店?"><font color="#ff7300">[山东]</font>在山东教育项目加盟如</a></dd>
-                    <dd><span>07/31</span><a href="http://henan.qudao.com/news/4114363.shtml" target="_blank" title="河南亲子教育培训机构选址两要素"><font color="#ff7300">[河南]</font>河南亲子教育培训机构</a></dd>
+                    @foreach($areaNews as $index=>$areaNew)
+                        @if($index<1)
+                        <dt><a href="/{{$areaNew->arctype->real_path}}/{{$areaNew->id}}.shtml" title="{{$areaNew->title}}" target="_blank"><img src="{{$areaNew->litpic}}"></a><span>{{str_limit($areaNew->description,20,'')}}【<a href="/{{$areaNew->arctype->real_path}}/{{$areaNew->id}}.shtmll" style="color:#ff7300;" target="_blank">阅读</a>】</span></dt>
+                        @else
+                            <dd><span>07/31</span><a href="/{{$areaNew->arctype->real_path}}/{{$areaNew->id}}.shtml" target="_blank" title="{{$areaNew->title}}"><font color="#ff7300">[{{$areaNew->country}}]</font>{{$areaNew->title}}</a></dd>
+                        @endif
+                    @endforeach
                 </dl>
             </div>
         </div>
@@ -386,15 +300,13 @@
             <h2>展会资讯</h2>
             <div class="right_con">
                 <dl>
-                    <dt><a href="http://canyin.qudao.com/news/4110832.shtml" title="方便面褪去风光 方便火锅真的能够降服百亿市场吗" target="_blank"><img src="http://images.qudao.com/temp/2016-08-19/57b69a1b3be94.jpg" alt="方便面褪去风光 方便火锅真的能够降服百亿市场吗"></a></dt>
-                    <dd><a href="http://canyin.qudao.com/news/4111302.shtml" title="想要餐厅生意火人气旺 就要狠抓年轻吃货的心" target="_blank"><span>[最新]</span>想要餐厅生意火人气旺 就要狠抓</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4111416.shtml" title="开麻辣烫小吃加盟店怎么样?麻辣烫成为第一快餐" target="_blank"><span>[最新]</span>开麻辣烫小吃加盟店怎么样?麻辣</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4112533.shtml" title="我国餐饮行业销售收入情况及增长趋势分析" target="_blank"><span>[最新]</span>我国餐饮行业销售收入情况及增长</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4105674.shtml" title="怎么开餐厅才能赚到钱？看选址精准分析" target="_blank"><span>[最新]</span>怎么开餐厅才能赚到钱？看选址精</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4110597.shtml" title="开餐厅赚不赚?用这5个公式来算一算" target="_blank"><span>[最新]</span>开餐厅赚不赚?用这5个公式来算</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4105697.shtml" title="去雄安新区开餐饮店有市场 快逃到二三线城市来" target="_blank"><span>[最新]</span>去雄安新区开餐饮店有市场 快逃</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4107164.shtml" title="在上海开什么餐厅好?日料居然进入八大菜系前位" target="_blank"><span>[最新]</span>在上海开什么餐厅好?日料居然进</a></dd>
-                    <dd><a href="http://canyin.qudao.com/news/4111469.shtml" title="餐饮加盟店如何抢下半年市场?老板们要可这8个点出发" target="_blank"><span>[最新]</span>餐饮加盟店如何抢下半年市场?老</a></dd>
+                    @foreach($zhanhuiNews as $index=>$zhanhuiNew)
+                       @if($index<1)
+                        <dt><a href="/{{$zhanhuiNew->arctype->real_path}}/{{$zhanhuiNew->id}}.shtml" title="{{$zhanhuiNew->title}}" target="_blank"><img src="http://images.qudao.com/temp/2016-08-19/57b69a1b3be94.jpg" alt="{{$zhanhuiNew->litpic}}"></a></dt>
+                        @else
+                            <dd><a href="/{{$zhanhuiNew->arctype->real_path}}/{{$zhanhuiNew->id}}.shtml" title="{{$zhanhuiNew->title}}" target="_blank"><span>[最新]</span>{{$zhanhuiNew->title}}</a></dd>
+                        @endif
+                    @endforeach
                 </dl>
             </div>
         </div>

@@ -203,8 +203,10 @@ a:link, a:visited {
 .rwn_l_lubo dl dd a {display: block;width: 132px;height: 32px;line-height: 32px;font-size: 14px;color: #666666;overflow: hidden;}
 .rwn_r {width: 227px;height: 288px;overflow: hidden;}
 .floatR {float: right; background:#fff;}
+.rw2_h2 {padding-left: 10px;height: 30px;line-height: 30px;font-size: 18px;color: #000;font-weight: normal;}
 .rw2_h3 {padding-left: 10px;height: 30px;line-height: 30px;font-size: 18px;color: #000;border-bottom: 1px solid #e4223e;font-weight: normal;}
 .rw2_h3 .line_red {display: block;width: 4px;height: 14px;background: #e4223e;float: left;margin-top: 10px;margin-right: 10px;}
+.rw2_h2 .line_red {display: block;width: 4px;height: 14px;background: #e4223e;float: left;margin-top: 10px;margin-right: 10px;}
 .rwn_r_news {width: 227px;height: 248px;background: #fff;}
 .rwn_r_news ul {width: 207px;height: 228px;overflow: hidden;padding: 0px 10px 10px 10px;}
 .rwn_r_news li a{color: #707070;cursor: pointer;text-decoration: none;}
@@ -666,9 +668,6 @@ button, input, select, textarea {
     border-color: #2e6da4;
 }
 
-.content {
-    margin-left: 4.5em;
-}
 .comment a.author {
     cursor: pointer;
 }
