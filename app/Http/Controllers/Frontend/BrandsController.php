@@ -25,36 +25,42 @@ class BrandsController extends Controller
                 $cid,//传入分类id,
                 $pagelists//传入原始分页器
             );
-            $topbrands=Archive::where('mid',1)->where('ismake','1')->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
+            $tradeTypes=Arctype::where('topid',9)->get();
+            $topbrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
+            $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
+
             $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
             $brandtypes=Arctype::where('mid',1)->get();
             $thistypeinfo=Arctype::where('real_path',$path)->first();
             $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
 
-            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments'));
+            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands'));
         }else{
 
             if(Arctype::where('real_path',$path)->value('id')==null)
             {
                 abort(404);
             }
-            if(Arctype::where('real_path',$path)->value('id')==2)
+            if(Arctype::where('real_path',$path)->value('id')==3|| Arctype::where('real_path',$path)->value('id')==4)
             {
-                $pagelists=Archive::whereIn('typeid',Arctype::whereIn('id',[1,2,3,4,5,9])->pluck('id'))->where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
-
+                $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 12, $columns = ['*'], $pageName = 'page', $page);
+                //转换自带分页器为自定义的分页器
+                $pagelists= Paginator::transfer(
+                    $cid,//传入分类id,
+                    $pagelists//传入原始分页器
+                );
+                return view('frontend.jiaindex',compact('pagelists'));
             }else{
                 $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
-
+                $pagelists= Paginator::transfer(
+                    $cid,//传入分类id,
+                    $pagelists//传入原始分页器
+                );
+                $topnews=Archive::where('mid','<>',1)->where('ismake','1')->where('litpic','<>','')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(5)->get();
+                $thistypeinfo=Arctype::where('real_path',$path)->first();
+                $fastfinds=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(20)->get();
+                return view('frontend.lists',compact('pagelists','topnews','newsbrands','thistypeinfo','fastfinds'));
             }
-            //转换自带分页器为自定义的分页器
-            $pagelists= Paginator::transfer(
-                $cid,//传入分类id,
-                $pagelists//传入原始分页器
-            );
-            $topnews=Archive::where('mid','<>',1)->where('ismake','1')->where('litpic','<>','')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(5)->get();
-            $thistypeinfo=Arctype::where('real_path',$path)->first();
-            $fastfinds=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(20)->get();
-            return view('frontend.lists',compact('pagelists','topnews','newsbrands','thistypeinfo','fastfinds'));
         }
 
     }

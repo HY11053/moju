@@ -8,158 +8,21 @@
 
             <div class="pro_main">
                 <div class=""></div>
+                @foreach($pagelists as $pagelist)
                 <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/4182" title="带门帘防尘模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2017/04/未标题-1-2-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/4182" title="带门帘防尘模具架" target="_blank">带门帘防尘模具架</a></dd>
+                    <dt><a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->title}}" target="_blank">
+                            <img width="300" height="250" src="{{$pagelist->litpic}}" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
+                    <dd><a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->title}}" target="_blank">{{$pagelist->title}}</a></dd>
                     <p>
-                        <a href="http://www.bolch168.com/4182" title="了解详情" target="_blank">
+                        <a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="了解详情" target="_blank">
                             <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
+                        <a href="#" title="免费咨询" target="_blank">
                             <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
                 </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/3934" title="封板模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2016/12/未标题-13-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/3934" title="封板模具架" target="_blank">封板模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/3934" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/3832" title="抽屉100%抽拉模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2016/11/未标题-1-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/3832" title="抽屉100%抽拉模具架" target="_blank">抽屉100%抽拉模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/3832" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/3139" title="滚筒模具架|滚筒架子" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2016/05/未标题-6-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/3139" title="滚筒模具架|滚筒架子" target="_blank">滚筒模具架|滚筒架子</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/3139" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/3137" title="带跑车模具架|承重型模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2016/05/未标题-3-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/3137" title="带跑车模具架|承重型模具架" target="_blank">带跑车模具架|承重型模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/3137" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/3118" title="钢平台模具架｜阁楼式" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2016/05/未标题-13-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/3118" title="钢平台模具架｜阁楼式" target="_blank">钢平台模具架｜阁楼式</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/3118" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/2348" title="承重3吨模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2015/09/未标题-2-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/2348" title="承重3吨模具架" target="_blank">承重3吨模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/2348" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/2341" title="龙门架（模具专用架）" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2015/09/未标题-1-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/2341" title="龙门架（模具专用架）" target="_blank">龙门架（模具专用架）</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/2341" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/2253" title="电动模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2015/07/650-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/2253" title="电动模具架" target="_blank">电动模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/2253" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/2214" title="智能模具架、自动模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2015/07/未标题-1-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/2214" title="智能模具架、自动模具架" target="_blank">智能模具架、自动模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/2214" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/2168" title="可调式模具架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2015/07/QQ截图20150717103257-300x250.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/2168" title="可调式模具架" target="_blank">可调式模具架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/2168" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
-                <dl class="pd_list_dl">
-                    <dt><a href="http://www.bolch168.com/1938" title="模具存放架" target="_blank">
-                            <img width="300" height="250" src="http://www.bolch168.com/wp-content/uploads/2015/05/QQ截图20150515133140-300x250.jpg" class="attachment-thumbnail size-thumbnail" alt="" data-bd-imgshare-binded="1"></a></dt>
-                    <dd><a href="http://www.bolch168.com/1938" title="模具存放架" target="_blank">模具存放架</a></dd>
-                    <p>
-                        <a href="http://www.bolch168.com/1938" title="了解详情" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt1.gif" alt="了解详情" title="了解详情" data-bd-imgshare-binded="1"></a>
-                        <a href="http://wpa.qq.com/msgrd?v=3&amp;site=博储机械&amp;menu=yes&amp;uin=113646180" title="免费咨询" target="_blank">
-                            <img src="http://www.bolch168.com/wp-content/themes/ztheme/images/pro_bt2.gif" alt="免费咨询" title="免费咨询" data-bd-imgshare-binded="1"></a></p>
-                </dl>
+                @endforeach
                 <div class="clear"></div>
                 <div class="page">
-                    <ul class="pagination">
-
-                        <li class="disabled"><span>上一页</span></li>
-
-
-
-
-
-                        <li class="active"><span>1</span></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/2/">2</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/3/">3</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/4/">4</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/5/">5</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/6/">6</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/7/">7</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/8/">8</a></li>
-
-                        <li class="disabled"><span>...</span></li>
-
-
-
-
-
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/246/">246</a></li>
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/247/">247</a></li>
-
-
-                        <li><a href="http://www.58lingshi.com/lingshizx/page/2/">下一页</a></li>
-                    </ul>
-
+                    {!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$pagelists->links()) !!}
                 </div>
                 <div class="xg_news">
                     <div class="title"><strong>戴永红炒货资讯</strong></div>

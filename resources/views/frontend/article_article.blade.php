@@ -7,11 +7,11 @@
         <div class="center_list clearfix">
             <div class="news_center">
                 <div class="ny_message">
-                    <h1> 爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富</h1>
-                    <div class="ny_message-js"> 时间：2017-08-02 15:41:24 <span>来源：58零食网</span> <span>浏览：657</span> </div>
+                    <h1> {{$thisarticleinfos->title}}</h1>
+                    <div class="ny_message-js"> 时间：{{$thisarticleinfos->created_at}} <span>来源：58零食网</span> <span>浏览：{{$thisarticleinfos->click}}</span> </div>
                 </div>
                 <div class="body_tit clearfix">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩发展的不错，在全国同行业中处于领军地位。现在可以说是零食加盟项目中最出色的一个。爱尚悠品零食量贩是行业佼佼者，只要大家把握机会加盟，即可获得巨大成功。爱尚悠品零食量贩一直发展的不错，在全国同行业处于领军地位，是多个品牌中最受欢迎，最具影响力的一个，所以大家可随时把握机会加盟其中。爱尚悠品零食量贩不会让大家失望，只要加盟即可坐等高额收益，自此轻松开启创业之旅，不必再为没有好项目而担忧。那么爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富</p><p><br></p><p style="text-align: center;">&nbsp;&nbsp;&nbsp; <img src="http://www.58lingshi.com/uploads/image/2017/08/02/f01b61f8d82b21264ddc1a4f15dfce0f.jpg" title="爱尚悠品量贩的加盟利润" alt="爱尚悠品量贩的加盟利润" style="border-radius: 5px;"></p><p><br>&nbsp;&nbsp;&nbsp; 加盟级别： 豪华店&nbsp;&nbsp;&nbsp; 时尚店<br>&nbsp;&nbsp;&nbsp; 面积： 80㎡&nbsp;&nbsp; 45㎡<br>&nbsp;&nbsp;&nbsp; 预计人均消费： 38元&nbsp;&nbsp; 34元<br>&nbsp;&nbsp;&nbsp; 预计日营业额 ：7600元&nbsp;&nbsp;&nbsp; 5100元<br>&nbsp;&nbsp;&nbsp; 预计月营业额： 12万元&nbsp;&nbsp;&nbsp; 10万元<br>&nbsp;&nbsp;&nbsp; 预计毛利率 ：50%&nbsp;&nbsp;&nbsp; 50%<br>&nbsp;&nbsp;&nbsp; 预计月毛利润： 6万元&nbsp;&nbsp;&nbsp; 5万元<br>&nbsp;&nbsp;&nbsp; 预计房租费用： 1.75万元&nbsp;&nbsp;&nbsp; 1万元<br>&nbsp;&nbsp;&nbsp; 预计月净利润 ：4万元&nbsp;&nbsp;&nbsp;&nbsp; 3万元<br>&nbsp;&nbsp;&nbsp; 预计年净利润 ：48万元&nbsp;&nbsp;&nbsp;&nbsp; 36万元<br><br>&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩持续创新产品口味，它在满足消费者需求的基础上，保证了在市场上的竞争优势。它致力于连锁事业的发展，注重每一个加盟商的利益，为保证合作关系的顺利建立，它为每一个商家提供专业技术培训，让商家可以轻松上手，做好开店的充分准备工作。<br><br>&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩加盟流程<br><br>&nbsp;&nbsp;&nbsp; 第一步、调查当地市场，确定投资方向（可以先找投资区域，等技术培训后再确定店面）<br><br>&nbsp;&nbsp;&nbsp; 第二步、亲临酷吧奶茶总店考察（请带好身份证和地图）、免费品尝、还可以与正在培训的学员交流<br><br>&nbsp;&nbsp;&nbsp; 第三步、与客户经理洽谈，办理相关手续，签定合同，支付相关费用<br><br>&nbsp;&nbsp;&nbsp; 第四步、接受酷吧奶茶总部的各项培训，学会为止，考核合格后方可毕业开店<br><br>&nbsp;&nbsp;&nbsp; 第五步、按经营项目确定采购物品，从总部订购的将通过物流公司配发全套设备和用品<br><br>&nbsp;&nbsp;&nbsp; 第六步、酷吧奶茶营业前的准备（精选店面、装修、店员培训、宣传、试营业）——正式开业大吉！<br><br>&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩加盟条件<br><br>&nbsp;&nbsp;&nbsp; 1、具有良好的商业信誉，无不良违法犯罪记录。<br><br>&nbsp;&nbsp;&nbsp; 2、接受爱尚悠品零食量贩总部统一管理，愿意共同维护品牌形象。<br><br>&nbsp;&nbsp;&nbsp; 3、在城市客流量充足的繁华地段有适合经营零食销售的场所。<br><br>&nbsp;&nbsp;&nbsp; 4、认同爱尚悠品零食量贩的企业文化和管理模式，愿意接受公司管理。<br><br>&nbsp;&nbsp;&nbsp; 5、具备区域市场品牌推广、运作能力和团队管理能力；<br><br>&nbsp;&nbsp;&nbsp; 6、店面地址需经总部评估同意，店面装修、物品购置符合总部要求。<br><br>&nbsp;&nbsp;&nbsp; 7、具有一定的资金基础，资金取得合法，或者拥有优越的物业条件，包括自有物业和租凭物业。<br><br>&nbsp;&nbsp;&nbsp; 8、有事业心，有恒心，能把爱尚悠品零食量贩休闲食品当成事业来做。<br><br></p>
+                    {!! $thisarticleinfos->article->body !!}
                 </div>
                 <div class="fenxiang">
                     <div class="fenxiangdao">分享到：</div>
@@ -20,175 +20,45 @@
                         <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
                         <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
                     </div>
-                    <div class="nr_biaoqian"><b>标签：</b>爱尚悠品量贩的加盟利润</div>
+                    <div class="nr_biaoqian"><b>标签：</b>{{$thisarticleinfos->tags}}</div>
                 </div>
                 <script>
                     window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
                 </script>
-                <div class="comments-container" id="js_join_7">
-                    <div class="comments-box">
-                        <div class="pull-left">
-                            <img class="avatar-32 " src="/reception/images/user-128.png" alt="">
-                        </div>
-                        <div class="comments-box-content">
-                            <form action="/comments" method="post">
-                                <input type="hidden" name="_token" value="LPdmUS8zQNYOVFqlAcCWakpVMGB1Eb4QeiEFuAvR">
-                                <div class="form-group mb0">
-                                    <textarea name="content" rows="3" class="form-control" id="commentcontent" placeholder="文明社会，理性评论"></textarea>
-                                    <div class="mt15 text-right">
-                                        <input type="hidden" name="archive_id" value="2953">
-                                        <button class=" btn btn-primary" type="submit">发布评论</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <!--登录弹窗 开始-->
-                <div class="login_popup_mask" id="commentuser"></div>
-                <div class="login_popup">
-                    <div class="hd"><a id="login_popup_close" class="close" href="javascript:void(0)" title="关闭">×</a><span class="tit">登录</span></div>
-                    <div class="bd">
-                        <div class="reg_box">
-                            <div class="login-title">注册新账号</div>
-                            <form class="form-horizontal" role="form" method="POST" action="http://www.shangjicms.com/register">
-                                <input type="hidden" name="_token" value="PNNkSCoHUyDxxcXinRxsuV0lL0NkaZEBWkDB7gk2">
-                                <div class="form-group">
-                                    <label for="name" class="control-label">用户名</label>
-                                    <input id="name" type="text" class="form-control" name="name" value="" required="" autofocus="" placeholder="真实姓名或常用昵称">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="control-label">邮箱</label>
-                                    <input id="email" type="email" class="form-control" name="email" value="" required="" placeholder="邮箱">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="control-label">手机号码</label>
-                                    <input id="mobilephone" type="text" class="form-control" name="mobilephone" value="" required="" placeholder="仅支持大陆手机号">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="control-label">密码</label>
-                                    <input id="password" type="password" class="form-control" name="password" required="" placeholder="不少于 6 位">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password-confirm" class="control-label">确认密码</label>
-                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required="" placeholder="再输入一遍密码">
-                                </div>
-                                <div class="form-group">
-                                    <span class="other_link">同意并接受<a href="#" target="_blank">《服务条款》</a></span>
-                                    <button type="submit" class="btn btn-primary">注册</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="login_box">
-                            <div class="login-title">用户登录</div>
-                            <form class="form-horizontal" role="form" method="POST" action="http://www.58lingshi.com/login">
-                                <input type="hidden" name="_token" value="LPdmUS8zQNYOVFqlAcCWakpVMGB1Eb4QeiEFuAvR">
-                                <div class="form-group">
-                                    <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                                    <div class="col-md-6">
-                                        <input id="email" type="email" class="form-control" name="email" value="" required="" autofocus="">
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="password" class="col-md-4 control-label">Password</label>
-
-                                    <div class="col-md-6">
-                                        <input id="password" type="password" class="form-control" name="password" required="">
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group ">
-                                    <label for="captcha" class="col-md-4 control-label">验证码</label>
-
-                                    <div class="col-md-6">
-                                        <input id="pcaptcha" type="text" class="form-control" name="captcha" required="">
-
-                                        <a id="refresh-capthca"><img src="http://www.58lingshi.com/captcha/default?vP3H5FsF" alt="验证码" title="点击刷新图片" width="160" height="46" id="captcha" border="0" data-captcha-config="default"> </a>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <span class="other_link"><label><input name="remember" type="checkbox" value="1" checked="">记住登录状态</label></span>
-                                    <button type="submit" class="btn btn-primary">登录</button>
-                                </div>
-                                <div class="form-group"><a href="/password/reset" target="_blank" class="forgot_link">忘记密码</a></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!--登录弹窗 结束-->
-
-                <script>
-                    $(function () {
-                        $("#commentcontent").click(function () {
-                            var authcheck="";
-                            if(authcheck.length<1){
-                                $("#commentuser").show();
-                                $(".login_popup").show();
-                            }else {
-                                $("#commentuser").hide();
-                                $(".login_popup").hide();
-                            }
-                        })
-                    });
-                </script>            <div class="shangxiapian">
-                    <p>上一篇： <a href="/lingshidianpp/2952.shtml" title="爱尚悠品量贩零食的费用高不高？行业最低加盟条件简单">爱尚悠品量贩零食的费用高不高？行业最低加盟条件简单</a>  </p>
-                    <p>下一篇： <a href="/lingshidianpp/2954.shtml" title="爱尚悠品量贩的利润如何？加盟零食店预计月入2.7万">爱尚悠品量贩的利润如何？加盟零食店预计月入2.7万</a>  </p>
-                </div>
+                <div class="shangxiapian">
+                    <p>上一篇：@if(isset($prev_article)) <a href="/{{$prev_article->arctype->real_path}}/{{$prev_article->id}}.shtml" title="{{$prev_article->title}}">{{$prev_article->title}}</a> @else 没有了 @endif </p>
+                    <p >下一篇：@if(isset($next_article)) <a href="/{{$next_article->arctype->real_path}}/{{$next_article->id}}.shtml" title="{{$next_article->title}}">{{$next_article->title}}</a> @else 没有了 @endif </p>
+                   </div>
                 <div class="xg_news">
-                    <div class="title"><strong>爱尚悠品量贩的加盟利润资讯</strong></div>
+                    <div class="title"><strong>{{$thisarticleinfos->tags}}资讯</strong></div>
                     <div class="xw">
                         <ul class="clearfix">
-                            <li><em>2017-08-02 15:41:24</em><a href="/lingshidianpp/2953.shtml" title="爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富">爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富 </a></li>
-                        </ul>
+                            @foreach($xgnews as $xgnew)
+                                <li><em>{{$xgnew->updated_at}}</em><a href="/{{$xgnew->arctype->real_path}}/{{$xgnew->id}}.shtml" title="{{$xgnew->title}}">{{$xgnew->title}} </a></li>
+                            @endforeach </ul>
                     </div>
                 </div>
             </div>
             <div class="new_right">
                 <div class="new_bt">
-                    <h3> <i></i> 零售店加盟排行榜 </h3>
+                    <h3> <i></i> 模具厂排行榜 </h3>
                     <div class="rank_bd">
                         <ul>
-                            <li class="top"> <a href="/lingshidianpp/5.shtml" target="_blank" title="三只松鼠"><i class="num">1 </i> <img src="/images/thread/2017/04/12/3353f2d4c9eacd918b8afcfb28554583.jpg" alt="三只松鼠"></a>
-                                <div class="cont">
-                                    <p><a href="/lingshidianpp/5.shtml" target="_blank">三只松鼠</a></p>
-                                    <p><span>投资金额：</span><i>10~20万元以上</i></p>
-                                    <p class="btn"><a href="/lingshidianpp/5.shtml">查看详情</a></p>
-                                </div>
-                            </li>
+                            @foreach($topbrands as $index=>$topbrand)
+                                @if($index==0)
+                                    <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}" ></a>
+                                        <div class="cont">
+                                            <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank">{{$topbrand->shorttitle}}</a></p>
+                                            <p><span>投资金额：</span><i>{{$topbrand->article->brandpay}}</i></p>
+                                            <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml">查看详情</a></p>
+                                        </div>
+                                    </li>
+                                @else
 
-                            <li class="top"> <i class="num">2</i> <span class="name"><a href="/chaohuodian/8.shtml" target="_blank" title="盐津铺子">盐津铺子</a></span> <span class="price">10.5~44万元</span> </li>
+                                    <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}">{{$topbrand->shorttitle}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
+                                @endif
 
-
-                            <li class="top"> <i class="num">3</i> <span class="name"><a href="/lingshidianpp/38.shtml" target="_blank" title="良品铺子">良品铺子</a></span> <span class="price">30~60万</span> </li>
-
-
-                            <li class="top"> <i class="num">4</i> <span class="name"><a href="/chaohuodian/51.shtml" target="_blank" title="百味林">百味林</a></span> <span class="price">20.58万元以上</span> </li>
-
-
-                            <li class="top"> <i class="num">5</i> <span class="name"><a href="/chaohuodian/9.shtml" target="_blank" title="戴永红炒货">戴永红炒货</a></span> <span class="price">28.2~47.9万元</span> </li>
-
-
-                            <li class="top"> <i class="num">6</i> <span class="name"><a href="/lingshidianpp/91.shtml" target="_blank" title="一扫光">一扫光</a></span> <span class="price">10~20万</span> </li>
-
-
-                            <li class="top"> <i class="num">7</i> <span class="name"><a href="/ganguodian/14.shtml" target="_blank" title="好想你枣">好想你枣</a></span> <span class="price">10万元</span> </li>
-
-
-                            <li class="top"> <i class="num">8</i> <span class="name"><a href="/chaohuodian/18.shtml" target="_blank" title="粒上皇">粒上皇</a></span> <span class="price">11.4万元以上</span> </li>
-
-
-                            <li class="top"> <i class="num">9</i> <span class="name"><a href="/lingshidianpp/53.shtml" target="_blank" title="老婆大人">老婆大人</a></span> <span class="price">20~40万</span> </li>
-
-
-                            <li class="top"> <i class="num">10</i> <span class="name"><a href="/jinkoulingshi/98.shtml" target="_blank" title="好一点">好一点</a></span> <span class="price">6-20万</span> </li>
-
-
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -197,26 +67,11 @@
                     <div class="bts">
                         <div class="common">
                             <ul>
-                                <li><a href="/lingshizx/312.shtml" target="_blank" title="薛记炒货如何加盟？加盟薛记炒货流程很简单">薛记炒货如何加盟？加盟薛记炒货流程很简单</a></li>
-                                <li><a href="/ganguodian/322.shtml" target="_blank" title="加盟百惠园利润回报多少？标准店16.23万年盈利">加盟百惠园利润回报多少？标准店16.23万年盈利</a></li>
-                                <li><a href="/ganguodian/153.shtml" target="_blank" title="金冠加盟利润多少？如何提高加盟利润">金冠加盟利润多少？如何提高加盟利润</a></li>
-                                <li><a href="/jinkoulingshi/476.shtml" target="_blank" title="兔子家进口食品加盟投资条件高不高？适合所有投资者！">兔子家进口食品加盟投资条件高不高？适合所有投资者！</a></li>
-                                <li><a href="/ganguodian/273.shtml" target="_blank" title="投资开姚生记连锁店多少钱？8.53万元开店小本项目">投资开姚生记连锁店多少钱？8.53万元开店小本项目</a></li>
-                                <li><a href="/chaohuodian/1071.shtml" target="_blank" title="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！">厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！</a></li>
-                                <li><a href="/ganguodian/251.shtml" target="_blank" title="开百草园零食店要多少钱？总费用只要9.285万元">开百草园零食店要多少钱？总费用只要9.285万元</a></li>
-                                <li><a href="/ganguodian/368.shtml" target="_blank" title="逗妮开心加盟能赚钱吗？小型店也能年入21.49万元">逗妮开心加盟能赚钱吗？小型店也能年入21.49万元</a></li>
-                                <li><a href="/jinkoulingshi/815.shtml" target="_blank" title="舌间味进口食品加盟费多少钱？5-15万即可轻松开店">舌间味进口食品加盟费多少钱？5-15万即可轻松开店</a></li>
-                                <li><a href="/chaohuodian/775.shtml" target="_blank" title="张二嘎炒货加盟费多少钱？县级城市只要5万">张二嘎炒货加盟费多少钱？县级城市只要5万</a></li>
+                                @foreach($brandnews as $brandnew)
+                                    <li><a href="/{{$brandnew->arctype->real_path}}/{{$brandnew->id}}.shtml" target="_blank" title="{{$brandnew->title}}">{{$brandnew->title}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
-                    </div>
-                </div>
-
-                <div class="new_bt">
-                    <h3> <i></i> 快速查询入口 </h3>
-                    <div class="kuishurk">
-
-                        <span></span>
                     </div>
                 </div>
             </div>

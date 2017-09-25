@@ -111,103 +111,20 @@
             </div>
 
             <div class="ww_330">
-                <dl>
-                    <dt><a href="/lingshidianpp/2955.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/51b47f094c413337dd562b5cf21ce08f.jpg" alt="爱尚悠品量贩零食的利润高不高？预计一年26万"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2955.shtml" target="_blank" title="爱尚悠品量贩零食的利润高不高？预计一年26万">爱尚悠品量贩零食的利润高不高？预计一年26万</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp; 零食店加盟品牌非常多，哪些零食加盟品牌才能真正的能够帮助加盟商获利？ 爱尚悠品零食量贩加盟项目受到了更多加盟商的欢迎。这家公司能够给加盟商提供更好的发展，目前越来越多的投资商愿意选择这个项目，这个品牌有很多独特的特点，制作出来的零食产品味道非常的美味，获得了更多消费者的青睐。 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:44:42 </span> <a href="/lingshidianpp/2955.shtml" title="爱尚悠品量贩零食的利润高不高？预计一年26万">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2954.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/81a2da1fb428101185a76de1f158f84b.jpg" alt="爱尚悠品量贩的利润如何？加盟零食店预计月入2.7万"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2954.shtml" target="_blank" title="爱尚悠品量贩的利润如何？加盟零食店预计月入2.7万">爱尚悠品量贩的利润如何？加盟零食店预计月入2.7万</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩一直在不断发展，发展过程中更是取得了巨大进步，在全国共开设数百家加盟店，每一家加盟店均生意红红火火。爱尚悠品零食量贩加盟连锁是一个集零食技术项目开发的加盟连锁企业。爱尚悠品零食量贩因其卓越的品质，成功的品牌运营，受到全国各地消费者的青睐及社 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:43:21 </span> <a href="/lingshidianpp/2954.shtml" title="爱尚悠品量贩的利润如何？加盟零食店预计月入2.7万">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2953.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/f01b61f8d82b21264ddc1a4f15dfce0f.jpg" alt="爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2953.shtml" target="_blank" title="爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富">爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩发展的不错，在全国同行业中处于领军地位。现在可以说是零食加盟项目中最出色的一个。爱尚悠品零食量贩是行业佼佼者，只要大家把握机会加盟，即可获得巨大成功。爱尚悠品零食量贩一直发展的不错，在全国同行业处于领军地位，是多个品牌中最受欢迎，最具影响力的一个，所以大家可 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:41:24 </span> <a href="/lingshidianpp/2953.shtml" title="爱尚悠品量贩的加盟利润怎么样？预计一月3万早致富">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2952.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/a9080c911b5e167c6c06a7a8b65cde45.jpg" alt="爱尚悠品量贩零食的费用高不高？行业最低加盟条件简单"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2952.shtml" target="_blank" title="爱尚悠品量贩零食的费用高不高？行业最低加盟条件简单">爱尚悠品量贩零食的费用高不高？行业最低加盟条件简单</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩，时尚零食品牌，以一流的产品和绝佳的环境，为消费者带来最高质的享受。它自创立之初，就引起了市场的广泛关注，并在不断的发展中，树立了独特的品牌形象，形成了独特的品牌影响力。下面，就随小编具体了解一下这个品牌的成本问题吧。&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 创 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:39:48 </span> <a href="/lingshidianpp/2952.shtml" title="爱尚悠品量贩零食的费用高不高？行业最低加盟条件简单">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2951.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/d80a4c3ed44631b59d4d00bb7b81fbd2.jpg" alt="爱尚悠品量贩都有哪些加盟优势？5大优势让你开店无忧"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2951.shtml" target="_blank" title="爱尚悠品量贩都有哪些加盟优势？5大优势让你开店无忧">爱尚悠品量贩都有哪些加盟优势？5大优势让你开店无忧</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩是一家以零食为主的专卖店，在成立初期本着创立；甜蜜的幸福滋味；致力于以五星级的产品、平价化的价格，为世界各地的消费者带来前所未有的消费新体验。用高级的原料与技术，呈现出精美、平价的商品，让人人都能享有五星级的待遇与感受。爱尚悠品零食量贩市场为根基迅速壮大，在 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:38:43 </span> <a href="/lingshidianpp/2951.shtml" title="爱尚悠品量贩都有哪些加盟优势？5大优势让你开店无忧">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2950.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/5ac405428b276ef4d21d404bd154af3e.jpg" alt="小区附近开爱尚悠品量贩贵不贵？预计13.5万可开中型店"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2950.shtml" target="_blank" title="小区附近开爱尚悠品量贩贵不贵？预计13.5万可开中型店">小区附近开爱尚悠品量贩贵不贵？预计13.5万可开中型店</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩是目前值得投资加盟的好项目，技术易于掌握，投资金额也不高，相对来说能够给加盟商带来好的经济收益。爱尚悠品零食量贩所占有的市场优势，我们可以看出这是一个值得投资的加盟项目，他所需要的创业步骤非常的简单，只要我们具备了相应的投资资金，我们 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:37:27 </span> <a href="/lingshidianpp/2950.shtml" title="小区附近开爱尚悠品量贩贵不贵？预计13.5万可开中型店">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2949.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/66ebeb5d8b73967fa6c25e44955cc7f6.jpg" alt="学校附近爱尚悠品量贩成本是多少？预计8万可开小型店"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2949.shtml" target="_blank" title="学校附近爱尚悠品量贩成本是多少？预计8万可开小型店">学校附近爱尚悠品量贩成本是多少？预计8万可开小型店</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 现在的零食行业竞争非常激烈，尤其是去年以来，传统的零食行业受经济政策及市场变化的影响生意暗淡。现在选择加盟投资零食店，就要独树一帜，在市场没有饱和的零食行业去投资，绝对是最有远见的，那么爱尚悠品零食量贩绝对是您最好的选择，现在加盟时机最好。爱尚悠品零食量贩在市场细分中 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:35:21 </span> <a href="/lingshidianpp/2949.shtml" title="学校附近爱尚悠品量贩成本是多少？预计8万可开小型店">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2948.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/065cf8ae963e826e842cb680d8975805.jpg" alt="加盟爱尚悠品量贩成本是多少？时尚店大概需8.9万元"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2948.shtml" target="_blank" title="加盟爱尚悠品量贩成本是多少？时尚店大概需8.9万元">加盟爱尚悠品量贩成本是多少？时尚店大概需8.9万元</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 想要开一家零食店，圆自己的创富梦。你还得从行业中，选择一个优势品牌。爱尚悠品零食量贩零食品牌的销售模式创新，产品系列多，销售网络全，市场火爆，值得投资。创业开这样的零食店，加盟优势多，市场广阔，致富不用愁。投资零食行业，好项目，值得携手。爱尚悠品零食量贩加盟总部 </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:33:39 </span> <a href="/lingshidianpp/2948.shtml" title="加盟爱尚悠品量贩成本是多少？时尚店大概需8.9万元">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2947.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/30ee6c8e0deb3511570e3665842c1099.jpg" alt="爱尚悠品量贩零食店的成本是多少？大概开店只需10万元"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2947.shtml" target="_blank" title="爱尚悠品量贩零食店的成本是多少？大概开店只需10万元">爱尚悠品量贩零食店的成本是多少？大概开店只需10万元</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp;&nbsp; 对于众多创业者来说，经验和资金方面的不足，让他们无法承担要求过高、规模过大的加盟品牌。爱尚悠品零食量贩加盟门槛低，无论是产品的制作还是店铺的经营，对商家都没有太高的要求，零经验创业者只要经过总部的简单培训，即可轻松入门，快速开店。大概开店只需10万元。&nbsp;&nbsp;&nbsp; &nbsp; </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:32:28 </span> <a href="/lingshidianpp/2947.shtml" title="爱尚悠品量贩零食店的成本是多少？大概开店只需10万元">阅读全文&gt;&gt;</a></dd>
-                </dl>
-                <dl>
-                    <dt><a href="/lingshidianpp/2946.shtml" target="_blank"><img src="http://www.58lingshi.com/uploads/image/2017/08/02/a1cfe2284effc02635f9b66891a2c7cc.jpg" alt="爱尚悠品量贩需要多少钱？豪华店大概15万元即可"></a></dt>
-                    <dd class="tit"><a href="/lingshidianpp/2946.shtml" target="_blank" title="爱尚悠品量贩需要多少钱？豪华店大概15万元即可">爱尚悠品量贩需要多少钱？豪华店大概15万元即可</a> </dd>
-                    <dd class="desc">&nbsp;&nbsp;&nbsp; 爱尚悠品零食量贩在市场上是个颇具影响力的品牌，它拥有属于自己的统一商标和统一形象，且这一形象为消费者所熟知。商家加盟它，在品牌总部的形象授权下，可以借助其影响力快速打入市场，为消费者所熟知，进而打开属于自己的销售市场。那么爱尚悠品量贩需要多少钱？豪华店大概15万元即可。&nbsp;&nbsp;&amp; </dd>
-                    <dd class="date">发布于：<span>2017-08-02 15:26:41 </span> <a href="/lingshidianpp/2946.shtml" title="爱尚悠品量贩需要多少钱？豪华店大概15万元即可">阅读全文&gt;&gt;</a></dd>
-                </dl>
+                @foreach($pagelists as $pagelist)
+                    <dl>
+                        <dt><a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank"><img src="{{$pagelist->litpic}}"  alt="{{$pagelist->title}}"/></a></dt>
+                        <dd class="tit"><a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" title="{{$pagelist->title}}">{{$pagelist->title}}</a> </dd>
+                        <dd class="desc">{{$pagelist->description}} </dd>
+                        <dd class="date">发布于：<span>{{$pagelist->created_at}} </span> <a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" title="{{$pagelist->title}}">阅读全文&gt;&gt;</a></dd>
+                    </dl>
+                @endforeach
 
             </div>
-            <div class="page">
-                <ul class="pagination">
-
-                    <li class="disabled"><span>上一页</span></li>
-
-
-
-
-
-                    <li class="active"><span>1</span></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/2/">2</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/3/">3</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/4/">4</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/5/">5</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/6/">6</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/7/">7</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/8/">8</a></li>
-
-                    <li class="disabled"><span>...</span></li>
-
-
-
-
-
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/246/">246</a></li>
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/247/">247</a></li>
-
-
-                    <li><a href="http://www.58lingshi.com/lingshizx/page/2/">下一页</a></li>
-                </ul>
-
-            </div>
+            <div class="page">  {!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$pagelists->links()) !!}  </div>
         </div>
         <div class="new_right">
-            <div class="new_bt">
+            <div class="new_bt2">
                 <div class="search_bc">
                     <form method="get">
                         <input type="text" class="new_input" name="search">
@@ -215,7 +132,7 @@
                     </form>
                 </div>
             </div>
-            <div class="new_bt">
+            <div class="new_bt2">
                 <h3> <i></i> 本周热门 </h3>
                 <div class="new_hotes">
                     <ul>
@@ -242,7 +159,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="new_bt">
+            <div class="new_bt2">
                 <h3><i></i>热门品牌查询入口</h3>
                 <div class="kuishurk">
                     <a href="/lingshidianpp/5.shtml">三只松鼠</a>

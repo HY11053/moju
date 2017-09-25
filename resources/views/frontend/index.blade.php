@@ -169,46 +169,11 @@
             <div class="fc_right">
                 <h3><span>VIP</span>会员专区</h3>
                 <ul>
-                    <li class=" ">
-                        <a target="_blank" title="美石记石锅拌饭" data-ad="1652" stat="ad-1652" href="http://www.7808.cn/xiangmu/meishiji.html?noshow=1" class="block">特色美食 加盟赚钱                                                        <span class="new"></span>
-                        </a>
+                    @foreach($newMjCompanys as $index=>$newMjCompany)
+                    <li class=" @if($index==11) last-row text-red @endif">
+                        <a target="_blank" title="{{$newMjCompany->companyname}}" data-ad="1652" stat="ad-1652" href="/{{$newMjCompany->arctype->real_path}}/{{$newMjCompany->id}}.shtml" class="block">{{$newMjCompany->article->companyname}}@if($index==0 ) <span class="new"></span>@elseif($index==5 || $index==6  || $index==9) <span class="hot"></span> @endif </a>
                     </li>
-                    <li class=" ">
-                        <a target="_blank" title="鲜果时光饮品" data-ad="1653" stat="ad-1653" href="http://www.7808.cn/xiangmu/xgsgyp.html?noshow=1" class="block">5㎡开果饮店！轻松赚钱                                                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="大懒猫懒人用品专卖店" data-ad="1654" stat="ad-1654" href="http://www.7808.cn/xiangmu/dalanmao.html" class="block">懒人生活用品，谁做谁赚钱！                                                        </a>
-                    </li>
-                    <li class=" text-red">
-                        <a target="_blank" title="七十二变玩偶" data-ad="1655" stat="ad-1655" href="http://www.7808.cn/xiangmu/qishierbianwanou.html?noshow=1" class="block">3D人面玩偶 超高利润                                                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="中艾堂艾灸养生馆" data-ad="1656" stat="ad-1656" href="http://www.7808.cn/xiangmu/zhongaitang.html?noshow=1" class="block">开艾灸养生馆！赚钱有保障                                                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="一品世家疯狂烤翅" data-ad="1657" stat="ad-1657" href="http://www.7808.cn/xiangmu/yipinshijia.html?noshow=1" class="block">疯狂烤翅  疯狂赚钱                                                        <span class="hot"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="稀奇古怪玩具" data-ad="1658" stat="ad-1658" href="http://www.7808.cn/xiangmu/xiqiguguai.html" class="block">稀奇古怪 不赚才怪                                                        <span class="hot"></span>
-                        </a>
-                    </li>
-                    <li class=" text-red">
-                        <a target="_blank" title="小资生活化妆品" data-ad="1659" stat="ad-1659" href="http://www.7808.cn/xiangmu/xiaozishenghuo.html?noshow=1" class="block">小资生活进口化妆品连锁                                                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="渝口福小面" data-ad="1660" stat="ad-1660" href="http://www.7808.cn/xiangmu/yukoufuxiaomian.html" class="block">渝口福重庆小面五十强                                                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="童话波比童装" data-ad="1661" stat="ad-1661" href="http://www.7808.cn/xiangmu/tonghuabobitongzhuang.html?noshow=1" class="block">童话波比童装 1店=N店                                                        <span class="hot"></span>
-                        </a>
-                    </li>
-                    <li class=" ">
-                        <a target="_blank" title="金陵鸭血粉丝" data-ad="1662" stat="ad-1662" href="http://www.7808.cn/xiangmu/jinlingyaxuefensi.html?noshow=1" class="block">小生意 大财富                                                        </a>
-                    </li>
-                    <li class="last-row text-red">
-                        <a target="_blank" title="麻辣秘笈卤味" data-ad="1663" stat="ad-1663" href="http://www.7808.cn/xiangmu/malamijiluwei.html?noshow=1" class="block">麻辣商机 赚钱秘笈                                                        </a>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -314,7 +279,7 @@
     <!--/news-->
     <!--flinks-->
     <div class="friend_links">
-        <span>友情链接：</span><a href="http://www.51xxsp.com/" target="_blank">51休闲食品</a>
+        <span>友情链接：</span> @foreach($flinks as $flink) <a href="{{$flink->weburl}}">{{$flink->webname}}</a>@endforeach
     </div>
     <!--/flinks-->
 @stop
