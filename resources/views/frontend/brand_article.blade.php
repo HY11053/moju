@@ -112,50 +112,50 @@
                         <div class="join_tit" id="js_join_1" style="margin-bottom: 8px">@if(!empty($thisarticleinfos->article->companyinfotitle))  <h2 class="tit">{{$thisarticleinfos->article->companyinfotitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>品牌介绍</em></h2>  @endif</div><table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
                             <tbody>
                             <tr>
-                                <td class="td_color">品牌名称</td>
-                                <td class="td_style">三只松鼠</td>
+                                <td class="td_color">公司名称</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companyname}}</td>
                                 <td class="td_color">投资金额</td>
-                                <td class="td_style">10~20万元以上</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companypay}}</td>
                             </tr>
                             <tr>
                                 <td class="td_color">成立日期</td>
-                                <td class="td_style">2012</td>
-                                <td class="td_color">门店总数</td>
-                                <td class="td_style">300</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companydate}}</td>
+                                <td class="td_color">综合指数</td>
+                                <td class="td_style">{{$thisarticleinfos->click}}</td>
                             </tr>
                             <tr>
                                 <td class="td_color">经营范围</td>
-                                <td class="td_style">干果、炒货，夏威夷果等</td>
-                                <td class="td_color">适合人群</td>
-                                <td class="td_style">大学生，80后，白领等</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companyarea}}</td>
+                                <td class="td_color">企业性质</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companyopt}}</td>
                             </tr>
                             <tr>
-                                <td class="td_color">加盟区域</td>
-                                <td class="td_style">北京，上海，安徽等全国</td>
-                                <td class="td_color">是否有区域授权</td>
-                                <td class="td_style">是</td>
+                                <td class="td_color">公司地址</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companyaddr}}</td>
+                                <td class="td_color">发展模式</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companydev}}</td>
                             </tr>
                             <tr>
                                 <td class="td_color">品牌发源地</td>
-                                <td class="td_style">芜湖</td>
-                                <td class="td_color">合同期限</td>
+                                <td class="td_style">{{$thisarticleinfos->country}}</td>
+                                <td class="td_color">联系电话</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companyphone}}</td>
+                            </tr>
+                            <tr>
+                                <td class="td_color">电子邮件</td>
+                                <td class="td_style">{{$thisarticleinfos->article->companyemail}}</td>
+                                <td class="td_color">生产周期</td>
                                 <td class="td_style"></td>
                             </tr>
                             <tr>
-                                <td class="td_color">培训期限</td>
-                                <td class="td_style">二周</td>
-                                <td class="td_color">特许使用费</td>
+                                <td class="td_color">经营许可</td>
+                                <td class="td_style">{{$thisarticleinfos->article->brandapply}}</td>
+                                <td class="td_color"></td>
                                 <td class="td_style"></td>
                             </tr>
                             <tr>
-                                <td class="td_color">公司名称</td>
-                                <td class="td_style">三只松鼠股份有限公司</td>
-                                <td class="td_color">公司性质</td>
-                                <td class="td_style">股份有限公司</td>
-                            </tr>
-                            <tr>
-                                <td class="td_color">所需面积</td>
-                                <td class="td_style">≥20平米</td>
+                                <td class="td_color"></td>
+                                <td class="td_style"></td>
                                 <td class="td_color"> </td>
                                 <td class="td_style"> </td>
                             </tr>
@@ -166,27 +166,27 @@
                             {!! $thisarticleinfos->article['body'] !!}
                         </div>
 
-                        <div class="join_tit" id="js_join_">  @if(!empty($thisarticleinfos->article->companyavtitle))  <h2 class="tit">{{$thisarticleinfos->article->companyavtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>公司优势</em></h2>  @endif </div>
+                        <div class="join_tit" id="js_join_2">  @if(!empty($thisarticleinfos->article->companyavtitle))  <h2 class="tit">{{$thisarticleinfos->article->companyavtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>公司优势</em></h2>  @endif </div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['companyadvantage'] !!}
                         </div>
-                        <div class="join_tit" id="js_join_2">   @if(!empty($thisarticleinfos->article->companyareatitle))  <h2 class="tit">{{$thisarticleinfos->article->companyareatitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>经营范围</em></h2>  @endif  </div>
+                        <div class="join_tit" id="js_join_3">   @if(!empty($thisarticleinfos->article->companyareatitle))  <h2 class="tit">{{$thisarticleinfos->article->companyareatitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>经营范围</em></h2>  @endif  </div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['companyareacontent'] !!}
                         </div>
-                        <div class="join_tit" id="js_join_3"> @if(!empty($thisarticleinfos->article->processtitle))  <h2 class="tit">{{$thisarticleinfos->article->processtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>加工流程</em></h2>  @endif  </div>
+                        <div class="join_tit" id="js_join_4"> @if(!empty($thisarticleinfos->article->processtitle))  <h2 class="tit">{{$thisarticleinfos->article->processtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>加工流程</em></h2>  @endif  </div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['processcontent'] !!}
                          </div>
-                        <div class="join_tit" id="js_join_4">  @if(!empty($thisarticleinfos->article->productiontitle))  <h2 class="tit">{{$thisarticleinfos->article->productiontitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>产品展示</em></h2>  @endif  </div>
+                        <div class="join_tit" id="js_join_5">  @if(!empty($thisarticleinfos->article->productiontitle))  <h2 class="tit">{{$thisarticleinfos->article->productiontitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>产品展示</em></h2>  @endif  </div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['productioncontent'] !!}
                         </div>
-                        <div class="join_tit" id="js_join_5">  @if(!empty($thisarticleinfos->article->credittitle))  <h2 class="tit">{{$thisarticleinfos->article->credittitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>企业信用</em></h2>  @endif  </div>
+                        <div class="join_tit" id="js_join_6">  @if(!empty($thisarticleinfos->article->credittitle))  <h2 class="tit">{{$thisarticleinfos->article->credittitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>企业信用</em></h2>  @endif  </div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['creditcontent'] !!}
                          </div>
-                        <div class="join_tit"> @if(!empty($thisarticleinfos->article->teamtitle))  <h2 class="tit">{{$thisarticleinfos->article->teamtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>团队展示</em></h2>  @endif</div>
+                        <div class="join_tit" id="js_join_7"> @if(!empty($thisarticleinfos->article->teamtitle))  <h2 class="tit">{{$thisarticleinfos->article->teamtitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>团队展示</em></h2>  @endif</div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['teamcontent'] !!}
                         </div>
@@ -243,7 +243,7 @@
             </div>
             <div class="new_right">
                 <!--计算器 开始-->
-                <div class="new_bt">
+                <div class="new_bt2">
                     <h3> <i></i>模具厂排行榜 </h3>
                     <div class="rank_bd">
                         <ul>
@@ -265,7 +265,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="new_bt">
+                <div class="new_bt2">
                     <h3> <i></i> 最新入驻模具厂品牌 </h3>
                     <div class="bt_xiangmu">
                         <ul>
@@ -275,8 +275,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="new_bt">
-                    <h3> <i></i> 最新零食新闻 </h3>
+                <div class="new_bt2">
+                    <h3> <i></i> 模具行业新闻 </h3>
                     <div class="bts com_news">
                         <div class="common">
                             <ul>

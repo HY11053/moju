@@ -13,17 +13,13 @@
             <dl>
                 <dt>项目分类</dt>
                 <dd><a class="hover" target="_self" href="#">全部</a></dd>
-                <dd><a target="_self" href="/lingshidianpp/">零食店品牌</a></dd>
-                <dd><a target="_self" href="/chaohuodian/">炒货店品牌</a></dd>
-                <dd><a target="_self" href="/ganguodian/">干果店品牌</a></dd>
-                <dd><a target="_self" href="/jinkoulingshi/">进口零食品牌</a></dd>
-                <dd><a target="_self" href="/shushidian/">熟食店品牌</a></dd>
-                <dd><a target="_self" href="/paihangbang/">零食品牌排行榜</a></dd>
-                <dd><a target="_self" href="/pinpai/">零食品牌大全</a></dd>
+                @foreach($tradeTypes as $tradeType)
+                    <dd><a target="_self" href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></dd>
+                @endforeach
 
             </dl>
             <dl>
-                <dt>投资金额</dt>
+                <dt>适用范围</dt>
                 <dd><a class="hover" target="_self" href="#">全部</a></dd>
                 <dd><a target="_self" href="/project/0-1~5-0-0.shtml">1-5万元</a></dd>
                 <dd><a target="_self" href="/project/0-5~10-0-0.shtml">5-10万元</a></dd>
@@ -33,8 +29,8 @@
                 <dd><a target="_self" href="/project/0-50~100-0-0.shtml">50-100万元</a></dd>
             </dl>
             <dl>
-                <dt>店铺面积</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
+                <dt>作用对象</dt>
+                <dd><a class="hover" target="_self" href="#">分类</a></dd>
                 <dd><a target="_self" href="/project/0-0-1~10-0.shtml">10平米以下</a></dd>
                 <dd><a target="_self" href="/project/0-0-10~30-0.shtml">10-30平米</a></dd>
                 <dd><a target="_self" href="/project/0-0-30~50-0.shtml">30-50平米</a></dd>
@@ -43,7 +39,7 @@
             </dl>
             <dl>
                 <dt>所在地区</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
+                <dd><a class="hover" target="_self" href="#">地区</a></dd>
                 <dd><a target="_self" href="/project/0-0-0-1.shtml">北京</a></dd>
                 <dd><a target="_self" href="/project/0-0-0-125.shtml">济南</a></dd>
                 <dd><a target="_self" href="/project/0-0-0-71.shtml">广州</a></dd>
@@ -65,47 +61,35 @@
         </div>
         <div class="rec_brand_list">
             <ul>
-                <li><a href="/lingshidianpp/5.shtml" target="_blank" title="三只松鼠" class="pic"><img src="/images/thread/2017/04/12/3353f2d4c9eacd918b8afcfb28554583.jpg" alt="三只松鼠"><em>三只松鼠</em></a></li>
-                <li><a href="/chaohuodian/8.shtml" target="_blank" title="盐津铺子" class="pic"><img src="/images/thread/2017/04/13/c74990e280bd9596e04c57fe8ce4b1cf.jpg" alt="盐津铺子"><em>盐津铺子</em></a></li>
-                <li><a href="/lingshidianpp/38.shtml" target="_blank" title="良品铺子" class="pic"><img src="/images/thread/2017/04/14/0bd504b4a3542dfd6af6417b00962879.png" alt="良品铺子"><em>良品铺子</em></a></li>
-                <li><a href="/chaohuodian/51.shtml" target="_blank" title="百味林" class="pic"><img src="/images/thread/2017/04/17/257b0d604a639d13975512bfe10f323d.jpg" alt="百味林"><em>百味林</em></a></li>
-                <li><a href="/chaohuodian/9.shtml" target="_blank" title="戴永红炒货" class="pic"><img src="/images/thread/2017/04/13/8b45deb678f769725ba9557a22f6c4c3.jpg" alt="戴永红炒货"><em>戴永红炒货</em></a></li>
-                <li><a href="/lingshidianpp/91.shtml" target="_blank" title="一扫光" class="pic"><img src="/images/thread/2017/04/17/bbe84998a4eae40c57f2be6f2a0cd32f.jpg" alt="一扫光"><em>一扫光</em></a></li>
-                <li><a href="/ganguodian/14.shtml" target="_blank" title="好想你枣" class="pic"><img src="/images/thread/2017/04/13/3191b10bd7d2e2a346f5b58a83cd4811.jpg" alt="好想你枣"><em>好想你枣</em></a></li>
-                <li><a href="/chaohuodian/18.shtml" target="_blank" title="粒上皇" class="pic"><img src="/images/thread/2017/04/14/8358a8f13bb15323c15f9ffc6483654e.jpg" alt="粒上皇"><em>粒上皇</em></a></li>
-                <li><a href="/lingshidianpp/53.shtml" target="_blank" title="老婆大人" class="pic"><img src="/images/thread/2017/04/17/77484503c2bc694ecf802cee7a2f2e1d.jpg" alt="老婆大人"><em>老婆大人</em></a></li>
-            </ul>
+                @foreach($topbrands as $topbrand)
+                    <li><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->article->companyname}}" class="pic"><img src="{{$topbrand->litpic}}" alt="{{$topbrand->article->companyname}}"><em>{{$topbrand->article->companyname}}</em></a></li>
+                @endforeach </ul>
         </div>
         <div class="news_center">
             <div class="news_tj clearfix">
                 <dl>
-                    <dt><a href="/gxlirun_475.html"><img src="/uploads/allimg/160310/1-16031010311b41.JPG" alt="干洗店的利润是多大_干洗店利润"></a></dt>
+                    <dt><a href="/{{$cNews->arctype->real_path}}/{{$cNews->id}}.shtml"><img src="{{$cNews->litpic}}" alt="{{$cNews->title}}"></a></dt>
                     <dd>
-                        <h3><a href="/gxlirun_475.html" target="_blank">干洗店的利润是多大_干洗店利润</a></h3>
-                        <p>干洗店一年预期的利润大概是多少？干洗店的利润是多大？我国经济水平的不断...</p>
+                        <h3><a href="/{{$cNews->arctype->real_path}}/{{$cNews->id}}.shtml" target="_blank">{{$cNews->title}}</a></h3>
+                        <p>{{$cNews->description}}...</p>
                     </dd>
 
                 </dl>
 
                 <div class="news_tj_r">
-                    <b>干洗店利润特别推荐</b>
+                    <b>{{$thisTypeinfos->typename}}特别推荐</b>
                     <div class="news_tj_r1">
 
-                        <h3><a href="/gxlirun_564.html" target="_blank">干洗店的利润有多大，2017洗衣店</a></h3>
-                        <p>洗衣店利润有多大？洗衣店的利润怎么样？洗衣店是洗涤行业中出现较早的店铺类型，也是到目前为止都比较受大众...<a href="/gxlirun_564.html" target="_blank">详情&gt;&gt;</a></p>
+                        <h3><a href="/{{$hNews->arctype->real_path}}/{{$hNews->id}}.shtml" target="_blank">{{$hNews->title}}</a></h3>
+                        <p>{{$hNews->description}}..<a href="/{{$hNews->arctype->real_path}}/{{$hNews->id}}.shtml" target="_blank">详情&gt;&gt;</a></p>
+
 
                     </div>
 
                     <ul class="clearfix">
-                        <li><a href="/gxlirun_475.html" target="_blank">干洗店的利润是多大_干洗店利润</a></li>
-                        <li><a href="/gxlirun_2318.html" target="_blank">开个干洗店利润怎么样</a></li>
-                        <li><a href="/gxlirun_476.html" target="_blank">洗烫店利润高吗</a></li>
-                        <li><a href="/gxlirun_473.html" target="_blank">小型干洗店一年预期的利润</a></li>
-                        <li><a href="/gxlirun_808.html" target="_blank">小型干洗店的利润</a></li>
-                        <li><a href="/gxlirun_750.html" target="_blank">干洗店利润大吗</a></li>
-                        <li><a href="/gxlirun_477.html" target="_blank">水洗店利润</a></li>
-                        <li><a href="/gxlirun_309.html" target="_blank">干洗店利润怎么样</a></li>
-
+                        @foreach($sNews as $sNew)
+                        <li><a href="/{{$sNew->arctype->real_path}}/{{$sNew->id}}.shtml" target="_blank">{{$sNew->title}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

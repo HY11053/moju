@@ -16,7 +16,7 @@ class IndexController extends Controller
     {
 
         //行业频道
-        $tradeTypes=Arctype::where('topid',9)->get();
+        $tradeTypes=Arctype::where('topid',9)->take(15)->get();
         //模具品牌企业顶部热门品牌
         $hotMjcompanys=Archive::where('typeid',1)->where('mid',1)->where('flags','like','%h%')->take(5)->get();
         $picMjcompanys=Archive::where('typeid',1)->where('mid',1)->where('flags','like','%p%')->take(3)->get();

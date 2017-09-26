@@ -6,14 +6,10 @@
     <div class="mainbox">
         <div class="hangyepd">
             <ul>
-                @foreach($tradeTypes as $tradeType)
-                <li><a href="/{{$tradeType->real_path}}/" target="_self">{{$tradeType->typename}}</a></li>
+                @foreach($tradeTypes as $index=>$tradeType)
+                <li @if($index==14) style="border:0px;" @endif><a href="/{{$tradeType->real_path}}/" target="_self">{{$tradeType->typename}}</a></li>
                 @endforeach
-                <li><a href="http://food.xiangmu.com/" target="_self">食品特产</a></li>
-                <li><a href="http://shipin.xiangmu.com/" target="_self">礼品饰品</a></li>
-                <li><a href="http://lingshou.xiangmu.com/" target="_self">零售专卖</a></li>
-                <li><a href="http://kongqineng.xiangmu.com/" target="_self">空气能</a></li>
-                <li style="border:0px;"><a href="http://jingshui.xiangmu.com/" target="_self">净水器</a></li>
+
             </ul>
         </div>
         <div class="picbox">
