@@ -109,7 +109,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-md-12">
-                                {{Form::label('country', '经纬度', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('country', '地区', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-4 col-sm-9 col-xs-12">
                                     {{Form::text('country',null, array('class' => 'form-control col-md-10','id'=>'country','placeholder'=>'填写地区名称即可'))}}
                                 </div>
@@ -183,7 +183,7 @@
                     <div class="timeline-item">
                         <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
 
-                        <h3 class="timeline-header"><a href="#">产品信息</a> 产品信息描述</h3>
+                        <h3 class="timeline-header"><a href="#">企业信息</a>企业信息描述</h3>
 
                         <div class="timeline-body">
                             <div class="row">
