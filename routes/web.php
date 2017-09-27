@@ -124,6 +124,8 @@ Route::post('/phone/complate','Mobile\PhoneController@Complates');
 
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
+Route::get('paihangbang','Frontend\BrandsController@Paihangbang');
+Route::get('paihangbang/page/{page}/','Frontend\BrandsController@Paihangbang')->name('paihangbanglists');
 Route::get('{path}','Frontend\BrandsController@BrandLists');
 Route::get('{path?}/page/{page}/','Frontend\BrandsController@BrandLists')->name('pagelists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');

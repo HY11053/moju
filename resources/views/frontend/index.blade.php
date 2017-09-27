@@ -34,65 +34,45 @@
         </div>
         <div class="sumbox">
             <div class="joinbox">
-                <span>加入项目网项目库</span>
+                <span>加入中国模具网项目库</span>
                 <br><br>
-                <a href="http://www.xiangmu.com/member/memreg.aspx" target="_blank">得二级域名网站，免费发信息！</a><br>
-                <a href="http://www.xiangmu.com/member/memreg.aspx" target="_blank"><img src="/reception//images/join.gif" alt="加入项目网产品库" width="131" height="40"></a>
-                <div class="txt">已发布加盟项目<span>44339</span>个<br>累计意向加盟者<span>1932737</span>人次</div>
+                <a href="">汇聚全国模具生产厂家供应信息！</a><br>
+                <a href="" ><img src="/reception//images/join.gif" alt="加入中国模具网产品库" width="131" height="40"></a>
+                <div class="txt">已发布项目<span>44339</span>个<br>累计意向咨询者<span>1932737</span>人次</div>
             </div>
             <div class="newtop">
                 <div class="title">
                     <ul>
-                        <li class="" onclick="ch(1)" id="ch1">新加盟项目</li>
-                        <li onclick="ch(2)" id="ch2" class="">新加盟企业</li>
-                        <li onclick="ch(3)" id="ch3" class="cur">品牌项目</li>
+                        <li class="" onclick="ch(1)" id="ch1">实力生产厂家</li>
+                        <li onclick="ch(2)" id="ch2" class="">新产品信息</li>
+                        <li onclick="ch(3)" id="ch3" class="cur">热门关注信息</li>
                     </ul>
                 </div>
                 <div class="content">
                     <div class="lnone" id="a2_3_1">
                         <div class="jmzx">
                             <ul>
-                                <li><a href="http://www.xiangmu.com/project/928452.html" title="肯德基鸡叉骨加盟">肯德基鸡叉骨加盟</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928451.html" title="合金催化液技术 合金催化液技术配方 合金催化液技术转让">合金催化液技术 合金催化液技术配方 合金</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928450.html" title="加盟贵州茅台古酿坊酒业酱香型白酒">加盟贵州茅台古酿坊酒业酱香型白酒</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928449.html" title="普比欧牌阿胶含片加盟代理">普比欧牌阿胶含片加盟代理</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928448.html" title="天保堂野山参招商加盟,天保堂野山参加盟条件">天保堂野山参招商加盟,天保堂野山参加盟</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928447.html" title="娇倍源阿胶加盟电话加盟条件_娇倍源阿胶加盟排行榜">娇倍源阿胶加盟电话加盟条件_娇倍源阿胶</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928446.html" title="官燕栈燕窝加盟条件_官燕栈燕窝加盟生意怎么样">官燕栈燕窝加盟条件_官燕栈燕窝加盟生意</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928444.html" title="VVO进口食品加盟代理,VVO进口食品诚招代理商">VVO进口食品加盟代理,VVO进口食品诚招代</a></li>
-                                <li><a href="http://www.xiangmu.com/project/928443.html" title="小布叮早教机加盟费用多少钱_小布叮早教机加盟电话">小布叮早教机加盟费用多少钱_小布叮早教</a></li>
-
+                                @foreach($Mjcompanys as $mjcompany)
+                                <li><a href="/{{$mjcompany->arctype->real_path}}/{{$mjcompany->id}}.shtml" title="{{$mjcompany->article->companyname}}">{{$mjcompany->article->companyname}}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
                     <div class="lnone" id="a2_3_2">
                         <div class="jmzx">
                             <ul>
-                                <li><a href="http://pubiou.xiangmu.com/" title="山东普比欧生物技术有限公司">山东普比欧生物技术有限公司</a></li>
-                                <li><a href="http://jiaobeiyuan.xiangmu.com/" title="东阿阿胶股份有限公司">东阿阿胶股份有限公司</a></li>
-                                <li><a href="http://guanyanzhan.xiangmu.com/" title="官燕栈国际有限公司">官燕栈国际有限公司</a></li>
-                                <li><a href="http://VVO.xiangmu.com/" title="深圳好食食品有限公司">深圳好食食品有限公司</a></li>
-                                <li><a href="http://xiaobuding.xiangmu.com/" title="浙江小布叮动漫文化股份有限公司">浙江小布叮动漫文化股份有限公司</a></li>
-                                <li><a href="http://qhlz.xiangmu.com/" title="倍乐生商贸（中国）有限公司">倍乐生商贸（中国）有限公司</a></li>
-                                <li><a href="http://zdyw.xiangmu.com/" title="青岛正典实业有限公司">青岛正典实业有限公司</a></li>
-                                <li><a href="http://zhangyaoshi.xiangmu.com/" title="东阿县张药师电子商务有限公司">东阿县张药师电子商务有限公司</a></li>
-                                <li><a href="http://sanshandao.xiangmu.com/" title="大连三山岛海产食品有限公司">大连三山岛海产食品有限公司</a></li>
-                            </ul>
+                                @foreach($feileiMojus as $feileiMoju)
+                                <li><a href="/{{$feileiMoju->arctype->real_path}}/{{$feileiMoju->id}}.shtml" title="{{$feileiMoju->title}}">{{$feileiMoju->title}}</a></li>
+                                @endforeach
+                             </ul>
                         </div>
                     </div>
                     <div class="lcur" id="a2_3_3">
                         <div class="jmzx">
                             <ul>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/sunfeel.html" title="赛菲尔珠宝诚招加盟商">赛菲尔珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/chowtaiseng.html" title="周大生珠宝诚招加盟商">周大生珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/66fu.html" title="六六福珠宝诚招加盟商">六六福珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/mokingran.html" title="梦金园珠宝诚招加盟商">梦金园珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/zhengdafu.html" title="正大福珠宝诚招加盟商">正大福珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/2s.html" title="尚银珠宝诚招加盟商">尚银珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/cbjt.html" title="COLORGEMS彩宝诚招加盟商">COLORGEMS彩宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/vandear.html" title="范蒂尔珠宝诚招加盟商">范蒂尔珠宝诚招加盟商</a></li>
-                                <li><a href="http://www.xiangmu.com/so/zhubao/shenyuyuan.html" title="神玉源珠宝诚招加盟商">神玉源珠宝诚招加盟商</a></li>
-
+                                @foreach($hotNews as $hotNew)
+                                <li><a href="/{{$hotNew->arctype->real_path}}/{{$hotNew->id}}.shtml" title="{{$hotNew->title}}">{{$hotNew->title}}</a></li>
+                               @endforeach
                             </ul>
                         </div>
                     </div>
@@ -163,7 +143,7 @@
 
             </div>
             <div class="fc_right">
-                <h3><span>VIP</span>会员专区</h3>
+                <h3><span>VIP</span>模具厂家会员专区</h3>
                 <ul>
                     @foreach($newMjCompanys as $index=>$newMjCompany)
                     <li class=" @if($index==11) last-row text-red @endif">
@@ -275,7 +255,10 @@
     <!--/news-->
     <!--flinks-->
     <div class="friend_links">
-        <span>友情链接：</span> @foreach($flinks as $flink) <a href="{{$flink->weburl}}">{{$flink->webname}}</a>@endforeach
-    </div>
+        <div class="flinks">
+            <span>友情链接：</span> @foreach($flinks as $flink) <a href="{{$flink->weburl}}">{{$flink->webname}}</a>@endforeach
+
+        </div>
+   </div>
     <!--/flinks-->
 @stop

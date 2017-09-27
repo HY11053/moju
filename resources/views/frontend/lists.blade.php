@@ -120,52 +120,33 @@
                 <h3> <i></i> 本周热门 </h3>
                 <div class="new_hotes">
                     <ul>
-                        <li> <a href="/lingshizx/312.shtml" target="_blank" title="薛记炒货如何加盟？加盟薛记炒货流程很简单"><img src="/images/thread/2017/04/28/b3136011f1319205c3a14cbb5cf0d46b.jpg" alt="薛记炒货如何加盟？加盟薛记炒货流程很简单"></a>
-                            <p><a href="/lingshizx/312.shtml" title="薛记炒货如何加盟？加盟薛记炒货流程很简单">薛记炒货如何加盟？加盟薛记炒货流程很简单</a></p>
-                            <p></p>
-                        </li>
-                        <li> <a href="/ganguodian/322.shtml" target="_blank" title="加盟百惠园利润回报多少？标准店16.23万年盈利"><img src="http://www.58lingshi.com/uploads/image/2017/04/28/45b75e9fc25b82c845e5e004e60c98bc.jpg" alt="加盟百惠园利润回报多少？标准店16.23万年盈利"></a>
-                            <p><a href="/ganguodian/322.shtml" title="加盟百惠园利润回报多少？标准店16.23万年盈利">加盟百惠园利润回报多少？标准店16.23万年盈利</a></p>
-                            <p></p>
-                        </li>
-                        <li> <a href="/jinkoulingshi/476.shtml" target="_blank" title="兔子家进口食品加盟投资条件高不高？适合所有投资者！"><img src="http://www.58lingshi.com/uploads/image/2017/05/05/58a87a5338f699a77b868b5fbfccddb5.jpg" alt="兔子家进口食品加盟投资条件高不高？适合所有投资者！"></a>
-                            <p><a href="/jinkoulingshi/476.shtml" title="兔子家进口食品加盟投资条件高不高？适合所有投资者！">兔子家进口食品加盟投资条件高不高？适合所有投资者！</a></p>
-                            <p></p>
-                        </li>
-                        <li> <a href="/ganguodian/273.shtml" target="_blank" title="投资开姚生记连锁店多少钱？8.53万元开店小本项目"><img src="http://www.58lingshi.com/uploads/image/2017/04/27/d34408692cb7bf1e0caa04d61af69476.jpg" alt="投资开姚生记连锁店多少钱？8.53万元开店小本项目"></a>
-                            <p><a href="/ganguodian/273.shtml" title="投资开姚生记连锁店多少钱？8.53万元开店小本项目">投资开姚生记连锁店多少钱？8.53万元开店小本项目</a></p>
-                            <p></p>
-                        </li>
-                        <li> <a href="/chaohuodian/1071.shtml" target="_blank" title="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！"><img src="http://www.58lingshi.com/uploads/image/2017/05/26/2f63770e0569ed3569f5c11a2724f00d.png" alt="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！"></a>
-                            <p><a href="/chaohuodian/1071.shtml" title="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！">厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！</a></p>
-                            <p></p>
-                        </li>
+                        @foreach($topnews as $topnew)
+                            <li > <a href="/{{$topnew->arctype->real_path}}/{{$topnew->id}}.shtml" target="_blank" title="{{$topnew->title}}"><img src="{{$topnew->litpic}}" alt="{{$topnew->title}}" ></a>
+                                <p><a  href="/{{$topnew->arctype->real_path}}/{{$topnew->id}}.shtml" title="{{$topnew->title}}">{{$topnew->title}}</a></p>
+                                <p>{{str_limit($topnew->description,15,'')}}</p>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
             <div class="new_bt2">
-                <h3><i></i>热门品牌查询入口</h3>
+                <h3><i></i>热门磨具厂查询入口</h3>
                 <div class="kuishurk">
-                    <a href="/lingshidianpp/5.shtml">三只松鼠</a>
-                    <a href="/chaohuodian/8.shtml">盐津铺子</a>
-                    <a href="/lingshidianpp/38.shtml">良品铺子</a>
-                    <a href="/chaohuodian/51.shtml">百味林</a>
-                    <a href="/chaohuodian/9.shtml">戴永红炒货</a>
-                    <a href="/lingshidianpp/91.shtml">一扫光</a>
-                    <a href="/ganguodian/14.shtml">好想你</a>
-                    <a href="/chaohuodian/18.shtml">粒上皇</a>
-                    <a href="/lingshidianpp/53.shtml">老婆大人</a>
-                    <a href="/jinkoulingshi/98.shtml">好一点</a>
-                    <a href="/lingshidianpp/226.shtml">不二家</a>
-                    <a href="/jinkoulingshi/65.shtml">不二家</a>
-                    <a href="/chaohuodian/140.shtml">张二嘎</a>
-                    <a href="/jinkoulingshi/185.shtml">舌间味</a>
-                    <a href="/lingshidianpp/72.shtml">盼盼零零嘴 </a>
-                    <a href="/lingshidianpp/92.shtml">因味爱</a>
-                    <a href="/ganguodian/26.shtml">姚生记</a>
-                    <a href="/ganguodian/134.shtml">天泉甜甜</a>
-                    <a href="/lingshidianpp/1147.shtml">零食有约</a>
-                    <a href="/lingshidianpp/444.shtml">光合农场</a>
+                    @foreach($fastfinds as $fastfind)
+                        <a href="/{{$fastfind->arctype->real_path}}/{{$fastfind->id}}.shtml">{{$fastfind->article->companyname}}</a>
+                    @endforeach
+                </div>
+            </div>
+            <div class="new_bt2">
+                <h3> <i></i> 最新展会信息 </h3>
+                <div class="bts">
+                    <div class="common">
+                        <ul>
+                            @foreach($zhanhuiNews as $zhanhuiNew)
+                                <li><a href="/{{$zhanhuiNew->arctype->real_path}}/{{$zhanhuiNew->id}}.shtml" target="_blank" title="{{$zhanhuiNew->title}}">{{$zhanhuiNew->title}}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
             </div>
 

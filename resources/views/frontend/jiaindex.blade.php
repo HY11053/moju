@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="service">
-                <span class="title">所属行业：</span>
+                <span class="title">产品分类：</span>
                 <div class="service_list">
                     <ul class="list auto">
                         <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/guonei/" title="不限" style="color:#2577e3;">不限</a></li>
@@ -119,92 +119,6 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="time_box">
-                <span class="title">展会时间：</span>
-                <div class="time_bar fl">
-						<span class="big_bar">
-							<span m="2017" title="2017年">2017年</span>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="12月" m="12"><span>12月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="11月" m="11"><span>11月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="10月" m="10"><span>10月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar  select-month ">
-							<div><a title="9月" m="09"><span>9月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="8月" m="08"><span>8月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="7月" m="07"><span>7月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="6月" m="06"><span>6月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="5月" m="05"><span>5月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="4月" m="04"><span>4月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="3月" m="03"><span>3月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="2月" m="02"><span>2月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="1月" m="01"><span>1月<i></i></span></a></div>
-						</span>
-                    <span class="big_bar">
-							<span m="2016" title="2016年">2016年</span>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="12月" m="12"><span>12月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="11月" m="11"><span>11月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="10月" m="10"><span>10月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="9月" m="09"><span>9月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="8月" m="08"><span>8月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="7月" m="07"><span>7月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="6月" m="06"><span>6月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="5月" m="05"><span>5月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="4月" m="04"><span>4月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="3月" m="03"><span>3月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="2月" m="02"><span>2月<i></i></span></a></div>
-						</span>
-                    <span class="small_bar ">
-							<div><a title="1月" m="01"><span>1月<i></i></span></a></div>
-						</span>
-                    <span class="big_bar">
-							<span m="2015" title="2015年">2015年</span>
-						</span>
-                </div>
-            </div>
         </div>
 
         <div class="rightl">
@@ -250,127 +164,68 @@
 
         </div>
         <div class="new_right">
-            <!--/-->
-            <div class="leftr">
-                <div class="fl lf_nav">
-                    <div class="new_bt">
-                        <h3> <i></i> 产品分类中心 </h3>
-                        <div class="lf_nav_ct">
-                            <div class="lefts fl mt10" id="leftcolumns">
-                                <h5 class="curr" style="cursor: pointer;">模具架</h5>
-                                <ul id="menu-shelf" class="celanfl"><li id="menu-item-35" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35"><a href="http://www.bolch168.com/category/huojia/moju">模具货架</a></li>
-                                    <li id="menu-item-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="http://www.bolch168.com/category/huojia/chouti">抽屉式货架</a></li>
-                                </ul>
-                                <h5 style="cursor: pointer;" class="">物流台车</h5>
-                                <ul id="menu-logistics-trolley" class="celanfl" style="display: none;"><li id="menu-item-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="http://www.bolch168.com/category/wuliutaiche/yiyao">医药专用笼车</a></li>
-                                    <li id="menu-item-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82"><a href="http://www.bolch168.com/category/wuliutaiche/guomei">国美电器专用物流台车</a></li>
-                                    <li id="menu-item-83" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83"><a href="http://www.bolch168.com/category/wuliutaiche/tushu">图书馆专用笼车</a></li>
-                                    <li id="menu-item-84" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-84"><a href="http://www.bolch168.com/category/wuliutaiche/darunfa-wuliutaiche">大润发物流台车</a></li>
-                                    <li id="menu-item-85" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-85"><a href="http://www.bolch168.com/category/wuliutaiche/xuexiao">学校专用物流台车</a></li>
-                                    <li id="menu-item-86" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-86"><a href="http://www.bolch168.com/category/wuliutaiche/jialefu-wuliutaiche">家乐福物流台车</a></li>
-                                    <li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="http://www.bolch168.com/category/wuliutaiche/bucao">布草专用笼车</a></li>
-                                    <li id="menu-item-88" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88"><a href="http://www.bolch168.com/category/wuliutaiche/fuzhuang">服装专用物流台车</a></li>
-                                    <li id="menu-item-89" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-89"><a href="http://www.bolch168.com/category/wuliutaiche/aoerma-wuliutaiche">沃尔玛物流台车</a></li>
-                                    <li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90"><a href="http://www.bolch168.com/category/wuliutaiche/xiyi">洗衣房专用物流笼车</a></li>
-                                    <li id="menu-item-91" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91"><a href="http://www.bolch168.com/category/wuliutaiche/yancao">烟草专用笼车</a></li>
-                                    <li id="menu-item-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a href="http://www.bolch168.com/category/wuliutaiche/wuliuzhongxing">物流中心专用物流台车</a></li>
-                                    <li id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="http://www.bolch168.com/category/wuliutaiche/wuliu">物流配送专用物流台车</a></li>
-                                    <li id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a href="http://www.bolch168.com/category/wuliutaiche/suling">苏宁电器专用物流台车</a></li>
-                                    <li id="menu-item-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a href="http://www.bolch168.com/category/wuliutaiche/liansuo">连锁超市物流台车</a></li>
-                                </ul>
-                                <h5 style="cursor: pointer;">登高车</h5>
-                                <ul id="menu-ladder-truck" class="celanfl" style="display: none;"><li id="menu-item-67" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67"><a href="http://www.bolch168.com/category/denggaoche/cangku">仓库专用登高车</a></li>
-                                    <li id="menu-item-68" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68"><a href="http://www.bolch168.com/category/denggaoche/bianli">便利店专用登高车</a></li>
-                                    <li id="menu-item-69" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-69"><a href="http://www.bolch168.com/category/denggaoche/mart">商场专用登高车</a></li>
-                                    <li id="menu-item-70" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-70"><a href="http://www.bolch168.com/category/denggaoche/darunfa">大润发卖场登高车</a></li>
-                                    <li id="menu-item-71" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-71"><a href="http://www.bolch168.com/category/denggaoche/jialefu">家乐福卖场登高车</a></li>
-                                    <li id="menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-72"><a href="http://www.bolch168.com/category/denggaoche/zhedie">折叠登高车</a></li>
-                                    <li id="menu-item-73" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-73"><a href="http://www.bolch168.com/category/denggaoche/aoerma">沃尔玛卖场登高车</a></li>
-                                    <li id="menu-item-74" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-74"><a href="http://www.bolch168.com/category/denggaoche/chuangchang">船厂登高车</a></li>
-                                    <li id="menu-item-75" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-75"><a href="http://www.bolch168.com/category/denggaoche/supermart">超市专用登高车</a></li>
-                                    <li id="menu-item-76" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="http://www.bolch168.com/category/denggaoche/chehang">车行登高车</a></li>
-                                    <li id="menu-item-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77"><a href="http://www.bolch168.com/category/denggaoche/lisuomart">连锁超市登高车</a></li>
-                                    <li id="menu-item-78" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"><a href="http://www.bolch168.com/category/denggaoche/tiezi">铁质登高车</a></li>
-                                </ul>
-                                <h5 style="cursor: pointer;" class="">仓储笼</h5>
-                                <ul id="menu-storage-cage" class="celanfl" style="display: none;"><li id="menu-item-97" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a href="http://www.bolch168.com/category/changchulong1/changkuzhuanyong">仓库专用仓储笼</a></li>
-                                    <li id="menu-item-98" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a href="http://www.bolch168.com/category/changchulong1/yibao">仪器仪表专用仓储笼</a></li>
-                                    <li id="menu-item-99" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a href="http://www.bolch168.com/category/changchulong1/chukou">出口日本专用仓储笼</a></li>
-                                    <li id="menu-item-100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-100"><a href="http://www.bolch168.com/category/changchulong1/quliangan">曲轴连杆专用仓储笼</a></li>
-                                    <li id="menu-item-101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101"><a href="http://www.bolch168.com/category/changchulong1/qichelingbujian">汽车零部件专用仓储笼</a></li>
-                                    <li id="menu-item-102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-102"><a href="http://www.bolch168.com/category/changchulong1/wuliaozhouzhuan">物料周转专用仓储笼</a></li>
-                                    <li id="menu-item-103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a href="http://www.bolch168.com/category/changchulong1/wuliustoge">物流中心专用仓储笼</a></li>
-                                    <li id="menu-item-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a href="http://www.bolch168.com/category/changchulong1/jingmi">精密压铸造专用仓储笼</a></li>
-                                </ul>
-                                <h5 style="cursor: pointer;" class="">货架</h5>
-                                <ul id="menu-other" class="celanfl" style="display: none;"><li id="menu-item-2067" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-2067"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/qiche4s">汽车4S店专用货架</a></li>
-                                    <li id="menu-item-2068" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2068"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/liuli">流利专用货架</a></li>
-                                    <li id="menu-item-2069" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2069"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/xiaofang">消防专用货架</a></li>
-                                    <li id="menu-item-2070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2070"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/dianli">电力公司专用货架</a></li>
-                                    <li id="menu-item-2071" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2071"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/tongxun">通讯电信专用货架</a></li>
-                                    <li id="menu-item-2072" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2072"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/yinghang">银行专用货架</a></li>
-                                    <li id="menu-item-2073" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2073"><a href="http://www.bolch168.com/category/%e5%86%9b%e9%98%9f%e8%90%a5%e6%88%bf%e4%b8%93%e7%94%a8%e8%b4%a7%e6%9e%b6/shiping">食品专用货架</a></li>
-                                </ul>
-                                <script type="text/javascript">
-                                    $("#leftcolumns h5:first").addClass("curr");
-                                    $("#leftcolumns ul:gt(0)").hide();
-                                    $("#leftcolumns h5").css("cursor", "pointer").click(function () {
-                                        $(this).addClass("curr").siblings("h5").removeClass("curr");
-                                        $(this).next("ul").toggle(500);
-                                    });
-                                </script>
-                                <!--二级分类切换js-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="new_bt2">
+                <h3> <i></i> 模具厂排行榜 </h3>
+                <div class="rank_bd">
+                    <ul>
+                        @foreach($topbrands as $index=>$topbrand)
+                            @if($index==0)
+                                <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}" ></a>
+                                    <div class="cont">
+                                        <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank">{{$topbrand->shorttitle}}</a></p>
+                                        <p><span>投资金额：</span><i>{{$topbrand->article->brandpay}}</i></p>
+                                        <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml">查看详情</a></p>
+                                    </div>
+                                </li>
+                            @else
 
-                <div class="new_bt">
-                    <h3> <i></i> 品牌新闻 </h3>
-                    <div class="bts">
-                        <div class="common">
-                            <ul>
-                                <li><a href="/lingshizx/312.shtml" target="_blank" title="薛记炒货如何加盟？加盟薛记炒货流程很简单">薛记炒货如何加盟？加盟薛记炒货流程很简单</a></li>
-                                <li><a href="/ganguodian/322.shtml" target="_blank" title="加盟百惠园利润回报多少？标准店16.23万年盈利">加盟百惠园利润回报多少？标准店16.23万年盈利</a></li>
-                                <li><a href="/ganguodian/153.shtml" target="_blank" title="金冠加盟利润多少？如何提高加盟利润">金冠加盟利润多少？如何提高加盟利润</a></li>
-                                <li><a href="/jinkoulingshi/476.shtml" target="_blank" title="兔子家进口食品加盟投资条件高不高？适合所有投资者！">兔子家进口食品加盟投资条件高不高？适合所有投资者！</a></li>
-                                <li><a href="/ganguodian/273.shtml" target="_blank" title="投资开姚生记连锁店多少钱？8.53万元开店小本项目">投资开姚生记连锁店多少钱？8.53万元开店小本项目</a></li>
-                                <li><a href="/chaohuodian/1071.shtml" target="_blank" title="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！">厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！</a></li>
-                                <li><a href="/ganguodian/251.shtml" target="_blank" title="开百草园零食店要多少钱？总费用只要9.285万元">开百草园零食店要多少钱？总费用只要9.285万元</a></li>
-                                <li><a href="/ganguodian/368.shtml" target="_blank" title="逗妮开心加盟能赚钱吗？小型店也能年入21.49万元">逗妮开心加盟能赚钱吗？小型店也能年入21.49万元</a></li>
-                                <li><a href="/jinkoulingshi/815.shtml" target="_blank" title="舌间味进口食品加盟费多少钱？5-15万即可轻松开店">舌间味进口食品加盟费多少钱？5-15万即可轻松开店</a></li>
-                                <li><a href="/chaohuodian/775.shtml" target="_blank" title="张二嘎炒货加盟费多少钱？县级城市只要5万">张二嘎炒货加盟费多少钱？县级城市只要5万</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                                <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}">{{$topbrand->shorttitle}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
+                            @endif
 
-                <div class="new_bt">
-                    <h3><i></i>热门品牌查询入口</h3>
-                    <div class="kuishurk">
-                        <a href="/lingshidianpp/5.shtml">三只松鼠</a>
-                        <a href="/chaohuodian/8.shtml">盐津铺子</a>
-                        <a href="/lingshidianpp/38.shtml">良品铺子</a>
-                        <a href="/chaohuodian/51.shtml">百味林</a>
-                        <a href="/chaohuodian/9.shtml">戴永红炒货</a>
-                        <a href="/lingshidianpp/91.shtml">一扫光</a>
-                        <a href="/ganguodian/14.shtml">好想你</a>
-                        <a href="/chaohuodian/18.shtml">粒上皇</a>
-                        <a href="/lingshidianpp/53.shtml">老婆大人</a>
-                        <a href="/jinkoulingshi/98.shtml">好一点</a>
-                        <a href="/lingshidianpp/226.shtml">不二家</a>
-                        <a href="/jinkoulingshi/65.shtml">不二家</a>
-                        <a href="/chaohuodian/140.shtml">张二嘎</a>
-                        <a href="/jinkoulingshi/185.shtml">舌间味</a>
-                        <a href="/lingshidianpp/72.shtml">盼盼零零嘴 </a>
-                        <a href="/lingshidianpp/92.shtml">因味爱</a>
-                        <a href="/ganguodian/26.shtml">姚生记</a>
-                        <a href="/ganguodian/134.shtml">天泉甜甜</a>
-                        <a href="/lingshidianpp/1147.shtml">零食有约</a>
-                        <a href="/lingshidianpp/444.shtml">光合农场</a>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            <div class="new_bt2">
+                <h3> <i></i> 模具资讯 </h3>
+                <div class="bts">
+                    <div class="common">
+                        <ul>
+                            <li><a href="/lingshizx/312.shtml" target="_blank" title="薛记炒货如何加盟？加盟薛记炒货流程很简单">薛记炒货如何加盟？加盟薛记炒货流程很简单</a></li>
+                            <li><a href="/ganguodian/322.shtml" target="_blank" title="加盟百惠园利润回报多少？标准店16.23万年盈利">加盟百惠园利润回报多少？标准店16.23万年盈利</a></li>
+                            <li><a href="/ganguodian/153.shtml" target="_blank" title="金冠加盟利润多少？如何提高加盟利润">金冠加盟利润多少？如何提高加盟利润</a></li>
+                            <li><a href="/jinkoulingshi/476.shtml" target="_blank" title="兔子家进口食品加盟投资条件高不高？适合所有投资者！">兔子家进口食品加盟投资条件高不高？适合所有投资者！</a></li>
+                            <li><a href="/ganguodian/273.shtml" target="_blank" title="投资开姚生记连锁店多少钱？8.53万元开店小本项目">投资开姚生记连锁店多少钱？8.53万元开店小本项目</a></li>
+                            <li><a href="/chaohuodian/1071.shtml" target="_blank" title="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！">厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！</a></li>
+                            <li><a href="/ganguodian/251.shtml" target="_blank" title="开百草园零食店要多少钱？总费用只要9.285万元">开百草园零食店要多少钱？总费用只要9.285万元</a></li>
+                            <li><a href="/ganguodian/368.shtml" target="_blank" title="逗妮开心加盟能赚钱吗？小型店也能年入21.49万元">逗妮开心加盟能赚钱吗？小型店也能年入21.49万元</a></li>
+                            <li><a href="/jinkoulingshi/815.shtml" target="_blank" title="舌间味进口食品加盟费多少钱？5-15万即可轻松开店">舌间味进口食品加盟费多少钱？5-15万即可轻松开店</a></li>
+                            <li><a href="/chaohuodian/775.shtml" target="_blank" title="张二嘎炒货加盟费多少钱？县级城市只要5万">张二嘎炒货加盟费多少钱？县级城市只要5万</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="new_bt2">
+                <h3> <i></i> 模具供求信息 </h3>
+                <div class="bts">
+                    <div class="common">
+                        <ul>
+                            <li><a href="/lingshizx/312.shtml" target="_blank" title="薛记炒货如何加盟？加盟薛记炒货流程很简单">薛记炒货如何加盟？加盟薛记炒货流程很简单</a></li>
+                            <li><a href="/ganguodian/322.shtml" target="_blank" title="加盟百惠园利润回报多少？标准店16.23万年盈利">加盟百惠园利润回报多少？标准店16.23万年盈利</a></li>
+                            <li><a href="/ganguodian/153.shtml" target="_blank" title="金冠加盟利润多少？如何提高加盟利润">金冠加盟利润多少？如何提高加盟利润</a></li>
+                            <li><a href="/jinkoulingshi/476.shtml" target="_blank" title="兔子家进口食品加盟投资条件高不高？适合所有投资者！">兔子家进口食品加盟投资条件高不高？适合所有投资者！</a></li>
+                            <li><a href="/ganguodian/273.shtml" target="_blank" title="投资开姚生记连锁店多少钱？8.53万元开店小本项目">投资开姚生记连锁店多少钱？8.53万元开店小本项目</a></li>
+                            <li><a href="/chaohuodian/1071.shtml" target="_blank" title="厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！">厚生记坚果炒货加盟利润大吗？掌握核心科技月赚3万多！</a></li>
+                            <li><a href="/ganguodian/251.shtml" target="_blank" title="开百草园零食店要多少钱？总费用只要9.285万元">开百草园零食店要多少钱？总费用只要9.285万元</a></li>
+                            <li><a href="/ganguodian/368.shtml" target="_blank" title="逗妮开心加盟能赚钱吗？小型店也能年入21.49万元">逗妮开心加盟能赚钱吗？小型店也能年入21.49万元</a></li>
+                            <li><a href="/jinkoulingshi/815.shtml" target="_blank" title="舌间味进口食品加盟费多少钱？5-15万即可轻松开店">舌间味进口食品加盟费多少钱？5-15万即可轻松开店</a></li>
+                            <li><a href="/chaohuodian/775.shtml" target="_blank" title="张二嘎炒货加盟费多少钱？县级城市只要5万">张二嘎炒货加盟费多少钱？县级城市只要5万</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/-->
+
         </div>
     </div>
 

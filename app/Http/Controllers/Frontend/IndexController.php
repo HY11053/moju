@@ -14,7 +14,10 @@ class IndexController extends Controller
 {
     function Index()
     {
-
+        //生产厂家
+        $Mjcompanys=Archive::where('typeid',1)->where('mid',1)->take(9)->orderBy('click','desc')->get();
+        $feileiMojus=Archive::whereIn('typeid',Arctype::where('topid',9)->pluck('id'))->where('mid','<>',1)->take(9)->orderBy('click','desc')->get();
+        $hotNews=Archive::where('typeid',7)->where('mid','<>',1)->take(9)->orderBy('click','desc')->get();
         //行业频道
         $tradeTypes=Arctype::where('topid',9)->take(15)->get();
         //模具品牌企业顶部热门品牌
@@ -40,7 +43,8 @@ class IndexController extends Controller
         $zhanhuiNews=Archive::where('typeid','6')->take(9)->where('litpic','<>','')->latest()->get();
         return view('frontend.index',compact('flinks','tradeTypes','hotMjcompanys','picMjcompanys',
             'mjCompany1s','mjCompany2s','mjCompany3s','mjCompany4s','mjCompany5s','mjCompany6s',
-            'jiaProductions','gangProductions','productionNews','hytjNews','hyNews','gongqiuNews','areaNews','zhanhuiNews','newMjCompanys'));
+            'jiaProductions','gangProductions','productionNews','hytjNews','hyNews','gongqiuNews',
+            'areaNews','zhanhuiNews','newMjCompanys','Mjcompanys','feileiMojus','hotNews'));
     }
     function demo()
     {

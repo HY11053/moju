@@ -117,9 +117,9 @@ function Recursivestypeinfos($arr){
 
                 }
             }else{
-            //print_r($value);
-                echo " <li><a href=\"/admin/article/type/{$value}\"><i class=\"fa fa-envelope-o\"></i> {$value}
-                                <span class=\"label label-primary pull-right\">".\App\AdminModel\Archive::where('typeid',$value)->count()."</span>
+
+                echo " <li><a href=\"#\"><i class=\"fa fa-envelope-o\"></i> {$value}
+                                <span class=\"label label-primary pull-right\">".\App\AdminModel\Archive::where('typeid',$key)->count()."</span>
                                 <span class=\"label label-danger pull-right\" data-toggle=\"modal\" data-target=\".modal-sm{$key}\">删除</span>
                                 <div class=\"modal fade modal-sm{$key}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\">
                             <div class=\"modal-dialog modal-sm modal-s-m{$key} \" role=\"document\">

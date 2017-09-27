@@ -11,7 +11,7 @@
                 <dd></dd>
             </dl>
             <dl>
-                <dt>项目分类</dt>
+                <dt>模具类型</dt>
                 <dd><a class="hover" target="_self" href="#">全部</a></dd>
                 @foreach($tradeTypes as $tradeType)
                     <dd><a target="_self" href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></dd>
@@ -21,21 +21,25 @@
             <dl>
                 <dt>适用范围</dt>
                 <dd><a class="hover" target="_self" href="#">全部</a></dd>
-                <dd><a target="_self" href="/project/0-1~5-0-0.shtml">1-5万元</a></dd>
-                <dd><a target="_self" href="/project/0-5~10-0-0.shtml">5-10万元</a></dd>
-                <dd><a target="_self" href="/project/0-10~20-0-0.shtml">10-20万元</a></dd>
-                <dd><a target="_self" href="/project/0-20~30-0-0.shtml">20-30万元</a></dd>
-                <dd><a target="_self" href="/project/0-30~50-0-0.shtml">30-50万元</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">50-100万元</a></dd>
+                <dd><a target="_self" href="/project/0-1~5-0-0.shtml">家电</a></dd>
+                <dd><a target="_self" href="/project/0-5~10-0-0.shtml">日用品</a></dd>
+                <dd><a target="_self" href="/project/0-10~20-0-0.shtml">汽车</a></dd>
+                <dd><a target="_self" href="/project/0-20~30-0-0.shtml">电子</a></dd>
+                <dd><a target="_self" href="/project/0-30~50-0-0.shtml">医疗</a></dd>
+                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">工艺品</a></dd>
+                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">仪表</a></dd>
+                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">餐具</a></dd>
             </dl>
             <dl>
                 <dt>作用对象</dt>
-                <dd><a class="hover" target="_self" href="#">分类</a></dd>
-                <dd><a target="_self" href="/project/0-0-1~10-0.shtml">10平米以下</a></dd>
-                <dd><a target="_self" href="/project/0-0-10~30-0.shtml">10-30平米</a></dd>
-                <dd><a target="_self" href="/project/0-0-30~50-0.shtml">30-50平米</a></dd>
-                <dd><a target="_self" href="/project/0-0-50~80-0.shtml">50-80平米</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">100平米以上</a></dd>
+                <dd><a class="hover" target="_self" href="#">铝合金</a></dd>
+                <dd><a target="_self" href="/project/0-0-1~10-0.shtml">金属</a></dd>
+                <dd><a target="_self" href="/project/0-0-10~30-0.shtml">锌合金</a></dd>
+                <dd><a target="_self" href="/project/0-0-30~50-0.shtml">塑料</a></dd>
+                <dd><a target="_self" href="/project/0-0-50~80-0.shtml">铜合金</a></dd>
+                <dd><a target="_self" href="/project/0-0-100-0.shtml">铝</a></dd>
+                <dd><a target="_self" href="/project/0-0-100-0.shtml">不锈钢</a></dd>
+                <dd><a target="_self" href="/project/0-0-100-0.shtml">水泥</a></dd>
             </dl>
             <dl>
                 <dt>所在地区</dt>
@@ -90,8 +94,8 @@
                             </div>
                             <div class="list list-two">
                                 <div class="biao_h clearfix fl"> <i class="jianIco fl"></i> <i class="shenIco fl"></i> <i class="huiIco fl"></i> <i class="baoIco fl"></i> </div>
-                                <div class="jibie fl"><span>投资星级：<em class="xing">★★★★★</em></span></div>
-                                <span class="money fr h4">综合指数：&nbsp;<em class="red">{{$pagelist->article->brandattch}}</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近咨询：&nbsp;<em class="red">{{$pagelist->article->brandchat}}</em>&nbsp;&nbsp;</span>
+                                <div class="jibie fl"><span>投资星级：<em class="xing">@if($pagelist->click <2000)★★★@elseif($pagelist->click <3000)★★★★ @elseif($pagelist->click >3000) ★★★★★ @endif</em></span></div>
+                                <span class="money fr h4">综合指数：&nbsp;<em class="red">{{$pagelist->click}}</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;厂址：&nbsp;<em class="red">{{$pagelist->article->companyaddr}}</em>&nbsp;&nbsp;</span>
                             </div>
                             <div class="list-three">
                                 <a href="#" target="_blank" class="squaer tell fl">免费通话</a>
