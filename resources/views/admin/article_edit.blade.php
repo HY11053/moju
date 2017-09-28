@@ -156,6 +156,7 @@
                     </div>
                 </li>
                 <!-- END timeline item -->
+
                 <!-- timeline item -->
                 <li>
                     <i class="fa fa-photo bg-aqua"></i>
@@ -175,7 +176,64 @@
                     </div>
                 </li>
                 <!-- END timeline item -->
+                <!-- timeline item -->
+                <li>
+                    <i class="fa fa-user bg-yellow"></i>
 
+                    <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+
+                        <h3 class="timeline-header"><a href="#">产品信息</a>产品信息描述</h3>
+
+                        <div class="timeline-body">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    {{Form::label('mjlx', '模具类型', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('mjlx',null, array('class' => 'form-control col-md-10','id'=>'mjlx','placeholder'=>'模具类型'))}}
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    {{Form::label('syfw', '适用范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('syfw', null, array('class' => 'form-control col-md-10','id'=>'syfw','placeholder'=>'适用范围'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('zydx', '作用对象', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('zydx', null, array('class' => 'form-control col-md-10','id'=>'zydx','placeholder'=>'作用对象'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('zzgy', '制造工艺', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('zzgy', null, array('class' => 'form-control col-md-10','id'=>'zzgy','placeholder'=>'制造工艺'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('azfs', '安装方式', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('azfs', null, array('class' => 'form-control col-md-10','id'=>'azfs','placeholder'=>'安装方式'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('guige', '模具规格', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('guige', null, array('class' => 'form-control col-md-10','id'=>'guige','placeholder'=>'模具规格'))}}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="timeline-footer">
+                            <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- END timeline item -->
                 <!-- timeline time label -->
                 <li class="time-label">
                   <span class="bg-green">
@@ -208,6 +266,64 @@
                             </div>
                             {{Form::hidden('imagepics', null,array('id'=>'imagepics'))}}
                             {{Form::hidden('mid', '0', array('class' => 'form-control col-md-10','id'=>'mid'))}}
+                        </div>
+                    </div>
+                </li>
+                <!-- END timeline item -->
+                <!-- timeline item -->
+                <li>
+                    <i class="fa fa-user bg-yellow"></i>
+
+                    <div class="timeline-item">
+                        <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+
+                        <h3 class="timeline-header"><a href="#">展会信息</a>展会信息描述</h3>
+
+                        <div class="timeline-body">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    {{Form::label('starttime', '开始日期', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('starttime',null, array('class' => 'form-control col-md-10','id'=>'starttime','placeholder'=>'公司名称'))}}
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    {{Form::label('endtime', '结束日期', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('endtime', null, array('class' => 'form-control col-md-10','id'=>'endtime','placeholder'=>'公司地址'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('zhanguan', '展会展馆', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('zhanguan', null, array('class' => 'form-control col-md-10','id'=>'zhanguan','placeholder'=>'展会展馆'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('zhtel', '联系电话', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('zhtel', null, array('class' => 'form-control col-md-10','id'=>'zhtel','placeholder'=>'联系电话'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('zhdz', '详细地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('zhdz', null, array('class' => 'form-control col-md-10','id'=>'zhdz','placeholder'=>'详细地址'))}}
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    {{Form::label('ticket', '门票价格', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                    <div class="col-md-8 col-sm-9 col-xs-12">
+                                        {{Form::text('ticket', null, array('class' => 'form-control col-md-10','id'=>'ticket','placeholder'=>'门票价格'))}}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="timeline-footer">
+                            <a class="btn btn-warning btn-flat btn-xs">View comment</a>
                         </div>
                     </div>
                 </li>
@@ -258,6 +374,7 @@
     <!-- iCheck -->
     <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
     <script src="/AdminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
     <script>
         $(document).ready(function() {
             $.ajaxSetup({
@@ -270,8 +387,10 @@
 
     <script>
         $(function () {
-            $('#datepicker').datepicker({
-                autoclose: true
+            $('#datepicker,#starttime,#endtime').datepicker({
+                autoclose: true,
+                language: 'zh-CN',
+                todayHighlight: true
             });
 
             //iCheck for checkbox and radio inputs

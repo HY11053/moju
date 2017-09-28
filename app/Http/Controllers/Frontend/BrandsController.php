@@ -17,7 +17,7 @@ class BrandsController extends Controller
     {
         $cid=$path;
         $tradeTypes=Arctype::where('topid',9)->take(9)->get();
-        $topbrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
+        $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
         $thisTypeinfos=Arctype::where('real_path',$path)->first();
         $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
         $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
@@ -69,9 +69,9 @@ class BrandsController extends Controller
                 if(Arctype::where('real_path',$path)->value('id')==9)
                 {
                     $typeids=Arctype::where('topid',9)->pluck('id');
-                    $pagelists=Archive::whereIn('typeid',$typeids)->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 12, $columns = ['*'], $pageName = 'page', $page);
+                    $pagelists=Archive::whereIn('typeid',$typeids)->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 20, $columns = ['*'], $pageName = 'page', $page);
                 }else{
-                    $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 12, $columns = ['*'], $pageName = 'page', $page);
+                    $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 20, $columns = ['*'], $pageName = 'page', $page);
                 }
                 //转换自带分页器为自定义的分页器
                 $pagelists= Paginator::transfer(

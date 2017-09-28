@@ -290,6 +290,7 @@
     <!-- iCheck -->
     <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
     <script src="/AdminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
     <script>
         $(document).ready(function() {
             $.ajaxSetup({
@@ -303,7 +304,9 @@
     <script>
         $(function () {
             $('#datepicker').datepicker({
-                autoclose: true
+                autoclose: true,
+                language: 'zh-CN',
+                todayHighlight: true
             });
 
             //iCheck for checkbox and radio inputs

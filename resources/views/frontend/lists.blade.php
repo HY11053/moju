@@ -2,68 +2,39 @@
 @section('title') {{ config('app.webname', '中国模具网') }} @stop
 @section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
 @section('description') {{ config('app.description', '中国模具网') }} @stop
+@section('headlibs') <script src="/reception/js/jquery.flexslider-min.js"></script>@stop
 @section('maincontent')
     <div class="main clearfix">
 
-        <div class="cate_sort">
-            <dl>
-                <dt>已经筛选条件：</dt>
-                <dd></dd>
-            </dl>
-            <dl>
-                <dt>项目分类</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
-                @foreach($tradeTypes as $tradeType)
-                    <dd><a target="_self" href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></dd>
-                @endforeach
-
-            </dl>
-            <dl>
-                <dt>适用范围</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
-                <dd><a target="_self" href="/project/0-1~5-0-0.shtml">1-5万元</a></dd>
-                <dd><a target="_self" href="/project/0-5~10-0-0.shtml">5-10万元</a></dd>
-                <dd><a target="_self" href="/project/0-10~20-0-0.shtml">10-20万元</a></dd>
-                <dd><a target="_self" href="/project/0-20~30-0-0.shtml">20-30万元</a></dd>
-                <dd><a target="_self" href="/project/0-30~50-0-0.shtml">30-50万元</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">50-100万元</a></dd>
-            </dl>
-            <dl>
-                <dt>作用对象</dt>
-                <dd><a class="hover" target="_self" href="#">分类</a></dd>
-                <dd><a target="_self" href="/project/0-0-1~10-0.shtml">10平米以下</a></dd>
-                <dd><a target="_self" href="/project/0-0-10~30-0.shtml">10-30平米</a></dd>
-                <dd><a target="_self" href="/project/0-0-30~50-0.shtml">30-50平米</a></dd>
-                <dd><a target="_self" href="/project/0-0-50~80-0.shtml">50-80平米</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">100平米以上</a></dd>
-            </dl>
-            <dl>
-                <dt>所在地区</dt>
-                <dd><a class="hover" target="_self" href="#">地区</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-1.shtml">北京</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-125.shtml">济南</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-71.shtml">广州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-281.shtml">合肥</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-401.shtml">上海</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-282.shtml">芜湖</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-195.shtml">武汉</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-112.shtml">南京</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-296.shtml">长沙</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-126.shtml">青岛</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-72.shtml">深圳</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-164.shtml">成都</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-139.shtml">沈阳</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-29.shtml">重庆</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-212.shtml">郑州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-101.shtml">杭州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-83.shtml">佛山</a></dd>
-            </dl>
-        </div>
-        <div class="rec_brand_list">
-            <ul>
-                @foreach($topbrands as $topbrand)
-                    <li><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->article->companyname}}" class="pic"><img src="{{$topbrand->litpic}}" alt="{{$topbrand->article->companyname}}"><em>{{$topbrand->article->companyname}}</em></a></li>
-                @endforeach </ul>
+        <div class="w1190 lanmu clearfix">
+            <div class="lmbanner fl">
+                <div class="w1920">
+                    <!-- 幻灯片 Start -->
+                    <div class="flexslider">
+                        <ul class="slides">
+                            @foreach(explode(',',$thistypeinfo->typeimages) as $pic)
+                            <li><a href="#" style="background:url({{$pic}}) no-repeat center top;"></a></li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <!-- 幻灯片 End -->
+                </div>
+                <script>
+                    $(function(){
+                        $('.w1920 .flexslider').flexslider({
+                            directionNav: true,
+                            pauseOnAction: false
+                        });
+                    });
+                </script>
+            </div>
+            <div class="lmright fr">
+                <h1 style="font-size:20px">{{$thistypeinfo->typename}}</h1>
+                <p>{!! str_limit(strip_tags($thistypeinfo->contents),540,'...') !!}</p>
+                <p>
+                <div class="bshare-custom"><div class="bsPromo bsPromo2"></div><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到腾讯微博" class="bshare-qqmb" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">52.1K</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                </p>
+            </div>
         </div>
         <div class="news_center">
             <div class="news_tj clearfix">

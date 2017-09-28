@@ -164,64 +164,40 @@
                     <div class="timeline-body">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                {{Form::label('companyname', '公司名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('mjlx', '模具类型', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyname',null, array('class' => 'form-control col-md-10','id'=>'companyname','placeholder'=>'公司名称'))}}
+                                    {{Form::text('mjlx',null, array('class' => 'form-control col-md-10','id'=>'mjlx','placeholder'=>'模具类型'))}}
                                 </div>
                             </div>
 
                             <div class="form-group col-md-6">
-                                {{Form::label('companyaddr', '公司地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('syfw', '适用范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyaddr', null, array('class' => 'form-control col-md-10','id'=>'companyaddr','placeholder'=>'公司地址'))}}
+                                    {{Form::text('syfw', null, array('class' => 'form-control col-md-10','id'=>'syfw','placeholder'=>'适用范围'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companydev', '发展模式', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('zydx', '作用对象', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companydev', null, array('class' => 'form-control col-md-10','id'=>'companydev','placeholder'=>'发展模式'))}}
+                                    {{Form::text('zydx', null, array('class' => 'form-control col-md-10','id'=>'zydx','placeholder'=>'作用对象'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companyphone', '联系电话', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('zzgy', '制造工艺', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyphone', null, array('class' => 'form-control col-md-10','id'=>'companyphone','placeholder'=>'联系电话'))}}
+                                    {{Form::text('zzgy', null, array('class' => 'form-control col-md-10','id'=>'zzgy','placeholder'=>'制造工艺'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companyemail', '电子邮件', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('azfs', '安装方式', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyemail', null, array('class' => 'form-control col-md-10','id'=>'companyemail','placeholder'=>'电子邮件'))}}
+                                    {{Form::text('azfs', null, array('class' => 'form-control col-md-10','id'=>'azfs','placeholder'=>'安装方式'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companydate', '成立时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('guige', '模具规格', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companydate', null, array('class' => 'form-control col-md-10','id'=>'companydate','placeholder'=>'成立时间'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('companyarea', '经营范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyarea', null, array('class' => 'form-control col-md-10','id'=>'companyarea','placeholder'=>'经营范围'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('companyopt', '企业性质', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyopt', null, array('class' => 'form-control col-md-10','id'=>'companyopt','placeholder'=>'加盟意向人数'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('companypay', '注册资金', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companypay', null, array('class' => 'form-control col-md-10','id'=>'companypay','placeholder'=>'注册资金'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('brandapply', '经营许可', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandapply', null, array('class' => 'form-control col-md-10','id'=>'brandapply','placeholder'=>'经营许可证编号'))}}
+                                    {{Form::text('guige', null, array('class' => 'form-control col-md-10','id'=>'guige','placeholder'=>'模具规格'))}}
                                 </div>
                             </div>
 
@@ -282,64 +258,40 @@
                     <div class="timeline-body">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                {{Form::label('companyname', '公司名称', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('starttime', '开始日期', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyname',null, array('class' => 'form-control col-md-10','id'=>'companyname','placeholder'=>'公司名称'))}}
+                                    {{Form::text('starttime',null, array('class' => 'form-control col-md-10','id'=>'starttime','placeholder'=>'公司名称'))}}
                                 </div>
                             </div>
 
                             <div class="form-group col-md-6">
-                                {{Form::label('companyaddr', '公司地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('endtime', '结束日期', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyaddr', null, array('class' => 'form-control col-md-10','id'=>'companyaddr','placeholder'=>'公司地址'))}}
+                                    {{Form::text('endtime', null, array('class' => 'form-control col-md-10','id'=>'endtime','placeholder'=>'公司地址'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companydev', '发展模式', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('zhanguan', '展会展馆', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companydev', null, array('class' => 'form-control col-md-10','id'=>'companydev','placeholder'=>'发展模式'))}}
+                                    {{Form::text('zhanguan', null, array('class' => 'form-control col-md-10','id'=>'zhanguan','placeholder'=>'展会展馆'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companyphone', '联系电话', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('zhtel', '联系电话', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyphone', null, array('class' => 'form-control col-md-10','id'=>'companyphone','placeholder'=>'联系电话'))}}
+                                    {{Form::text('zhtel', null, array('class' => 'form-control col-md-10','id'=>'zhtel','placeholder'=>'联系电话'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companyemail', '电子邮件', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('zhdz', '详细地址', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyemail', null, array('class' => 'form-control col-md-10','id'=>'companyemail','placeholder'=>'电子邮件'))}}
+                                    {{Form::text('zhdz', null, array('class' => 'form-control col-md-10','id'=>'zhdz','placeholder'=>'详细地址'))}}
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                {{Form::label('companydate', '成立时间', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
+                                {{Form::label('ticket', '门票价格', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companydate', null, array('class' => 'form-control col-md-10','id'=>'companydate','placeholder'=>'成立时间'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('companyarea', '经营范围', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyarea', null, array('class' => 'form-control col-md-10','id'=>'companyarea','placeholder'=>'经营范围'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('companyopt', '企业性质', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companyopt', null, array('class' => 'form-control col-md-10','id'=>'companyopt','placeholder'=>'加盟意向人数'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('companypay', '注册资金', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('companypay', null, array('class' => 'form-control col-md-10','id'=>'companypay','placeholder'=>'注册资金'))}}
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                {{Form::label('brandapply', '经营许可', array('class' => 'control-label col-md-2 col-sm-3 col-xs-12'))}}
-                                <div class="col-md-8 col-sm-9 col-xs-12">
-                                    {{Form::text('brandapply', null, array('class' => 'form-control col-md-10','id'=>'brandapply','placeholder'=>'经营许可证编号'))}}
+                                    {{Form::text('ticket', null, array('class' => 'form-control col-md-10','id'=>'ticket','placeholder'=>'门票价格'))}}
                                 </div>
                             </div>
 
@@ -410,6 +362,7 @@
 <!-- iCheck -->
 <script src="/AdminLTE/plugins/iCheck/icheck.min.js"></script>
 <script src="/AdminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
 <script>
     $(document).ready(function() {
         $.ajaxSetup({
@@ -424,8 +377,10 @@
 
 <script>
     $(function () {
-        $('#datepicker').datepicker({
-            autoclose: true
+        $('#datepicker,#starttime,#endtime').datepicker({
+            autoclose: true,
+            language: 'zh-CN',
+            todayHighlight: true
         });
 
         //iCheck for checkbox and radio inputs

@@ -32,15 +32,15 @@ class IndexController extends Controller
         $newMjCompanys=Archive::where('typeid',1)->where('mid',1)->take(12)->where('flags','like','%s%')->get();
         $flinks=flink::latest()->orderBy('created_at','desc')->take(30)->latest()->get();
         //产品专区
-        $jiaProductions=Archive::where('typeid',3)->where('mid',1)->take(6)->latest()->get();
-        $gangProductions=Archive::where('typeid',4)->where('mid',1)->take(6)->latest()->get();
+        $jiaProductions=Archive::where('typeid',3)->where('mid','<>',1)->take(6)->latest()->get();
+        $gangProductions=Archive::where('typeid',4)->where('mid','<>',1)->take(6)->latest()->get();
         $productionNews=Archive::whereIn('typeid',[3,4])->where('mid','<>',1)->take(10)->latest()->get();
         //模具生产制造
-        $hytjNews=Archive::where('typeid',7)->where('flags','like','%c%')->take(2)->latest()->get();
-        $hyNews=Archive::where('typeid',7)->take(18)->latest()->get();
+        $hytjNews=Archive::where('typeid',7)->where('mid','<>',1)->where('flags','like','%c%')->take(2)->latest()->get();
+        $hyNews=Archive::where('typeid',7)->where('mid','<>',1)->take(18)->latest()->get();
         $gongqiuNews=Archive::where('typeid',5)->take(10)->latest()->get();
-        $areaNews=Archive::where('typeid','7')->where('country','<>','')->take(8)->where('litpic','<>','')->latest()->get();
-        $zhanhuiNews=Archive::where('typeid','6')->take(9)->where('litpic','<>','')->latest()->get();
+        $areaNews=Archive::where('typeid','7')->where('mid','<>',1)->where('country','<>','')->take(8)->where('litpic','<>','')->latest()->get();
+        $zhanhuiNews=Archive::where('typeid','6')->take(9)->where('mid','<>',1)->where('litpic','<>','')->latest()->get();
         return view('frontend.index',compact('flinks','tradeTypes','hotMjcompanys','picMjcompanys',
             'mjCompany1s','mjCompany2s','mjCompany3s','mjCompany4s','mjCompany5s','mjCompany6s',
             'jiaProductions','gangProductions','productionNews','hytjNews','hyNews','gongqiuNews',

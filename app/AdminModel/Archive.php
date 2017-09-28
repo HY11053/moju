@@ -36,11 +36,9 @@ class Archive extends Model
      */
     public function setPublishedAtAttribute($date)
     {
-        if(!empty($date) && strpos($date, '/') !== false)
+        if(!empty($date) && strpos($date,':')==false)
         {
-            $newdate=explode('/',$date);
-            $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d',$newdate[2].'-'.$newdate[0].'-'.$newdate[1]);
-            $this->attributes['created_at'] = Carbon::createFromFormat('Y-m-d',$newdate[2].'-'.$newdate[0].'-'.$newdate[1]);
+            $this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d',$date);
         }else{
             $this->attributes['published_at'] =$date?$date : Carbon::now();
             //$this->attributes['created_at'] =$date?Carbon::createFromFormat('Y-m-d',date('Y-m-d',strtotime($date))) : Carbon::now();

@@ -10,6 +10,28 @@
                     <h1> {{$thisarticleinfos->title}}</h1>
                     <div class="ny_message-js"> 时间：{{$thisarticleinfos->created_at}} <span>来源：中国模具网</span> <span>浏览：{{$thisarticleinfos->click}}</span> </div>
                 </div>
+                <table cellspacing="0" style="border-top: 1px solid rgb(230, 230, 230);">
+                    <tbody>
+                    <tr>
+                        <td class="td_color">模具类型</td>
+                        <td class="td_style">{{str_limit($thisarticleinfos->article->mjlx,15,'...')}}</td>
+                        <td class="td_color">适用范围</td>
+                        <td class="td_style">{{str_limit($thisarticleinfos->article->syfw,15,'...')}}</td>
+                    </tr>
+                    <tr>
+                        <td class="td_color">安装方式</td>
+                        <td class="td_style">{{str_limit($thisarticleinfos->article->azfs,15,'...')}}</td>
+                        <td class="td_color">作用对象</td>
+                        <td class="td_style">{{str_limit($thisarticleinfos->article->zydx,15,'...')}}</td>
+                    </tr>
+                    <tr>
+                        <td class="td_color">制造工艺</td>
+                        <td class="td_style">{{str_limit($thisarticleinfos->article->zzgy,15,'...')}}</td>
+                        <td class="td_color">模具规格</td>
+                        <td class="td_style">{{str_limit($thisarticleinfos->article->guige,15,'...')}}</td>
+                    </tr>
+                    </tbody>
+                </table>
                 <div class="body_tit clearfix">
                     {!! $thisarticleinfos->article->body !!}
                 </div>
@@ -28,9 +50,9 @@
                 <div class="shangxiapian">
                     <p>上一篇：@if(isset($prev_article)) <a href="/{{$prev_article->arctype->real_path}}/{{$prev_article->id}}.shtml" title="{{$prev_article->title}}">{{$prev_article->title}}</a> @else 没有了 @endif </p>
                     <p >下一篇：@if(isset($next_article)) <a href="/{{$next_article->arctype->real_path}}/{{$next_article->id}}.shtml" title="{{$next_article->title}}">{{$next_article->title}}</a> @else 没有了 @endif </p>
-                   </div>
+                </div>
                 <div class="xg_news">
-                    <div class="title"><strong>{{$thisarticleinfos->tags}}资讯</strong></div>
+                    <div class="title"><strong>{{$thisarticleinfos->shorttitle}}资讯</strong></div>
                     <div class="xw">
                         <ul class="clearfix">
                             @foreach($xgnews as $xgnew)
@@ -78,6 +100,4 @@
 
         </div>
     </div>
-
-
 @stop

@@ -24,6 +24,7 @@
     <script type="text/javascript" src="/reception/js/roll.js"></script>
     <script type="text/javascript" src="/reception/js/main.js"></script>
     <script type="text/javascript" src="/reception/js/index.js"></script>
+    @yield('headlibs')
 </head>
 <body>
 
@@ -102,7 +103,7 @@
     <div class="footer_nav"><a href="/about/" rel="nofollow">关于我们</a>　|　企业服务　|　人才招聘　|　<a href="/contact/" rel="nofollow">联系我们</a>　|　合作客户　|　<a href="/law/" rel="nofollow">法律声明</a>　|　友情链接　|　服务导航　|　<a href="/sitemap.xml" rel="nofollow">网站地图</a>　　|　加盟导航 sitemap</div>
 
     <div class="copyright">
-        <p>58零食网友情提示：多打电话、多咨询、实地考察，可降低投资风险！</p>
+        <p>中国模具网友情提示：多打电话、多咨询、实地考察，可降低投资风险！</p>
         <p>Copyright © 2017 www.58lingshi.com Corporation, All Rights Reserved 上海莫卡网络科技有限公司 版权所有</p>
         <p><a href="http://www.miitbeian.gov.cn/" rel="nofollow"> 沪ICP备16055116号-11</a></p>
     </div>

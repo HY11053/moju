@@ -61,7 +61,7 @@ $factory->define(App\AdminModel\Arctype::class, function (Faker\Generator $faker
 $factory->define(App\AdminModel\Archive::class, function (Faker\Generator $faker) {
 
     return [
-        'typeid' => rand(1,19),
+        'typeid' => rand(1,25),
         'ismake'=>rand(0,1),
         'click'=>rand(1000,5000),
         'title'=>$faker->company,
@@ -83,7 +83,7 @@ $factory->define(App\AdminModel\Archive::class, function (Faker\Generator $faker
 $factory->define(App\AdminModel\Addonarticle::class, function (Faker\Generator $faker) {
 
     return [
-        'typeid' => rand(0,50),
+        'typeid' => rand(0,25),
         'body'=>$faker->text,
         'companyname'=>$faker->company,
         'companyaddr'=>$faker->address,
@@ -103,6 +103,17 @@ $factory->define(App\AdminModel\Addonarticle::class, function (Faker\Generator $
         'productiontitle'=>'产品展示标题测试数据',
         'teamtitle'=>'团队展示标题测试数据',
         'credittitle'=>'企业信用标题测试数据',
+        'mjlx'=>'模具类型',
+        'syfw'=>'适用范围',
+        'zydx'=>'作用对象',
+        'zzgy'=>'制造工艺',
+        'azfs'=>'安装方式',
+        'guige'=>'规格尺寸',
+        'zhanguan'=>'展会展馆',
+        'ticket'=>'门票免费',
+        'zhdz'=>'展会地址',
+        'starttime'=>\Carbon\Carbon::now(),
+        'endtime'=>\Carbon\Carbon::tomorrow(),
         'imagepics'=>$faker->imageUrl(640,480),
         'companyadvantage'=>$faker->text(1000),
         'companyareacontent'=>$faker->text(1000),

@@ -6,10 +6,24 @@
     <div class="main clearfix">
         <div class="center_list clearfix">
             <div class="news_center">
-                <div class="ny_message">
-                    <h1> {{$thisarticleinfos->title}}</h1>
-                    <div class="ny_message-js"> 时间：{{$thisarticleinfos->created_at}} <span>来源：中国模具网</span> <span>浏览：{{$thisarticleinfos->click}}</span> </div>
-                </div>
+                <dl class="company_hd act_reward msg_news">
+                    <dt><img src="{{$thisarticleinfos->litpic}}" width="280" height="210" alt="{{$thisarticleinfos->title}}" data-bd-imgshare-binded="1"></dt>
+                    <dd>
+                        <h1 class="tit">{{$thisarticleinfos->title}}</h1>
+                        <p><span>展会日期&nbsp;:{{date('Y-m-d',strtotime($thisarticleinfos->article->starttime))}} 至 {{date('Y-m-d',strtotime($thisarticleinfos->article->endtime))}}</span><span>联系人&nbsp;:&nbsp;曾城</span></p>
+                        <p><span>展馆&nbsp;:&nbsp;{{$thisarticleinfos->article->zhanguan}}</span>
+                            <span>地址：&nbsp;{{$thisarticleinfos->article->zhdz}}</span></p>
+                        <p><span>门票&nbsp;:&nbsp;{{$thisarticleinfos->article->ticket}}</span></p>
+                        <p class="btn">
+                            <a href="#" class="yd_zwei" title="" target="_blank">展位预定</a>
+                            <a href="#" class="yd_ticket" target="_blank">预订门票</a>
+                            <a href="#" class="find_fws">找服务商</a>
+                        </p>
+                        <div class="active">
+                            <div class="time"><span>进</span><span>行</span><span>中</span></div>
+                        </div>
+                    </dd>
+                </dl>
                 <div class="body_tit clearfix">
                     {!! $thisarticleinfos->article->body !!}
                 </div>
@@ -28,9 +42,9 @@
                 <div class="shangxiapian">
                     <p>上一篇：@if(isset($prev_article)) <a href="/{{$prev_article->arctype->real_path}}/{{$prev_article->id}}.shtml" title="{{$prev_article->title}}">{{$prev_article->title}}</a> @else 没有了 @endif </p>
                     <p >下一篇：@if(isset($next_article)) <a href="/{{$next_article->arctype->real_path}}/{{$next_article->id}}.shtml" title="{{$next_article->title}}">{{$next_article->title}}</a> @else 没有了 @endif </p>
-                   </div>
+                </div>
                 <div class="xg_news">
-                    <div class="title"><strong>{{$thisarticleinfos->tags}}资讯</strong></div>
+                    <div class="title"><strong>{{$thisarticleinfos->shorttitle}}资讯</strong></div>
                     <div class="xw">
                         <ul class="clearfix">
                             @foreach($xgnews as $xgnew)
@@ -78,6 +92,4 @@
 
         </div>
     </div>
-
-
 @stop
