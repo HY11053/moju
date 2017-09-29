@@ -19,29 +19,6 @@
 
             </dl>
             <dl>
-                <dt>适用范围</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
-                <dd><a target="_self" href="/project/0-1~5-0-0.shtml">家电</a></dd>
-                <dd><a target="_self" href="/project/0-5~10-0-0.shtml">日用品</a></dd>
-                <dd><a target="_self" href="/project/0-10~20-0-0.shtml">汽车</a></dd>
-                <dd><a target="_self" href="/project/0-20~30-0-0.shtml">电子</a></dd>
-                <dd><a target="_self" href="/project/0-30~50-0-0.shtml">医疗</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">工艺品</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">仪表</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">餐具</a></dd>
-            </dl>
-            <dl>
-                <dt>作用对象</dt>
-                <dd><a class="hover" target="_self" href="#">铝合金</a></dd>
-                <dd><a target="_self" href="/project/0-0-1~10-0.shtml">金属</a></dd>
-                <dd><a target="_self" href="/project/0-0-10~30-0.shtml">锌合金</a></dd>
-                <dd><a target="_self" href="/project/0-0-30~50-0.shtml">塑料</a></dd>
-                <dd><a target="_self" href="/project/0-0-50~80-0.shtml">铜合金</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">铝</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">不锈钢</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">水泥</a></dd>
-            </dl>
-            <dl>
                 <dt>所在地区</dt>
                 <dd><a class="hover" target="_self" href="#">地区</a></dd>
                 <dd><a target="_self" href="/project/0-0-0-1.shtml">北京</a></dd>

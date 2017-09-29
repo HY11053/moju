@@ -39,7 +39,7 @@
                     <li @if(Request::getRequestUri()=='/admin/article/ownership')class="active" @endif><a href="/admin/article/ownership"><i class="fa fa-circle-o"></i> 我发布的文档</a></li>
                     <li @if(Request::getRequestUri()=='/admin/article/pendingaudit')class="active" @endif><a href="/admin/article/pendingaudit"><i class="fa fa-circle-o"></i> 等待审核文档</a></li>
                     <li @if(Request::getRequestUri()=='/admin/article/pedingpublished')class="active" @endif><a href="/admin/article/pedingpublished"><i class="fa fa-circle-o"></i> 待发布的文档</a></li>
-                    <li @if(Request::getRequestUri()=='/admin/article/brands')class="active" @endif><a href="/admin/article/brands"><i class="fa fa-circle-o"></i> 品牌文档</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/article/supplydemand')class="active" @endif><a href="/admin/article/supplydemand"><i class="fa fa-circle-o"></i> 供求信息管理</a></li>
                 </ul>
             </li>
             <li class="treeview">

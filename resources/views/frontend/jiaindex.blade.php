@@ -17,52 +17,11 @@
                 <span class="title">产品分类：</span>
                 <div class="service_list">
                     <ul class="list auto">
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/guonei/" title="不限" style="color:#2577e3;">不限</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/shipinyinpin/guonei/" title="食品饮品">食品饮品</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/yaopinbaojian/guonei/" title="药品保健">药品保健</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/yiliaoqixie/guonei/" title="医疗器械">医疗器械</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/lipinshipin/guonei/" title="礼品饰品">礼品饰品</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/wanjuyingtong/guonei/" title="玩具婴童">玩具婴童</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/shichipin/guonei/" title="奢侈品">奢侈品</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/meirongmeifa/guonei/" title="美容美发">美容美发</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/tiyu/guonei/" title="体育休闲">体育休闲</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/lvyoudujia/guonei/" title="旅游度假">旅游度假</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/fuzhuangfushi/guonei/" title="服装服饰">服装服饰</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/pigezhipin/guonei/" title="皮革制品">皮革制品</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/fangzhifangxian/guonei/" title="纺织纺线">纺织纺线</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/jiajuzhuangshi/guonei/" title="家居装饰">家居装饰</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/jianzhucailiao/guonei/" title="建筑材料">建筑材料</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/fangdichan/guonei/" title="房地产">房地产</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/xiaofeidianzi/guonei/" title="消费电子">消费电子</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/xinxitongxin/guonei/" title="信息通信">信息通信</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/bangongongpin/guonei/" title="办公用品">办公用品</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/jixiegongye/guonei/" title="机械工业">机械工业</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/shebeizhizao/guonei/" title="设备制造">设备制造</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/nuantongzhileng/guonei/" title="暖通制冷">暖通制冷</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/jiaotonggongju/guonei/" title="交通工具">交通工具</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/qimopeijian/guonei/" title="汽摩配件">汽摩配件</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/wuliuyunshu/guonei/" title="物流运输">物流运输</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/dianzidianli/guonei/" title="电子电力">电子电力</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/guangdianzhaoming/guonei/" title="光电照明">光电照明</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/yiqiyibiao/guonei/" title="仪器仪表">仪器仪表</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/gangtieyejin/guonei/" title="钢铁冶金">钢铁冶金</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/nengyuankuangchan/guonei/" title="能源矿产">能源矿产</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/huagongxiangsu/guonei/" title="化工橡塑">化工橡塑</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/yinshuabaozhuang/guonei/" title="印刷包装">印刷包装</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/zipingongye/guonei/" title="制品工业">制品工业</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/guanggaohangye/guonei/" title="广告行业">广告行业</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/wujinbengfa/guonei/" title="五金泵阀">五金泵阀</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/anfangfanghu/guonei/" title="安防防护">安防防护</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/jiudianyongpin/guonei/" title="酒店用品">酒店用品</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/huanbaojieneng/guonei/" title="环保节能">环保节能</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/wenjiaokeji/guonei/" title="文教科技">文教科技</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/yinxiangyueqi/guonei/" title="音响乐器">音响乐器</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/nonglinmuyu/guonei/" title="农林牧渔">农林牧渔</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/zonghe/guonei/" title="综合">综合</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/chuangyejiameng/guonei/" title="创业加盟">创业加盟</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/qitahangye/guonei/" title="其他行业">其他行业</a></li>
+                        @foreach($sonTypeinfos as $sonTypeinfo)
+                        <li><a href="/{{ $sonTypeinfo->real_path}}/" title="{{ $sonTypeinfo->typename}}" style="color:#2577e3;">{{ $sonTypeinfo->typename}}</a></li>
+                       @endforeach
                     </ul>
-                    <span class="open">展开<i></i></span>
+
                 </div>
             </div>
             <div class="clear"></div>
@@ -89,33 +48,8 @@
                             <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/tianjin/" eh="tianjin" title="天津">天津</a></li>
                             <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/hebei/" eh="hebei" title="河北">河北</a></li>
                             <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/shanxi/" eh="shanxi" title="山西">山西</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/neimenggu/" eh="neimenggu" title="内蒙古">内蒙古</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/ningxia/" eh="ningxia" title="宁夏">宁夏</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/xinjiang/" eh="xinjiang" title="新疆">新疆</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/qinghai/" eh="qinghai" title="青海">青海</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/shaanxi/" eh="shaanxi" title="陕西">陕西</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/gansu/" eh="gansu" title="甘肃">甘肃</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/sichuan/" eh="sichuan" title="四川">四川</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/yunnan/" eh="yunnan" title="云南">云南</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/guizhou/" eh="guizhou" title="贵州">贵州</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/xizang/" eh="xizang" title="西藏">西藏</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/chongqing/" eh="chongqing" title="重庆">重庆</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/liaoning/" eh="liaoning" title="辽宁">辽宁</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/jilin/" eh="jilin" title="吉林">吉林</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/heilongjiang/" eh="heilongjiang" title="黑龙江">黑龙江</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/xianggang/" eh="xianggang" title="香港">香港</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/aomen/" eh="aomen" title="澳门">澳门</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/taiwan/" eh="taiwan" title="台湾">台湾</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/qita/" eh="qita" title="其他">其他</a></li>
                         </ul>
-                        <div class="city_info" sheight="33px" swidth="605px" style="top: 33px; display: none;">
-                            <div>
-                                <p><a href="http://zhanhui.3158.cn/zhxx/201711/trade/henan//" title="不限">不限</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/zhengzhou/" title="郑州">郑州</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/luoyang/" title="洛阳">洛阳</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/Kaifeng/" title="开封">开封</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/anyang/" title="安阳">安阳</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/xinyang/" title="信阳">信阳</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/gushixian/" title="固始县">固始县</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/jiaozuo/" title="焦作">焦作</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/hebi/" title="鹤壁">鹤壁</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/luohe/" title="漯河">漯河</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/shangqiu/" title="商丘">商丘</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/xinxiang/" title="新乡">新乡</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/nanyang/" title="南阳">南阳</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/sanmenxia/" title="三门峡">三门峡</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/xuchang/" title="许昌">许昌</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/zhoukou/" title="周口">周口</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/pingdingshan/" title="平顶山">平顶山</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/puyang/" title="濮阳">濮阳</a><a href="http://zhanhui.3158.cn/zhxx/201711/trade/zhumadian/" title="驻马店">驻马店</a></p>
-                                <i style="left: 605px;"></i>
-                            </div>
-                        </div>
                     </div>
-                    <span class="open">展开<i></i></span>
                 </div>
             </div>
             <div class="clear"></div>

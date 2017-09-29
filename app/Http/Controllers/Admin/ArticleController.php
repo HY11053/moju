@@ -274,7 +274,29 @@ class ArticleController extends Controller
     function UploadImages(ImagesUploadRequest $request){
         UploadImages::UploadImage($request);
     }
+    /**
+     * 供求信息列表
+     */
+    public function SupplyDemandList()
+    {
+        $articles=Archive::where('typeid',5)->latest()->paginate(30);
+        return view('admin.supplydemandarticle',compact('articles'));
 
+    }
+    /**
+     * 供应信息创建
+     */
+    public function SupplyCreate()
+    {
+        return view('admin.supply_create',compact('allnavinfos'));
+    }
+    /**
+     * 求购信息创建
+     */
+    public function DemandCreate()
+    {
+        return view('admin.demandcreate',compact('allnavinfos'));
+    }
     /**
      * 品牌文档查看
      *
@@ -284,7 +306,7 @@ class ArticleController extends Controller
         $articles=Archive::where('mid',1)/*->where('dutyadmin',auth('admin')->user()->id)*/->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
-    /*
+    /**
      * 栏目文章查看
      */
     function Type(Request $request,$id)

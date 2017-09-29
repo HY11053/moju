@@ -24,6 +24,11 @@ class AddOtherclumsToAddonarticlesTable extends Migration
             $table->string('ticket')->nullable();
             $table->string('zhdz')->nullable();
             $table->string('zhtel')->nullable();
+            $table->string('xqnum')->nullable();
+            $table->string('price')->nullable();
+            $table->string('productname')->nullable();
+            $table->string('mixnum')->nullable();
+            $table->string('senddate')->nullable();
             $table->timestamp('starttime')->nullable();
             $table->timestamp('endtime')->nullable();
         });
@@ -37,7 +42,7 @@ class AddOtherclumsToAddonarticlesTable extends Migration
     public function down()
     {
         Schema::table('addonarticles', function (Blueprint $table) {
-            $table->dropColumn(['mjlx','syfw','zydx','zzgy','azfs','guige','zhanguan','ticket','zhdz','starttime','endtime']);
+            $table->dropColumn(['mjlx','syfw','zydx','zzgy','azfs','guige','zhanguan','ticket','zhdz','starttime','endtime','xqnum','price','productname','mixnum','senddate']);
         });
     }
 }

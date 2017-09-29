@@ -11,7 +11,7 @@ class Addonarticle extends Model
         'id','body','typeid','imagepics','redirect','coordinate','companyinfotitle',
         'companyavtitle','companyareatitle','processtitle','productiontitle','teamtitle','credittitle',
         'companyadvantage','companyareacontent','processcontent','productioncontent','teamcontent','creditcontent',
-        'mjlx','syfw','zydx','zzgy','azfs','guige','zhanguan','ticket','zhdz','starttime','endtime'
+        'mjlx','syfw','zydx','zzgy','azfs','guige','zhanguan','ticket','zhdz','starttime','endtime','xqnum','price','productname','mixnum','senddate'
     ];
     public function archive(){
         return $this->belongsTo('App\AdminModel\Archive', 'id');

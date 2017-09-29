@@ -17,14 +17,16 @@
 	<div class="ph_l">
 		<p class="tit">磨具厂品牌排行榜</p>
 		<ul>
-			<li class="cur"><a target="_self" href="#">磨具厂</a></li>
+			@foreach($tradeTypes as $index=>$tradeType)
+				<li @if($index<1)class="cur"@endif><a target="_self" href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></li>
+			@endforeach
 		</ul>
 	</div>
 	<!--左边 结束-->
 	
 	<!--右边 开始-->
 	<div class="ph_r">
-		<div class="hd"><em>零食店品牌排行榜</em></div>
+		<div class="hd"><em>模具生产厂家排行榜</em></div>
 		<div class="tip_info">{{$thistypeinfo->description}}</div>
 		<div class="bd">
 

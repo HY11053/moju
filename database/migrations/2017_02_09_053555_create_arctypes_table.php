@@ -28,7 +28,7 @@ class CreateArctypesTable extends Migration
             $table->string('real_path')->default('');
             $table->string('litpic')->default('');
             $table->string('typeimages')->nullable();
-            $table->string('contents')->nullable();
+            $table->text('contents')->nullable();
             $table->timestamps();
         });
     }

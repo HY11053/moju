@@ -42,6 +42,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::post('article/uploads','ArticleController@UploadImages');
     Route::get('article/create','ArticleController@Create');
     Route::get('article/brandcreate','ArticleController@BrandCreate');
+    Route::get('article/supplydemand','ArticleController@SupplyDemandList');
+    Route::get('article/supplycreate','ArticleController@SupplyCreate');
+    Route::get('article/demandcreate','ArticleController@DemandCreate');
     Route::get('article/edit/{id}','ArticleController@Edit');
     Route::get('article/type/{id}','ArticleController@Type');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
