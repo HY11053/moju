@@ -133,13 +133,21 @@
                 </ul>
             </li>
             <li>
-                <a href="/admin/Atlas">
-                    <i class="fa fa-photo"></i> <span>图集内容管理</span>
+                <a href="#">
+                    <i class="fa fa-photo"></i> <span>模具类型分类</span>
                     <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
               <small class="label pull-right bg-blue">17</small>
             </span>
                 </a>
+                <ul class="treeview-menu">
+                    <li @if(Request::getRequestUri()=='/admin/mjlxadd')class="active"@endif><a href="/admin/mjlxadd"><i class="fa fa-circle-o"></i> 模具类型添加</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/mjlxlist')class="active"@endif><a href="/admin/mjlxlist"><i class="fa fa-circle-o"></i> 模具类型列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/syfwadd')class="active"@endif><a href="/admin/syfwadd"><i class="fa fa-circle-o"></i> 适用范围添加</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/syfwlist')class="active"@endif><a href="/admin/syfwlist"><i class="fa fa-circle-o"></i> 适用范围列表</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/zydxadd')class="active"@endif><a href="/admin/zydxadd"><i class="fa fa-circle-o"></i> 作用对象添加</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/zydxlist')class="active"@endif><a href="/admin/zydxlist"><i class="fa fa-circle-o"></i> 作用对象列表</a></li>
+                </ul>
             </li>
 
             <li class="treeview">

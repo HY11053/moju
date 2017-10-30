@@ -12,55 +12,46 @@
             </dl>
             <dl>
                 <dt>模具类型</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
+                <dd><a @if(Request::getrequesturi()=='/mojufenlei')class="hover" @endif target="_self" href="#">全部</a></dd>
                 @foreach($tradeTypes as $tradeType)
-                    <dd><a target="_self" href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></dd>
+                    <dd><a target="_self"  @if(Request::getrequesturi()=='/'.$tradeType->real_path || isset($path) && $path==$tradeType->real_path)class="hover" @endif  href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></dd>
                 @endforeach
 
             </dl>
             <dl>
                 <dt>适用范围</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
-                <dd><a target="_self" href="/project/0-1~5-0-0.shtml">家电</a></dd>
-                <dd><a target="_self" href="/project/0-5~10-0-0.shtml">日用品</a></dd>
-                <dd><a target="_self" href="/project/0-10~20-0-0.shtml">汽车</a></dd>
-                <dd><a target="_self" href="/project/0-20~30-0-0.shtml">电子</a></dd>
-                <dd><a target="_self" href="/project/0-30~50-0-0.shtml">医疗</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">工艺品</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">仪表</a></dd>
-                <dd><a target="_self" href="/project/0-50~100-0-0.shtml">餐具</a></dd>
+                <dd><a @if(!isset($syfw) || empty($syfw)) class="hover" @endif  target="_self" href="#">全部</a></dd>
+                @foreach($moldareas as $moldarea)
+                <dd><a @if(isset($syfw) && $syfw==$moldarea->id) class="hover" @endif target="_self" href="/{{$path}}/mjsx/{{$moldarea->id}}">{{$moldarea->moldarea}}</a></dd>
+                @endforeach
             </dl>
             <dl>
                 <dt>作用对象</dt>
-                <dd><a class="hover" target="_self" href="#">铝合金</a></dd>
-                <dd><a target="_self" href="/project/0-0-1~10-0.shtml">金属</a></dd>
-                <dd><a target="_self" href="/project/0-0-10~30-0.shtml">锌合金</a></dd>
-                <dd><a target="_self" href="/project/0-0-30~50-0.shtml">塑料</a></dd>
-                <dd><a target="_self" href="/project/0-0-50~80-0.shtml">铜合金</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">铝</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">不锈钢</a></dd>
-                <dd><a target="_self" href="/project/0-0-100-0.shtml">水泥</a></dd>
+                <dd><a @if(!isset($zydx) || empty($zydx)) class="hover" @endif target="_self" href="#">全部</a></dd>
+                @foreach($moldobjects as $moldobject)
+                <dd><a @if(isset($zydx) && $zydx==$moldobject->id) class="hover" @endif target="_self" href="/{{$path}}/mjsx/{{$syfw}}-{{$moldobject->id}}/">{{$moldobject->moldobject}}</a></dd>
+                @endforeach
             </dl>
             <dl>
                 <dt>所在地区</dt>
-                <dd><a class="hover" target="_self" href="#">地区</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-1.shtml">北京</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-125.shtml">济南</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-71.shtml">广州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-281.shtml">合肥</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-401.shtml">上海</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-282.shtml">芜湖</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-195.shtml">武汉</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-112.shtml">南京</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-296.shtml">长沙</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-126.shtml">青岛</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-72.shtml">深圳</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-164.shtml">成都</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-139.shtml">沈阳</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-29.shtml">重庆</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-212.shtml">郑州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-101.shtml">杭州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-83.shtml">佛山</a></dd>
+                <dd><a @if($city==0)  class="hover" @endif target="_self" href="#">地区</a></dd>
+                <dd><a target="_self" @if($city==1)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-1/">北京</a></dd>
+                <dd><a target="_self" @if($city==125)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-125/">济南</a></dd>
+                <dd><a target="_self" @if($city==71)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-71/">广州</a></dd>
+                <dd><a target="_self" @if($city==281)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-281/">合肥</a></dd>
+                <dd><a target="_self" @if($city==401)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-401/">上海</a></dd>
+                <dd><a target="_self" @if($city==282)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-282/">芜湖</a></dd>
+                <dd><a target="_self" @if($city==195)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-195/">武汉</a></dd>
+                <dd><a target="_self" @if($city==112)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-112/">南京</a></dd>
+                <dd><a target="_self" @if($city==296)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-296/">长沙</a></dd>
+                <dd><a target="_self" @if($city==126)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-126/">青岛</a></dd>
+                <dd><a target="_self" @if($city==72)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-72/">深圳</a></dd>
+                <dd><a target="_self" @if($city==164)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-164/">成都</a></dd>
+                <dd><a target="_self" @if($city==139)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-139/">沈阳</a></dd>
+                <dd><a target="_self" @if($city==29)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-29/">重庆</a></dd>
+                <dd><a target="_self" @if($city==212)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-212/">郑州</a></dd>
+                <dd><a target="_self" @if($city==101)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-101/">杭州</a></dd>
+                <dd><a target="_self" @if($city==83)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-83/">佛山</a></dd>
             </dl>
         </div>
         <div class="rec_brand_list">

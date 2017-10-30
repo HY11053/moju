@@ -14,20 +14,20 @@
         </div>
         <div class="picbox">
             <div class="rollpic" id="rollpic">
-                <a href="http://www.xiangmu.com/jmxm/wlyxzsg/"><img src="/reception/devnull/1706260921421764846802.jpg" height="300" width="720" alt="五粮液小酌时光酒招商加盟"></a>
-                <a href="http://www.xiangmu.com/jmxm/rgct/"><img src="/reception/devnull/170511145720612516320.gif" height="300" width="720" alt="若谷草堂官网-五谷杂粮加盟_五谷杂粮加盟店_五谷杂粮养生坊"></a>
-                <a href="http://www.xiangmu.com/jmxm/hdyp/"><img src="/reception/devnull/1705181004151987741334.jpg" height="300" width="720" alt="十元百货店韩都优品加盟连锁全国招商"></a>
+                <a href="#"><img src="/reception/devnull/1706260921421764846802.jpg" height="300" width="720" alt="五粮液小酌时光酒招商加盟"></a>
+                <a href="#"><img src="/reception/devnull/170511145720612516320.gif" height="300" width="720" alt="若谷草堂官网-五谷杂粮加盟_五谷杂粮加盟店_五谷杂粮养生坊"></a>
+                <a href="#"><img src="/reception/devnull/1705181004151987741334.jpg" height="300" width="720" alt="十元百货店韩都优品加盟连锁全国招商"></a>
             </div>
             <script language="javascript" type="text/javascript">new $o.slide("rollpic");</script>
             <div class="renwu">
                 <div class="list">
                     <ul>
-                        <li><a href="http://www.xiangmu.com/jmxm/jhb/"><img src="/reception/devnull/1702281554302105498237.jpg" height="150" width="105" alt="聚惠保车险加盟"></a></li>
-                        <li><a href="http://www.xiangmu.com/jmxm/jingtu/"><img src="/reception/devnull/170417151834122114727.jpg" height="150" width="105" alt="精途酒店加盟条件-精途连锁酒店加盟费用-精途酒店加盟官方网站"></a></li>
-                        <li><a href="http://www.xiangmu.com/jmxm/fengcha/"><img src="/reception/devnull/170418144214869471038.jpg" height="150" width="105" alt="奶茶加盟_茶饮加盟_奶茶连锁店_奉茶奶茶加盟"></a></li>
-                        <li><a href="http://www.xiangmu.com/jmxm/huyanshijia/"><img src="/reception/devnull/1609040241451762947984.jpg" height="150" width="105" alt="青岛护眼世家招商加盟"></a></li>
-                        <li><a href="http://www.xiangmu.com/jmxm/hrkon/"><img src="/reception/devnull/1609231641062116218693.jpg" height="150" width="105" alt="华尔康净水器招商加盟"></a></li>
-                        <li style="width:106px;"><a href="http://www.xiangmu.com/jmxm/lianglong/"><img src="/reception/devnull/1609270901191784388896.jpg" height="150" width="105" alt="亮龙硅藻泥加盟费用,亮龙硅藻泥加盟多少钱"></a></li>
+                        <li><a href="#"><img src="/reception/devnull/1702281554302105498237.jpg" height="150" width="105" alt="聚惠保车险加盟"></a></li>
+                        <li><a href="#"><img src="/reception/devnull/170417151834122114727.jpg" height="150" width="105" alt="精途酒店加盟条件-精途连锁酒店加盟费用-精途酒店加盟官方网站"></a></li>
+                        <li><a href="#"><img src="/reception/devnull/170418144214869471038.jpg" height="150" width="105" alt="奶茶加盟_茶饮加盟_奶茶连锁店_奉茶奶茶加盟"></a></li>
+                        <li><a href="#"><img src="/reception/devnull/1609040241451762947984.jpg" height="150" width="105" alt="青岛护眼世家招商加盟"></a></li>
+                        <li><a href="#"><img src="/reception/devnull/1609231641062116218693.jpg" height="150" width="105" alt="华尔康净水器招商加盟"></a></li>
+                        <li style="width:106px;"><a href="#"><img src="/reception/devnull/1609270901191784388896.jpg" height="150" width="105" alt="亮龙硅藻泥加盟费用,亮龙硅藻泥加盟多少钱"></a></li>
                     </ul>
                 </div>
             </div>

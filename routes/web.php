@@ -111,6 +111,19 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('brands','SeoInfoController@BrandsView');
     Route::get('worklinks','SeoInfoController@WorkLinks');
     Route::get('workcheck','SeoInfoController@WorkCheck');
+    Route::get('mjlxadd','MoldTypeController@MoldtypeAdd');
+    Route::post('mjlxadd','MoldTypeController@PostMoldtypeAdd');
+    Route::get('mjlxlist','MoldTypeController@MoldtypeLists')->name('moldlist');
+    Route::get('moldtypedel/{id}','MoldTypeController@MoldtypeDelete');
+    Route::get('syfwadd','MoldTypeController@MoldareaAdd');
+    Route::post('syfwadd','MoldTypeController@PostMoldareaAdd');
+    Route::get('syfwlist','MoldTypeController@MoldareaLists')->name('moldarealist');
+    Route::get('moldareadel/{id}','MoldTypeController@MoldareaDelete');
+    Route::get('zydxadd','MoldTypeController@MoldobjectAdd');
+    Route::post('zydxadd','MoldTypeController@PostMoldobjectAdd');
+    Route::get('zydxlist','MoldTypeController@MoldobjectLists')->name('moldobjlist');
+    Route::get('zydxdel/{id}','MoldTypeController@Moldobjectdel');
+
     Route::get('Atlas',function(){
         abort(403);
     });
@@ -129,6 +142,8 @@ Route::post('/phone/complate','Mobile\PhoneController@Complates');
 Route::get('/','Frontend\IndexController@Index');
 Route::get('paihangbang','Frontend\BrandsController@Paihangbang');
 Route::get('paihangbang/page/{page}/','Frontend\BrandsController@Paihangbang')->name('paihangbanglists');
+Route::get('{path}/mjsx/{syfw?}-{zydx?}-{city?}/','Frontend\ProjectFilterController@MojuFilter');
+Route::get('{path}/mjsx/{syfw?}-{zydx?}-{city?}/page/{page}/','Frontend\ProjectFilterController@MojuFilter')->name('filterlists');
 Route::get('{path}','Frontend\BrandsController@BrandLists');
 Route::get('{path?}/page/{page}/','Frontend\BrandsController@BrandLists')->name('pagelists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');

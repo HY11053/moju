@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\AdminModel\Archive;
 use App\AdminModel\Arctype;
 use App\AdminModel\Comment;
+use App\AdminModel\Moldarea;
+use App\AdminModel\Moldobject;
 use App\Overwrite\Paginator;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -83,7 +85,12 @@ class BrandsController extends Controller
                     $cid,//传入分类id,
                     $pagelists//传入原始分页器
                 );
-                return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','phBrands','newsbrands'));
+                $moldareas=Moldarea::all();
+                $moldobjects=Moldobject::all();
+                $syfw=0;
+                $zydx=0;
+                $city=0;
+                return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','phBrands','newsbrands','moldareas','moldobjects','path','syfw','zydx','city'));
             }else{
                 $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
                 $pagelists= Paginator::transfer(
