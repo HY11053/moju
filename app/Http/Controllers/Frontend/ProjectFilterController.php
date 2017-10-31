@@ -8,6 +8,7 @@ use App\AdminModel\Arctype;
 use App\AdminModel\Area;
 use App\AdminModel\Moldarea;
 use App\AdminModel\Moldobject;
+use App\AdminModel\Moldtype;
 use App\Overwrite\Paginator;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -30,6 +31,7 @@ class ProjectFilterController extends Controller
         $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
         if(Arctype::where('real_path',$path)->value('id')==9)
         {
+
             $typeids=Arctype::where('topid',9)->pluck('id');
             $pagelists=Archive::whereIn('typeid',$typeids)->where('mid','<>',1)
                 ->when($syfw, function ($query) use ($syfw) {
@@ -37,9 +39,16 @@ class ProjectFilterController extends Controller
                 })
                 ->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 20, $columns = ['*'], $pageName = 'page', $page);
         }else{
+
             $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)
                 ->when($syfw, function ($query) use ($syfw) {
                     return $query->whereIn('id',Addonarticle::where('syfw', 'like','%'.Moldarea::where('id',$syfw)->value('moldarea').'%')->pluck('id'));
+                })
+                ->when($zydx, function ($query) use ($zydx) {
+                    return $query->whereIn('id',Addonarticle::where('zydx', 'like','%'.Moldobject::where('id',$zydx)->value('moldobject').'%')->pluck('id'));
+                })
+                ->when($city, function ($query) use ($city) {
+                    return $query->where('country',Area::where('id',$city)->value('city'));
                 })
                 ->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 20, $columns = ['*'], $pageName = 'page', $page);
         }
@@ -54,5 +63,33 @@ class ProjectFilterController extends Controller
         $moldobjects=Moldobject::all();
 
         return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','phBrands','newsbrands','moldareas','moldobjects','syfw','zydx','city','path'));
+    }
+
+    public function MoldGroupFilterList(Request $request,$option,$city,$page=0)
+    {
+        $city?:0;
+        $cid=$option.$city;
+        $tradeTypes=Moldtype::take(9)->get();
+        $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
+        $thisTypeinfos=Arctype::where('real_path',$option)->first();
+        $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
+        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $pagelists=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')
+            ->when($option, function ($query) use ($option) {
+                return $query->whereIn('id',Addonarticle::where('companyarea','like','%'.Moldtype::where('id',$option)->value('moldtype').'%')->pluck('id'));
+            })
+            ->when($city, function ($query) use ($city) {
+                return $query->where('country',Area::where('id',$city)->value('city'));
+            })
+            ->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
+        //转换自带分页器为自定义的分页器
+        $pagelists= Paginator::transfer(
+            $cid,//传入分类id,
+            $pagelists//传入原始分页器
+        );
+        $brandtypes=Arctype::where('mid',1)->get();
+        $thistypeinfo=Arctype::where('real_path',$option)->first();
+        return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
+
     }
 }

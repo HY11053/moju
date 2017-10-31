@@ -25,34 +25,6 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="city" style="z-index: 99; height: 36px;">
-                <span class="title">所在地区：</span>
-                <div class="service_list">
-                    <div class="city_cont">
-                        <ul class="list auto">
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/" eh="" title="不限" style="color:#2577e3;">不限</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/shandong/" eh="shandong" title="山东">山东</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/jiangsu/" eh="jiangsu" title="江苏">江苏</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/anhui/" eh="anhui" title="安徽">安徽</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/zhejiang/" eh="zhejiang" title="浙江">浙江</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/fujian/" eh="fujian" title="福建">福建</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/shanghai/" eh="shanghai" title="上海">上海</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/guangdong/" eh="guangdong" title="广东">广东</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/guangxi/" eh="guangxi" title="广西">广西</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/hainan/" eh="hainan" title="海南">海南</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/hubei/" eh="hubei" title="湖北">湖北</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/hunan/" eh="hunan" title="湖南">湖南</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/henan/" eh="henan" title="河南">河南</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/jiangxi/" eh="jiangxi" title="江西">江西</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/beijing/" eh="beijing" title="北京">北京</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/tianjin/" eh="tianjin" title="天津">天津</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/hebei/" eh="hebei" title="河北">河北</a></li>
-                            <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/shanxi/" eh="shanxi" title="山西">山西</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="clear"></div>
         </div>
 
         <div class="rightl">

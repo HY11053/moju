@@ -12,32 +12,32 @@
             </dl>
             <dl>
                 <dt>模具类型</dt>
-                <dd><a class="hover" target="_self" href="#">全部</a></dd>
+                <dd><a @if(!$option) class="hover" @endif  target="_self" href="#">全部</a></dd>
                 @foreach($tradeTypes as $tradeType)
-                    <dd><a target="_self" href="/{{$tradeType->real_path}}/">{{$tradeType->typename}}</a></dd>
+                    <dd><a target="_self" @if($option && $option==$tradeType->id) class="hover" @endif href="/mojuchang/filter/{{$tradeType->id}}/">{{$tradeType->moldtype}}</a></dd>
                 @endforeach
 
             </dl>
             <dl>
                 <dt>所在地区</dt>
-                <dd><a class="hover" target="_self" href="#">地区</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-1.shtml">北京</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-125.shtml">济南</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-71.shtml">广州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-281.shtml">合肥</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-401.shtml">上海</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-282.shtml">芜湖</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-195.shtml">武汉</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-112.shtml">南京</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-296.shtml">长沙</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-126.shtml">青岛</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-72.shtml">深圳</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-164.shtml">成都</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-139.shtml">沈阳</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-29.shtml">重庆</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-212.shtml">郑州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-101.shtml">杭州</a></dd>
-                <dd><a target="_self" href="/project/0-0-0-83.shtml">佛山</a></dd>
+                <dd><a @if($city==0) class="hover" @endif target="_self" href="#">地区</a></dd>
+                <dd><a target="_self" @if($city==1) class="hover" @endif href="/mojuchang/filter/{{$option}}-1/">北京</a></dd>
+                <dd><a target="_self" @if($city==125) class="hover" @endif  href="/mojuchang/filter/{{$option}}-125/">济南</a></dd>
+                <dd><a target="_self" @if($city==71) class="hover" @endif  href="/mojuchang/filter/{{$option}}-71/">广州</a></dd>
+                <dd><a target="_self" @if($city==281) class="hover" @endif  href="/mojuchang/filter/{{$option}}-281/">合肥</a></dd>
+                <dd><a target="_self" @if($city==400) class="hover" @endif  href="/mojuchang/filter/{{$option}}-400/">上海</a></dd>
+                <dd><a target="_self" @if($city==282) class="hover" @endif  href="/mojuchang/filter/{{$option}}-282/">芜湖</a></dd>
+                <dd><a target="_self" @if($city==195) class="hover" @endif  href="/mojuchang/filter/{{$option}}-195/">武汉</a></dd>
+                <dd><a target="_self" @if($city==112) class="hover" @endif  href="/mojuchang/filter/{{$option}}-112/">南京</a></dd>
+                <dd><a target="_self" @if($city==296) class="hover" @endif  href="/mojuchang/filter/{{$option}}-296/">长沙</a></dd>
+                <dd><a target="_self" @if($city==126) class="hover" @endif  href="/mojuchang/filter/{{$option}}-126/">青岛</a></dd>
+                <dd><a target="_self" @if($city==72) class="hover" @endif  href="/mojuchang/filter/{{$option}}-72/">深圳</a></dd>
+                <dd><a target="_self" @if($city==164) class="hover" @endif  href="/mojuchang/filter/{{$option}}-164/">成都</a></dd>
+                <dd><a target="_self" @if($city==139) class="hover" @endif  href="/mojuchang/filter/{{$option}}-139/">沈阳</a></dd>
+                <dd><a target="_self" @if($city==29) class="hover" @endif  href="/mojuchang/filter/{{$option}}-29/">重庆</a></dd>
+                <dd><a target="_self" @if($city==212) class="hover" @endif  href="/mojuchang/filter/{{$option}}-212/">郑州</a></dd>
+                <dd><a target="_self" @if($city==101) class="hover" @endif  href="/mojuchang/filter/{{$option}}-101/">杭州</a></dd>
+                <dd><a target="_self" @if($city==83) class="hover" @endif  href="/mojuchang/filter/{{$option}}-83/">佛山</a></dd>
             </dl>
         </div>
         <div class="rec_brand_list">

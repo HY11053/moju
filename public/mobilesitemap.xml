@@ -19814,15 +19814,28 @@
                 <priority>0.8</priority>
             </url>
             <url> 
+            <loc>http://m.moju.com/mojujia/2990.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojujia/2990.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
             <loc>http://m.moju.com/jycxm/2994.shtml</loc> 
             <mobile:mobile type="mobile"/>
-            <lastmod>2017-09-29</lastmod>
+            <lastmod>2017-10-30</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.8</priority>
             </url> 
             <url>
                 <loc>http://www.moju.com/jycxm/2994.shtml</loc>
-                <lastmod>2017-09-29</lastmod>
+                <lastmod>2017-10-30</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
@@ -19875,6 +19888,97 @@
             <url>
                 <loc>http://www.moju.com/mojuchang/3001.shtml</loc>
                 <lastmod>2017-09-29</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/zscxm/3002.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/3002.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/zscxm/3003.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/3003.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/zscxm/3004.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/3004.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/zscxm/3005.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/3005.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/zscxm/3006.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/3006.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/zscxm/3007.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-30</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/zscxm/3007.shtml</loc>
+                <lastmod>2017-10-30</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/mojuchang/3008.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-31</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojuchang/3008.shtml</loc>
+                <lastmod>2017-10-31</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>

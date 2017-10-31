@@ -17,8 +17,8 @@
                 <span class="title">展会状态：</span>
                 <div class="service_list">
                     <ul class="list auto">
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/trade/guonei/" title="不限" style="color:#2577e3;">未开展会</a></li>
-                        <li><a href="http://zhanhui.3158.cn/zhxx/all/shipinyinpin/guonei/" title="食品饮品">已开展会</a></li>
+                        <li><a href="/zhanhuiunstart/" title="未开展会" style="color:#2577e3;">未开展会</a></li>
+                        <li><a href="/zhanhuiout/" title="已开展会">已开展会</a></li>
                     </ul>
 
                 </div>
@@ -29,24 +29,24 @@
                 <div class="service_list">
                     <div class="city_cont">
                         <ul class="list auto">
-                            <li><a href="" eh="" title="不限" style="color:#2577e3;">不限</a></li>
-                            <li><a href="" eh="shandong" title="山东">山东</a></li>
-                            <li><a href="" eh="jiangsu" title="江苏">江苏</a></li>
-                            <li><a href="" eh="anhui" title="安徽">安徽</a></li>
-                            <li><a href="" eh="zhejiang" title="浙江">浙江</a></li>
-                            <li><a href="" eh="fujian" title="福建">福建</a></li>
-                            <li><a href="" eh="shanghai" title="上海">上海</a></li>
-                            <li><a href="" eh="guangdong" title="广东">广东</a></li>
-                            <li><a href="" eh="guangxi" title="广西">广西</a></li>
-                            <li><a href="" eh="hainan" title="海南">海南</a></li>
-                            <li><a href="" eh="hubei" title="湖北">湖北</a></li>
-                            <li><a href="" eh="hunan" title="湖南">湖南</a></li>
-                            <li><a href="" eh="henan" title="河南">河南</a></li>
-                            <li><a href="" eh="jiangxi" title="江西">江西</a></li>
-                            <li><a href="" eh="beijing" title="北京">北京</a></li>
-                            <li><a href="" eh="tianjin" title="天津">天津</a></li>
-                            <li><a href="" eh="hebei" title="河北">河北</a></li>
-                            <li><a href="" eh="shanxi" title="山西">山西</a></li>
+                            <li><a href="/zhanhui/" eh="" title="不限" style="color:#2577e3;">不限</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/1/" eh="shandong" title="北京">北京</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/125/" eh="jiangsu" title="济南">济南</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/71/" eh="anhui" title="广州">广州</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/281/" eh="zhejiang" title="合肥">合肥</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/400/" eh="fujian" title="上海">上海</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/282/" eh="shanghai" title="芜湖">芜湖</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/195/" eh="guangdong" title="武汉">武汉</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/126/" eh="guangxi" title="青岛">青岛</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/139/" eh="hainan" title="沈阳">沈阳</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/83/" eh="hubei" title="湖北">佛山</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/112/" eh="hunan" title="南京">南京</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/296/" eh="henan" title="长沙">长沙</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/126/" eh="jiangxi" title="青岛">青岛</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/72/" eh="beijing" title="深圳">深圳</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/164/" eh="tianjin" title="成都">成都</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/101/" eh="hebei" title="杭州">杭州</a></li>
+                            <li><a href="/zhanhui{{$cuid}}/212/" eh="shanxi" title="郑州">郑州</a></li>
                         </ul>
                     </div>
                 </div>
@@ -161,22 +161,7 @@
                 @endforeach
             </div>
             <div class="page">
-                <ul class="pagination">
-
-                    <li class="disabled"><span>上一页</span></li>
-
-
-
-
-
-                    <li class="active"><span>1</span></li>
-                    <li><a href="http://www.moju.com/mojuchang/page/2/">2</a></li>
-                    <li><a href="http://www.moju.com/mojuchang/page/3/">3</a></li>
-
-
-                    <li><a href="http://www.moju.com/mojuchang/page/2/">下一页</a></li>
-                </ul>
-
+                {!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$pagelists->links()) !!}
             </div>
         </div>
         <div class="w260">

@@ -39,7 +39,7 @@
                 <dd><a target="_self" @if($city==125)  class="hover" @endif href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-125/">济南</a></dd>
                 <dd><a target="_self" @if($city==71)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-71/">广州</a></dd>
                 <dd><a target="_self" @if($city==281)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-281/">合肥</a></dd>
-                <dd><a target="_self" @if($city==401)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-401/">上海</a></dd>
+                <dd><a target="_self" @if($city==400)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-400/">上海</a></dd>
                 <dd><a target="_self" @if($city==282)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-282/">芜湖</a></dd>
                 <dd><a target="_self" @if($city==195)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-195/">武汉</a></dd>
                 <dd><a target="_self" @if($city==112)  class="hover" @endif  href="/{{$path}}/mjsx/{{$syfw}}-{{$zydx}}-112/">南京</a></dd>

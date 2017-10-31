@@ -8,7 +8,7 @@ class Addonarticle extends Model
 {
     //,
     protected $fillable=[
-        'id','body','typeid','imagepics','redirect','coordinate','companyinfotitle',
+        'id','body','typeid','imagepics','redirect','coordinate','companyinfotitle','companyarea',
         'companyavtitle','companyareatitle','processtitle','productiontitle','teamtitle','credittitle',
         'companyadvantage','companyareacontent','processcontent','productioncontent','teamcontent','creditcontent',
         'mjlx','syfw','zydx','zzgy','azfs','guige','zhanguan','ticket','zhdz','starttime','endtime','xqnum','price','productname','mixnum','senddate'
