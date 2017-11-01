@@ -2,15 +2,6 @@
 @section('title') {{$thistypeinfo->title}}@stop
 @section('keywords') {{$thistypeinfo->keywords}} @stop
 @section('description')  {{$thistypeinfo->description}}  @stop
-@section('headlibs')
-    <meta name="Copyright" content="中国模具网-{{env('APP_URL')}}"/>
-    <meta name="author" content="中国模具网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" >
-    <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}"/>
-@stop
 @section('maincontent')
 <div class="main clearfix">
 	<!--左边 开始-->

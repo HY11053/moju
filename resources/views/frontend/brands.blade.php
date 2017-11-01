@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '中国模具网') }} @stop
-@section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
-@section('description') {{ config('app.description', '中国模具网') }} @stop
+@section('title') {{$thisTypeinfos->title}}@stop
+@section('keywords') {{$thisTypeinfos->keywords}} @stop
+@section('description') {{$thisTypeinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
 
@@ -116,7 +116,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="bn260"><a href="/lingshidianpp/91.shtml" target="_blank"><img src="/reception/images/temp/bn6.jpg" width="260" height="295" alt=""></a></div>
+            <div class="bn260"><a href="/lingshidianpp/91.shtml" target="_blank"><img src="/reception/images/bn6.jpg" width="260" height="295" alt=""></a></div>
 
             <div class="side_news">
                 <div class="common_bt">

@@ -12,13 +12,13 @@
     <meta name="keywords" content=" @yield('keywords') "/>
     <meta name="description" content=" @yield('description') "/>
     <link href="/reception/css/style.css" rel="stylesheet" type="text/css" />
-    <meta name="Copyright" content="中国模具网"/>
+    <meta name="Copyright" content="中国模具网-{{config('app.url')}}"/>
     <meta name="author" content="中国模具网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{config('app.url')}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url=" />
-    <meta http-equiv="mobile-agent" content="format=html5; url=" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="" >
-    <link rel="canonical" href=""/>
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" >
+    <link rel="canonical" href="{{config('app.url')}}{{Request::getrequesturi()}}"/>
     <meta property="og:image" content="/reception/images/logo.jpg"/>
     <script type="text/javascript" src="/reception/js/jquery.min.js"></script>
     <script type="text/javascript" src="/reception/js/roll.js"></script>

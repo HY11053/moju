@@ -36,7 +36,7 @@ class ListsViewController extends Controller
             case 1:
                 $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
                 $pagelists= Paginator::transfer($cid,$pagelists);
-                return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','tradeTypes','phBrands','option','city'));
+                return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thisTypeinfos','tradeTypes','phBrands','option','city'));
                 break;
             case 5:
                 $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 12, $columns = ['*'], $pageName = 'page', $page);
@@ -47,7 +47,7 @@ class ListsViewController extends Controller
                 $cuid='all';
                 $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 12, $columns = ['*'], $pageName = 'page', $page);
                 $pagelists= Paginator::transfer($cid,$pagelists);
-                return view('frontend.zhanhui',compact('pagelists','cuid'));
+                return view('frontend.zhanhui',compact('pagelists','cuid','thisTypeinfos','phBrands','newsbrands'));
                 break;
 
             default:
@@ -66,7 +66,7 @@ class ListsViewController extends Controller
                     }else{
                         $sonTypeinfos=Arctype::where('topid',Arctype::where('real_path',$path)->value('topid'))->get();
                     }
-                    return view('frontend.jiaindex',compact('pagelists','topbrands','sonTypeinfos'));
+                    return view('frontend.jiaindex',compact('pagelists','topbrands','sonTypeinfos','thisTypeinfos','phBrands'));
                 }
                 //模具分类
                 elseif (Arctype::where('real_path',$path)->value('id')==9 || Arctype::where('real_path',$path)->value('topid')==9)
@@ -87,7 +87,7 @@ class ListsViewController extends Controller
                     $moldobjects=Moldobject::all();
                     $syfw=0;
                     $zydx=0;
-                    return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','phBrands','newsbrands','moldareas','moldobjects','path','syfw','zydx','city'));
+                    return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','thisTypeinfos','phBrands','newsbrands','moldareas','moldobjects','path','syfw','zydx','city'));
                 }else{
                     $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
                     $pagelists= Paginator::transfer(

@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '中国模具网') }} @stop
-@section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
-@section('description') {{ config('app.description', '中国模具网') }} @stop
+@section('title') {{$thisTypeinfos->title}}@stop
+@section('keywords') {{$thisTypeinfos->keywords}} @stop
+@section('description') {{$thisTypeinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
         <div class="address">
@@ -51,16 +51,9 @@
                     <div class="title"><strong>戴永红炒货资讯</strong></div>
                     <div class="xw">
                         <ul class="clearfix">
+
                             <li><em>2017-05-11</em><a href="/chaohuodian/9.shtml" title="戴永红炒货加盟费多少,70平仅需28万元">戴永红炒货加盟费多少,70平仅需28万元 </a></li>
-                            <li><em>2017-06-27</em><a href="/chaohuodian/1466.shtml" title="戴永红炒货加盟怎么样？360度扶持让您玩转零食市场">戴永红炒货加盟怎么样？360度扶持让您玩转零食市场 </a></li>
-                            <li><em>2017-06-27</em><a href="/chaohuodian/1549.shtml" title="株洲戴永红炒货店加盟赚钱吗？年入46.08万元净利润 加盟两年即可买宝马">株洲戴永红炒货店加盟赚钱吗？年入46.08万元净利润 加盟两年即可买宝马 </a></li>
-                            <li><em>2017-06-19</em><a href="/chaohuodian/1802.shtml" title="株洲开戴永红炒货利润怎么样？月入上万不是梦">株洲开戴永红炒货利润怎么样？月入上万不是梦 </a></li>
-                            <li><em>2017-06-27</em><a href="/chaohuodian/657.shtml" title="戴永红炒货如何加盟，戴永红炒货加盟流程">戴永红炒货如何加盟，戴永红炒货加盟流程 </a></li>
-                            <li><em>2017-06-12</em><a href="/chaohuodian/1568.shtml" title="株洲戴永红炒货加盟条件是什么">株洲戴永红炒货加盟条件是什么 </a></li>
-                            <li><em>2017-06-27</em><a href="/chaohuodian/660.shtml" title="戴永红炒货加盟条件，戴永红炒货加盟要求">戴永红炒货加盟条件，戴永红炒货加盟要求 </a></li>
-                            <li><em>2017-06-27</em><a href="/chaohuodian/665.shtml" title="戴永红炒货加盟利润大吗？年净利润高达40万">戴永红炒货加盟利润大吗？年净利润高达40万 </a></li>
-                            <li><em>2017-06-07</em><a href="/chaohuodian/1401.shtml" title="戴永红炒货加盟条件？0风险，新手轻松当老板">戴永红炒货加盟条件？0风险，新手轻松当老板 </a></li>
-                            <li><em>2017-05-11</em><a href="/chaohuodian/602.shtml" title="戴永红炒货加盟费多少钱？仅需14.66万元即可开店">戴永红炒货加盟费多少钱？仅需14.66万元即可开店 </a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -74,18 +67,18 @@
                 <h3> <i></i> 模具厂排行榜 </h3>
                 <div class="rank_bd">
                     <ul>
-                        @foreach($topbrands as $index=>$topbrand)
+                        @foreach($phBrands as $index=>$phBrand)
                             @if($index==0)
-                                <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->shorttitle}}" ></a>
+                                <li class="top"> <a href="/{{$phBrand->arctype->real_path}}/{{$phBrand->id}}.shtml" target="_blank" title="{{$phBrand->shorttitle}}"><i class="num">{{$index+1}} </i> <img src="{{$phBrand->litpic}}" alt="{{$phBrand->shorttitle}}" ></a>
                                     <div class="cont">
-                                        <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank">{{$topbrand->shorttitle}}</a></p>
-                                        <p><span>投资金额：</span><i>{{$topbrand->article->brandpay}}</i></p>
-                                        <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml">查看详情</a></p>
+                                        <p><a href="/{{$phBrand->arctype->real_path}}/{{$phBrand->id}}.shtml" target="_blank">{{$phBrand->shorttitle}}</a></p>
+                                        <p><span>投资金额：</span><i>{{$phBrand->article->brandpay}}</i></p>
+                                        <p class="btn"><a href="/{{$phBrand->arctype->real_path}}/{{$phBrand->id}}.shtml">查看详情</a></p>
                                     </div>
                                 </li>
                             @else
 
-                                <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->shorttitle}}">{{$topbrand->shorttitle}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
+                                <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$phBrand->arctype->real_path}}/{{$phBrand->id}}.shtml" target="_blank" title="{{$phBrand->shorttitle}}">{{$phBrand->shorttitle}}</a></span> <span class="price">{{$phBrand->article->brandpay}}</span> </li>
                             @endif
 
                         @endforeach
@@ -131,9 +124,6 @@
                 </div>
             </div>
             <!--/-->
-
         </div>
     </div>
-
-
 @stop

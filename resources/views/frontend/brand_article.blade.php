@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '中国模具网') }} @stop
-@section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
-@section('description') {{ config('app.description', '中国模具网') }} @stop
+@section('title') {{$thisarticleinfos->title}} @stop
+@section('keywords') {{$thisarticleinfos->keywords}} @stop
+@section('description')  {{$thisarticleinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
         <div class="layout2">

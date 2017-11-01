@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '中国模具网') }} @stop
-@section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
-@section('description') {{ config('app.description', '中国模具网') }} @stop
+@section('title') {{$thisTypeinfos->title}}@stop
+@section('keywords') {{$thisTypeinfos->keywords}} @stop
+@section('description') {{$thisTypeinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
         <div class="address">
@@ -170,46 +170,26 @@
                 <h3> <i></i> 磨具厂排行榜 </h3>
                 <div class="rank_bd">
                     <ul>
-                        <li class="top"> <a href="/mojuchang/489.shtml" target="_blank" title="方正科技科技有限公司"><i class="num">1 </i> <img src="https://lorempixel.com/640/480/?26912" alt="方正科技科技有限公司"></a>
-                            <div class="cont">
-                                <p><a href="/mojuchang/489.shtml" target="_blank">方正科技科技有限公司</a></p>
-                                <p><span>投资金额：</span><i></i></p>
-                                <p class="btn"><a href="/mojuchang/489.shtml">查看详情</a></p>
-                            </div>
-                        </li>
+                        @foreach($phBrands as $index=>$topbrand)
+                            @if($index==0)
+                                <li class="top"> <a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->article->companyname}}"><i class="num">{{$index+1}} </i> <img src="{{$topbrand->litpic}}" alt="{{$topbrand->article->companyname}}" ></a>
+                                    <div class="cont">
+                                        <p><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank">{{$topbrand->article->companyname}}</a></p>
+                                        <p><span>投资金额：</span><i>{{$topbrand->article->brandpay}}</i></p>
+                                        <p class="btn"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml">查看详情</a></p>
+                                    </div>
+                                </li>
+                            @else
 
+                                <li class="top"> <i class="num">{{$index+1}}</i> <span class="name"><a href="/{{$topbrand->arctype->real_path}}/{{$topbrand->id}}.shtml" target="_blank" title="{{$topbrand->article->companyname}}">{{$topbrand->article->companyname}}</a></span> <span class="price">{{$topbrand->article->brandpay}}</span> </li>
+                            @endif
 
-                        <li class="top"> <i class="num">2</i> <span class="name"><a href="/mojuchang/1826.shtml" target="_blank" title="易动力信息有限公司">易动力信息有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">3</i> <span class="name"><a href="/mojuchang/2425.shtml" target="_blank" title="维涛网络有限公司">维涛网络有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">4</i> <span class="name"><a href="/mojuchang/1746.shtml" target="_blank" title="中建创业信息有限公司">中建创业信息有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">5</i> <span class="name"><a href="/mojuchang/1253.shtml" target="_blank" title="信诚致远网络有限公司">信诚致远网络有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">6</i> <span class="name"><a href="/mojuchang/1561.shtml" target="_blank" title="联软网络有限公司">联软网络有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">7</i> <span class="name"><a href="/mojuchang/648.shtml" target="_blank" title="创亿传媒有限公司">创亿传媒有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">8</i> <span class="name"><a href="/mojuchang/2474.shtml" target="_blank" title="天益科技有限公司">天益科技有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">9</i> <span class="name"><a href="/mojuchang/1273.shtml" target="_blank" title="信诚致远科技有限公司">信诚致远科技有限公司</a></span> <span class="price"></span> </li>
-
-
-                        <li class="top"> <i class="num">10</i> <span class="name"><a href="/mojuchang/889.shtml" target="_blank" title="凌云科技有限公司">凌云科技有限公司</a></span> <span class="price"></span> </li>
-
+                        @endforeach
 
                     </ul>
                 </div>
             </div>
-            <div class="bn260"><a href="/lingshidianpp/91.shtml" target="_blank"><img src="/reception/images/temp/bn6.jpg" width="260" height="295" alt=""></a></div>
+            <div class="bn260"><a href="/lingshidianpp/91.shtml" target="_blank"><img src="/reception/images/bn6.jpg" width="260" height="295" alt=""></a></div>
 
             <div class="side_news">
                 <div class="common_bt">
@@ -217,16 +197,9 @@
                 </div>
                 <div class="common_list">
                     <ul>
-                        <li><a href="/mojufenlei/2471.shtml" target="_blank" title="方正科技网络有限公司">方正科技网络有限公司</a></li>
-                        <li><a href="/cscxm/27.shtml" target="_blank" title="创亿科技有限公司">创亿科技有限公司</a></li>
-                        <li><a href="/zixun/266.shtml" target="_blank" title="立信电子信息有限公司">立信电子信息有限公司</a></li>
-                        <li><a href="/ccm/2349.shtml" target="_blank" title="开发区世创信息有限公司">开发区世创信息有限公司</a></li>
-                        <li><a href="/mojufenlei/965.shtml" target="_blank" title="快讯信息有限公司">快讯信息有限公司</a></li>
-                        <li><a href="/mojufenlei/2164.shtml" target="_blank" title="联软网络有限公司">联软网络有限公司</a></li>
-                        <li><a href="/gongqiu/2479.shtml" target="_blank" title="富罳信息有限公司">富罳信息有限公司</a></li>
-                        <li><a href="/zscxm/394.shtml" target="_blank" title="富罳传媒有限公司">富罳传媒有限公司</a></li>
-                        <li><a href="/mojujia/1034.shtml" target="_blank" title="天益科技有限公司">天益科技有限公司</a></li>
-                        <li><a href="/lsm/245.shtml" target="_blank" title="巨奥网络有限公司">巨奥网络有限公司</a></li>
+                        @foreach($newsbrands as $newsbrand)
+                            <li><a href="/{{$newsbrand->arctype->real_path}}/{{$newsbrand->id}}.shtml" target="_blank" title="{{$newsbrand->title}}">{{$newsbrand->title}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

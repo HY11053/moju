@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '中国模具网') }} @stop
-@section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
-@section('description') {{ config('app.description', '中国模具网') }} @stop
+@section('title') {{$thisTypeinfos->title}}@stop
+@section('keywords') {{$thisTypeinfos->keywords}} @stop
+@section('description') {{$thisTypeinfos->description}} @stop
 @section('headlibs') <script src="/reception/js/jquery.flexslider-min.js"></script>@stop
 @section('maincontent')
     <div class="main clearfix">
@@ -39,21 +39,22 @@
         <div class="news_center">
             <div class="news_tj clearfix">
                 <dl>
+                    @if($cNews)
                     <dt><a href="/{{$cNews->arctype->real_path}}/{{$cNews->id}}.shtml"><img src="{{$cNews->litpic}}" alt="{{$cNews->title}}"></a></dt>
                     <dd>
                         <h3><a href="/{{$cNews->arctype->real_path}}/{{$cNews->id}}.shtml" target="_blank">{{$cNews->title}}</a></h3>
                         <p>{{$cNews->description}}...</p>
                     </dd>
-
+                    @endif
                 </dl>
 
                 <div class="news_tj_r">
                     <b>{{$thisTypeinfos->typename}}特别推荐</b>
                     <div class="news_tj_r1">
-
+                        @if($hNews)
                         <h3><a href="/{{$hNews->arctype->real_path}}/{{$hNews->id}}.shtml" target="_blank">{{$hNews->title}}</a></h3>
                         <p>{{$hNews->description}}..<a href="/{{$hNews->arctype->real_path}}/{{$hNews->id}}.shtml" target="_blank">详情&gt;&gt;</a></p>
-
+                        @endif
 
                     </div>
 
@@ -120,8 +121,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
 @stop
