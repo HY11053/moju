@@ -12,7 +12,13 @@ use Illuminate\Support\Facades\DB;
 
 class BrandArticleController extends Controller
 {
-    //
+    /**
+     * 文章视图展示
+     * @param Request $request
+     * @param $path
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     function BrandArticle(Request $request,$path,$id)
     {
         preg_match('/[a-zA-Z]+/',$request->path(),$matchs);
@@ -25,7 +31,6 @@ class BrandArticleController extends Controller
                 $thisarticleinfos=Archive::findOrFail($id);
                 $topbrands=Archive::where('mid',1)->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $latestbrands=Archive::where('mid',1)->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->latest()->take(20)->get();
-                $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
                 $latesnews=Archive::where('ismake',1)->where('mid','<>',1)->whereIn('typeid',[1,3,4,5,9])->where('published_at','<=',Carbon::now())->latest()->take(10)->get();
                 $xgsearchs=Archive::where('ismake','1')->where('shorttitle','like','%'.$thisarticleinfos->article->brandname.'%')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $published=$thisarticleinfos['attributes']['published_at'];
@@ -38,30 +43,49 @@ class BrandArticleController extends Controller
                 $xgnews=Archive::where('title','like','%'.$thisarticleinfos->shorttitle.'%')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $prev_article = Archive::latest('published_at')->published()->find($this->getPrevArticleId($thisarticleinfos->id));
                 $next_article = Archive::latest('published_at')->published()->find($this->getNextArticleId($thisarticleinfos->id));
-                $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
                 $published=$thisarticleinfos['attributes']['published_at'];
                 DB::table('archives')->where('id',$id)->update(['click'=>$thisarticleinfos->click+1,'published_at'=>$published]);
-                if($thisarticleinfos->arctype->topid==9)
+                switch ($thisarticleinfos->arctype->id)
                 {
-                    $view='frontend.fenlei_article';
-                }elseif ($thisarticleinfos->arctype->id==6)
-                {
-                    $view='frontend.zhanhui_article';
-                }elseif ($thisarticleinfos->arctype->id==5)
-                {
-                    $view='frontend.gongqiu_article';
-                }else{
-                    $view='frontend.article_article';
+                    case 5:
+                        $view='frontend.gongqiu_article';
+                        break;
+                    case 6:
+                        $view='frontend.zhanhui_article';
+                        break;
+                    case 9:
+                        $view='frontend.fenlei_article';
+                        break;
+                    default:
+                        if($thisarticleinfos->arctype->topid==9)
+                        {
+                            $view='frontend.fenlei_article';
+                        }else{
+                            $view='frontend.article_article';
+                        }
                 }
+
                 return view($view,compact('thisarticleinfos','prev_article','next_article','topbrands','comments','brandnews','xgnews'));
             }
 
         }
     }
+
+    /**
+     * 获取上一页
+     * @param $id
+     * @return mixed
+     */
     protected function getPrevArticleId($id)
     {
         return Archive::where('id', '<', $id)->max('id');
     }
+
+    /**
+     * 获取下一页
+     * @param $id
+     * @return mixed
+     */
     protected function getNextArticleId($id)
     {
         return Archive::where('id', '>', $id)->min('id');

@@ -1,0 +1,18 @@
+/*关于我们*/
+.about_l{width:240px; height:600px; background:url(../images/about_bg.jpg) no-repeat #fff bottom; float:left; margin-top:20px;}
+.about_l .hd{ height:100px; background:url(../images/about_tit.jpg) no-repeat;}
+.about_l .bd{ padding-top:5px;}
+.about_l .bd li{ height:44px; line-height:44px; text-align:center; font-size:18px; border-bottom:2px solid #F5F5F5; border-left:3px solid #fff;}
+.about_l .bd a{ display:block;}
+.about_l .bd .cur{ border-left:3px solid #D71318;}
+.about_l .bd .cur a{ color:#D71318;}
+.about_r{ width:880px; min-height:700px; padding:20px 25px; float:right; background:#fff;margin-top:20px; margin-bottom:20px;}
+.about_r .hd{ border-bottom:2px solid #F5F5F5; background:url(../images/dot1.jpg) no-repeat 0 3px; height:40px; font-size:20px; padding-left:15px;}
+.about_r .bd{ font-size:14px; line-height:24px; padding:20px 0 0 0;}
+.about_map{}
+.about_map dl { margin:0; padding:0}
+.about_map dl dt{display:block; clear:both; padding-top:10px; height:32px;}
+.about_map dl dt a{height:30px; line-height:30px; font-weight:bold;}
+.about_map dl dd{ display:block; float:left; height:20px; padding-bottom:5px; width:75px;}
+.about_map dl dd a{ display:block; width:68px; height:20px; line-height:20px; border: #E3E3E3 dotted 1px; float:left; text-align:center;}
+.about_map dl dd a:hover{ background:#efefef; border:#cccccc dotted 1px;}

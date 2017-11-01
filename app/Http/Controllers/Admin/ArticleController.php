@@ -111,7 +111,7 @@ class ArticleController extends Controller
             return redirect(action('Admin\ArticleController@Index'));
         }else{
             $this->BaiduCurl($thisarticleurl,$token);
-            event(new SitemapEvent());
+            //event(new SitemapEvent());
             return redirect(action('Admin\ArticleController@Index'));
         }
     }

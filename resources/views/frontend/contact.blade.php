@@ -5,7 +5,7 @@
 @section('headlibs')
 <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
-@section('main_content')
+@section('maincontent')
 <!--主体开始-->
 <div class="main clearfix">
     <!--左侧开始-->
