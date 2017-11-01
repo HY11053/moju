@@ -21,23 +21,21 @@ class ArticleController extends Controller
     {
         $this->middleware('auth.admin:admin');
     }
+
     /**
      * 文档列表
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function Index()
     {
         //$articles = Archive::where('published_at','<=',Carbon::now())->latest()->paginate(30);
-        $articles = Archive::orderBy('id','desc')->paginate(30);
+        $articles = Archive::where('typeid','<>',5)->orderBy('id','desc')->paginate(30);
         return view('admin.article',compact('articles'));
     }
+
     /**
      * 普通文档创建
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
 
     function Create()
@@ -48,9 +46,7 @@ class ArticleController extends Controller
 
     /**
      * 品牌文档创建
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function BrandCreate()
     {
@@ -60,9 +56,8 @@ class ArticleController extends Controller
 
     /**
      * 文档创建提交数据处理
-     * @param
-     *
-     * @return
+     * @param CreateArticleRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     function PostCreate(CreateArticleRequest $request)
     {
@@ -123,9 +118,8 @@ class ArticleController extends Controller
 
     /**
      * 文档编辑
-     * @param
-     *
-     * @return
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function Edit($id)
     {
@@ -144,12 +138,13 @@ class ArticleController extends Controller
 
     /**
      * 文档编辑提交处理
-     * @param
-     *
-     * @return
+     * @param CreateArticleRequest $request
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     function PostEdit(CreateArticleRequest $request,$id)
     {
+
         if(isset($request['flags']))
         {
             $request['flags']=UploadImages::Flags($request['flags']);
@@ -189,46 +184,40 @@ class ArticleController extends Controller
         Addonarticle::findOrFail($id)->update($request->all());
         return redirect(action('Admin\ArticleController@Index'));
     }
+
     /**
      * 当前用户发布的文档
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function OwnerShip()
     {
-        $articles = Archive::where('published_at','<=',Carbon::now())->where('dutyadmin',auth('admin')->user()->id)->latest()->paginate(30);
+        $articles = Archive::where('published_at','<=',Carbon::now())->where('typeid','<>',5)->where('dutyadmin',auth('admin')->user()->id)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
 
     /**
      * 等待审核的文档
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function PendingAudit()
     {
-        $articles = Archive::where('published_at','<=',Carbon::now())->where('ismake','<>',1)->latest()->paginate(30);
+        $articles = Archive::where('published_at','<=',Carbon::now())->where('typeid','<>',5)->where('ismake','<>',1)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
 
     /**
      * 等待发布的文档
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function PedingPublished(){
-        $articles = Archive::where('published_at','>',Carbon::now())->latest()->paginate(30);
+        $articles = Archive::where('published_at','>',Carbon::now())->where('typeid','<>',5)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
 
     /**
      * 文档预览
-     * @param
-     *
-     * @return
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function PreViewArticle($id){
         $articleinfos=DB::table('addonarticles')->join('arctypes','addonarticles.typeid','=','arctypes.id')->join('archives','addonarticles.id','=','archives.id')->where('addonarticles.id','=',$id)->first();
@@ -237,9 +226,8 @@ class ArticleController extends Controller
 
     /**
      * 文档删除
-     * @param
-     *
-     * @return
+     * @param $id
+     * @return string
      */
     function DeleteArticle($id)
     {
@@ -254,28 +242,29 @@ class ArticleController extends Controller
 
 
     }
+
     /**
      * 文档搜索
-     * @param
-     *
-     * @return
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function PostArticleSearch(Request $request)
     {
         $articles=Archive::where('title','like','%'.$request->input('title').'%')->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
+
     /**
      * 图集上传处理
-     * @param
-     *
-     * @return
+     * @param ImagesUploadRequest $request
      */
     function UploadImages(ImagesUploadRequest $request){
         UploadImages::UploadImage($request);
     }
+
     /**
      * 供求信息列表
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function SupplyDemandList()
     {
@@ -283,39 +272,72 @@ class ArticleController extends Controller
         return view('admin.supplydemandarticle',compact('articles'));
 
     }
+
     /**
      * 供应信息创建
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function SupplyCreate()
     {
         return view('admin.supply_create',compact('allnavinfos'));
     }
+
+    /**供求信息编辑
+     * @param Request $request
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function SupplyEdit(Request $request ,$id)
+    {
+        $articleinfos=DB::table('archives')->join('addonarticles','archives.id','=','addonarticles.id')->where('addonarticles.id','=',$id)->first();
+        $pics=explode(',',Addonarticle::where('id',$id)->value('imagepics'));
+        if($articleinfos->mid==2)
+        {
+            return view('admin.supply_edit',compact('articleinfos','id','pics'));
+        }elseif ($articleinfos->mid==3)
+        {
+            return view('admin.demand_edit',compact('articleinfos','id','pics'));
+        }
+
+    }
+
     /**
      * 求购信息创建
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function DemandCreate()
     {
         return view('admin.demandcreate',compact('allnavinfos'));
     }
+
     /**
      * 品牌文档查看
-     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function Brands()
     {
         $articles=Archive::where('mid',1)/*->where('dutyadmin',auth('admin')->user()->id)*/->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
+
     /**
-     * 栏目文章查看
+     *  栏目文章查看
+     * @param Request $request
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function Type(Request $request,$id)
     {
         $articles=Archive::where('typeid',$id)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
-    /*
+
+    /**
      * 文章图片信息修改
+     * @param $content
+     * @param $title
+     * @param $fulltitle
+     * @return mixed
      */
     function ImageInformation($content,$title,$fulltitle)
     {
@@ -343,8 +365,11 @@ class ArticleController extends Controller
         $content=str_replace($patterns[1],$replacement[1],$content);
         return $content;
     }
-    /*
+
+    /**
      * 百度主动推送
+     * @param $thisarticleurl
+     * @param $token
      */
     private function BaiduCurl($thisarticleurl,$token)
     {

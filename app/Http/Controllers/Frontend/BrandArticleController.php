@@ -47,6 +47,9 @@ class BrandArticleController extends Controller
                 }elseif ($thisarticleinfos->arctype->id==6)
                 {
                     $view='frontend.zhanhui_article';
+                }elseif ($thisarticleinfos->arctype->id==5)
+                {
+                    $view='frontend.gongqiu_article';
                 }else{
                     $view='frontend.article_article';
                 }

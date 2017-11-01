@@ -40,7 +40,7 @@ class BrandsController extends Controller
             $thistypeinfo=Arctype::where('real_path',$path)->first();
             $option=0;
             $city=0;
-            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
+            return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','tradeTypes','phBrands','option','city'));
         }else{
 
             if(Arctype::where('real_path',$path)->value('id')==null)
@@ -63,6 +63,19 @@ class BrandsController extends Controller
                     $sonTypeinfos=Arctype::where('topid',Arctype::where('real_path',$path)->value('topid'))->get();
                 }
                 return view('frontend.jiaindex',compact('pagelists','topbrands','sonTypeinfos'));
+            }
+            //供求信息
+            elseif (Arctype::where('real_path',$path)->value('id')==5)
+            {
+                $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 12, $columns = ['*'], $pageName = 'page', $page);
+                //转换自带分页器为自定义的分页器
+                $pagelists= Paginator::transfer(
+                    $cid,//传入分类id,
+                    $pagelists//传入原始分页器
+                );
+                $option=0;
+                $city=0;
+                return view('frontend.gongqiu',compact('pagelists','thisTypeinfos','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
             }
             //展会信息列表数据
             elseif (Arctype::where('real_path',$path)->value('id')==6)

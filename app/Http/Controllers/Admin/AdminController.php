@@ -21,9 +21,7 @@ class AdminController extends Controller
 
     /**
      * 后台用户列表
-     * @param
-     *
-     * @return 后台用户数据
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
 
     function Index()
@@ -34,20 +32,18 @@ class AdminController extends Controller
 
     /**
      * 后台用户注册
-     * @param
-     *
-     * @return
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
 
     function Register()
     {
         return view('admin.adminregister',compact('adminlists'));
     }
+
     /**
      * 后台用户注册处理
-     * @param
-     *
-     * @return
+     * @param UserRegsiterRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     function PostRegister(UserRegsiterRequest $request)
     {
@@ -55,11 +51,11 @@ class AdminController extends Controller
         Admin::create($request->all());
         return redirect(action('Admin\AdminController@Index'));
     }
+
     /**
      * 后台用户编辑
-     * @param
-     *
-     * @return
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
 
     function Edit($id)
@@ -68,11 +64,12 @@ class AdminController extends Controller
         $groups=Usergroup::all();
         return view('admin.adminedit',compact('adminUser','groups'));
     }
+
     /**
      * 后台用户编辑提交处理
-     * @param
-     *
-     * @return
+     * @param UserRegsiterRequest $request
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     function PostEdit(UserRegsiterRequest $request,$id)
     {
@@ -95,7 +92,8 @@ class AdminController extends Controller
     }
 
     /**
-     * @param 用户组管理POST
+     * 用户组管理POST
+     * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function PostUserGroupCreate(Request $request)
@@ -105,8 +103,8 @@ class AdminController extends Controller
     }
 
     /**
-     * @param 用户组列表
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * 用户组列表
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function UserGroup()
     {
@@ -115,7 +113,8 @@ class AdminController extends Controller
     }
 
     /**
-     * @param 组编辑
+     * 组编辑
+     * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function UserGroupEdit($id)
@@ -154,9 +153,6 @@ class AdminController extends Controller
 
     /**
      * 后台用户授权
-     * @param
-     *
-     * @return
      */
     function Userauth()
     {

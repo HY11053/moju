@@ -18202,15 +18202,15 @@
                 <priority>0.8</priority>
             </url>
             <url> 
-            <loc>http://m.moju.com/zhanhui/2740.shtml</loc> 
+            <loc>http://m.moju.com/fszzm/2740.shtml</loc> 
             <mobile:mobile type="mobile"/>
-            <lastmod>2017-09-29</lastmod>
+            <lastmod>2017-10-31</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.8</priority>
             </url> 
             <url>
-                <loc>http://www.moju.com/zhanhui/2740.shtml</loc>
-                <lastmod>2017-09-29</lastmod>
+                <loc>http://www.moju.com/fszzm/2740.shtml</loc>
+                <lastmod>2017-10-31</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
@@ -18237,6 +18237,19 @@
             <url>
                 <loc>http://www.moju.com/lsm/2745.shtml</loc>
                 <lastmod>2017-09-29</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/mojuchang/2746.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-10-31</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/mojuchang/2746.shtml</loc>
+                <lastmod>2017-10-31</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
@@ -18529,13 +18542,13 @@
             <url> 
             <loc>http://m.moju.com/zhanhui/2778.shtml</loc> 
             <mobile:mobile type="mobile"/>
-            <lastmod>2017-09-29</lastmod>
+            <lastmod>2017-10-31</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.8</priority>
             </url> 
             <url>
                 <loc>http://www.moju.com/zhanhui/2778.shtml</loc>
-                <lastmod>2017-09-29</lastmod>
+                <lastmod>2017-10-31</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
@@ -19959,13 +19972,13 @@
             <url> 
             <loc>http://m.moju.com/zscxm/3007.shtml</loc> 
             <mobile:mobile type="mobile"/>
-            <lastmod>2017-10-30</lastmod>
+            <lastmod>2017-10-31</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.8</priority>
             </url> 
             <url>
                 <loc>http://www.moju.com/zscxm/3007.shtml</loc>
-                <lastmod>2017-10-30</lastmod>
+                <lastmod>2017-10-31</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>
@@ -19979,6 +19992,32 @@
             <url>
                 <loc>http://www.moju.com/mojuchang/3008.shtml</loc>
                 <lastmod>2017-10-31</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/gongqiu/3009.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-11-01</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/gongqiu/3009.shtml</loc>
+                <lastmod>2017-11-01</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>0.8</priority>
+            </url>
+            <url> 
+            <loc>http://m.moju.com/gongqiu/3010.shtml</loc> 
+            <mobile:mobile type="mobile"/>
+            <lastmod>2017-11-01</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.8</priority>
+            </url> 
+            <url>
+                <loc>http://www.moju.com/gongqiu/3010.shtml</loc>
+                <lastmod>2017-11-01</lastmod>
                 <changefreq>daily</changefreq>
                 <priority>0.8</priority>
             </url>

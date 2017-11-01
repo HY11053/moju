@@ -9,16 +9,16 @@ use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
-    /**
-     * 网站后台栏目管理首页
-     * @param
-     *
-     * @return
-     */
+
     public function __construct()
     {
         $this->middleware('auth.admin:admin');
     }
+
+    /**
+     * 网站后台栏目管理首页
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     function Index(){
         $topnavs=Arctype::where('reid',0)->pluck('typename','id');
         foreach ($topnavs as $key=>$topnav)
@@ -32,13 +32,10 @@ class CategoryController extends Controller
 
         return view('admin.category',compact('topnavs','recursivestypeinfos'));
     }
-
-
     /**
      * 栏目创建界面
-     * @param 栏目id
-     *
-     * @return
+     * @param int $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function Create($id=0)
     {
@@ -51,14 +48,11 @@ class CategoryController extends Controller
         //dd($topid);
         return view('admin.category_create',compact('id','thisnavinfos','allnavinfos','topid'));
     }
-
     /**
      * 栏目创建提交数据处理
-     * @param request验证
-     *
-     * @return
+     * @param StoreCategoryRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-
     function PostCreate(StoreCategoryRequest $request){
         //dd($request->all());
         $requestdata=$request->all();
@@ -81,11 +75,11 @@ class CategoryController extends Controller
 
 
     }
+
     /**
      * 栏目编辑界面
-     * @param 栏目id
-     *
-     * @return
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function Edit($id){
         $typeinfos=Arctype::findOrFail($id);
@@ -96,11 +90,12 @@ class CategoryController extends Controller
         $pics=array_filter(explode(',',Arctype::where('id',$id)->value('typeimages')));
         return view('admin.category_edit',compact('typeinfos','thisnavinfos','allnavinfos','topid','id','pics','reid'));
     }
+
     /**
      * 栏目更改数据提交处理界面
-     * @param   request验证 ，栏目id
-     *
-     * @return redirect
+     * @param StoreCategoryRequest $request
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     function PostEdit(StoreCategoryRequest $request,$id)
     {
@@ -129,9 +124,11 @@ class CategoryController extends Controller
         return redirect(action('Admin\CategoryController@Index'));
     }
 
-    /*
-     *
+    /**
      * 递归向上查找子级
+     * @param $id
+     * @param $reid
+     * @return bool
      */
     function RecursiveReid($id,$reid)
     {
@@ -148,11 +145,12 @@ class CategoryController extends Controller
 
 
     }
+
     /**
      * 栏目删除
-     * @param   $request验证，栏目id
-     *
-     * @return redirect
+     * @param Request $request
+     * @param $id
+     * @return string
      */
     function DeleteCategory(Request $request,$id){
         
@@ -167,10 +165,9 @@ class CategoryController extends Controller
     }
 
     /**
-     * 递归当前栏目自栏目
-     * @param 栏目id
-     *
-     * @return arraydatas
+     * 递归当前栏目子栏目
+     * @param $id
+     * @return mixed
      */
     function GetRecursiveType($id)
     {
@@ -192,11 +189,11 @@ class CategoryController extends Controller
 
 
     }
+
     /**
-     * 缩略图上传
-     * @param $request请求信息
-     *
-     * @return 上传后图片地址
+     *  缩略图上传
+     * @param $request
+     * @return string
      */
     function UploadImage($request){
         if(!$request->hasFile('image')){
@@ -219,9 +216,8 @@ class CategoryController extends Controller
 
     /**
      * 递归当前栏目自栏目
-     * @param $reid 当前栏目reid
-     *
-     * @return 递归后的栏目实际地址
+     * @param $reid
+     * @return mixed|string
      */
     function GetRealPath($reid){
         $relapath=Arctype::where('id',Arctype::where('id',$reid)->value('id'))->value('typedir');

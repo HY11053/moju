@@ -11,7 +11,7 @@
 @section('content')
         <!-- row -->
 <div class="row">
-    {{Form::open(array('route' => 'article_create','files' => true,))}}
+    {{Form::model($articleinfos,array('route' =>array( 'article_edit','id'=>$id),'method' => 'put','files' => true,))}}
     <div class="col-md-12">
         <!-- The time line -->
         <ul class="timeline">
@@ -141,7 +141,14 @@
                     <span class="time"><i class="fa fa-clock-o"></i> {{date('D M j')}}</span>
                     <h3 class="timeline-header no-border"><a href="#">缩略图处理</a> 图片上传</h3>
                     <div class="timeline-body">
-                        {{Form::file('image',  array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>'false','data-show-caption'=>'true'))}}
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <img src="{{ $articleinfos->litpic }}" class="img-rounded img-responsive"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            {{Form::file('image', array('class' => 'file col-md-10','id'=>'input-2','multiple data-show-upload'=>"false",'data-show-caption'=>"true"))}}
+                        </div>
+                        <div style="clear: both"></div>
+
                     </div>
                 </div>
             </li>
@@ -242,7 +249,7 @@
                 <div class="timeline-item">
                     <span class="time"><i class="fa fa-clock-o"></i> {{date('j, n,y')}}</span>
 
-                    <h3 class="timeline-header"><a href="#">图集处理</a> 供应产品图集批量上传</h3>
+                    <h3 class="timeline-header"><a href="#">图集处理</a> 批量上传图集</h3>
 
                     <div class="timeline-body">
                         {{Form::file('image', array('name'=>'input-image','class' => 'file-loading','id'=>'input-image-1','accept'=>'image/*'))}}
@@ -251,7 +258,7 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title">Yippee!</h4>
+                                        <h4 class="modal-title">图片上传成功</h4>
                                     </div>
                                     <div id="kv-success-box" class="modal-body">
                                     </div>
@@ -277,7 +284,7 @@
                    @include('admin.layouts.ueditor')
 
                         <!-- 编辑器容器 -->
-                        <script id="container" name="body" type="text/plain" ></script>
+                       <script id="container" name="body" type="text/plain" style="height:500px" > {!! $articleinfos->body!!}</script>
                         <!--<div style="display: none"><textarea  name="body" id="lawsContent"></textarea></div>-->
                     </div>
                     <div class="timeline-footer">
@@ -368,17 +375,41 @@
 <script>
     $("#input-image-1").fileinput({
         uploadUrl: "/admin/upload/images",
-        allowedFileExtensions: ["jpg", "png", "gif"],
-        maxImageWidth: 3000,
+        uploadAsync: true,
+        minFileCount: 1,
         maxFileCount: 6,
-        resizeImage: true
-    }).on('filepreupload', function() {
-        $('#kv-success-box').html('');
+        overwriteInitial: false,
+        initialPreview: [
+            // IMAGE DATA
+            @if($pics[0]!=' ')
+                    @foreach($pics as $pic)
+                "{{$pic}}",
+            // IMAGE DATA
+            @endforeach
+            @endif
+        ],
+        initialPreviewAsData: true, // identify if you are sending preview data only and not the raw markup
+        initialPreviewFileType: 'image', // image is the default and can be overridden in config below
+        initialPreviewConfig: [
+                @if($pics[0]!=" ")
+                @foreach($pics as $indexnum=>$pic)
+            {caption: "{{$indexnum+1}}", size: 827000, width: "120px", url: "/admin/file-delete-batch", key: [ {{$indexnum+1}} ,'{{$pic}}',{{$articleinfos->id}}]},
+            @endforeach
+            @endif
+
+        ],
+        purifyHtml: true, // this by default purifies HTML data for preview
+        uploadExtraData: {
+            img_key: "1000",
+            img_keywords: "happy, places",
+        }
+    }).on('filesorted', function(e, params) {
+        alert(222);
+        console.log('File sorted params', params);
     }).on('fileuploaded', function(event, data) {
         $('#kv-success-box').append(data.response.link);
         $('#kv-success-modal').modal('show');
         $("#imagepics").val($("#imagepics").val()+data.response.link+',');
-        console.log($("#imagepics").val())
     }).on('filepreremoved', function(e, params) {
         console.log('File sorted params', params);
         alert(111);

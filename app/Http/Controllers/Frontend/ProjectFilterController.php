@@ -92,4 +92,33 @@ class ProjectFilterController extends Controller
         return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
 
     }
+
+
+    public function MoldsupplydemandFilterList(Request $request,$option,$city,$page=0)
+    {
+        $city?:0;
+        $cid=$option.$city;
+        $tradeTypes=Moldtype::take(9)->get();
+        $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
+        $thisTypeinfos=Arctype::where('real_path',$option)->first();
+        $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
+        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $pagelists=Archive::where('typeid',5)->where('mid','<>',1)->where('ismake','1')
+            ->when($option, function ($query) use ($option) {
+                return $query->whereIn('id',Addonarticle::where('mjlx','like','%'.Moldtype::where('id',$option)->value('moldtype').'%')->pluck('id'));
+            })
+            ->when($city, function ($query) use ($city) {
+                return $query->where('country',Area::where('id',$city)->value('city'));
+            })
+            ->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
+        //转换自带分页器为自定义的分页器
+        $pagelists= Paginator::transfer(
+            $cid,//传入分类id,
+            $pagelists//传入原始分页器
+        );
+        $brandtypes=Arctype::where('mid',1)->get();
+        $thistypeinfo=Arctype::where('real_path',$option)->first();
+        return view('frontend.gongqiu',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
+
+    }
 }

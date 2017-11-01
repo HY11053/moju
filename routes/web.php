@@ -45,6 +45,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('article/supplydemand','ArticleController@SupplyDemandList');
     Route::get('article/supplycreate','ArticleController@SupplyCreate');
     Route::get('article/demandcreate','ArticleController@DemandCreate');
+    Route::get('supply/edit/{id}','ArticleController@SupplyEdit');
     Route::get('article/edit/{id}','ArticleController@Edit');
     Route::get('article/type/{id}','ArticleController@Type');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
@@ -146,6 +147,8 @@ Route::get('zhanhui{option}/{city?}','Frontend\BrandsController@ZhanhuiFilterLis
 Route::get('zhanhui{option}/{city?}/page/{page}','Frontend\BrandsController@ZhanhuiFilterList');
 Route::get('mojuchang/filter/{option}-{city?}','Frontend\ProjectFilterController@MoldGroupFilterList');
 Route::get('mojuchang/filter/{option}-{city?}/page/{page}/','Frontend\ProjectFilterController@MoldGroupFilterList');
+Route::get('gongqiu/filter/{option}-{city?}','Frontend\ProjectFilterController@MoldsupplydemandFilterList');
+Route::get('gongqiu/filter/{option}-{city?}/page/{page}/','Frontend\ProjectFilterController@MoldsupplydemandFilterList');
 Route::get('{path}/mjsx/{syfw?}-{zydx?}-{city?}/','Frontend\ProjectFilterController@MojuFilter');
 Route::get('{path}/mjsx/{syfw?}-{zydx?}-{city?}/page/{page}/','Frontend\ProjectFilterController@MojuFilter')->name('filterlists');
 Route::get('{path}','Frontend\BrandsController@BrandLists');
