@@ -5,7 +5,7 @@
 @section('headlibs') <script src="/reception/js/jquery.flexslider-min.js"></script>@stop
 @section('maincontent')
     <div class="main clearfix">
-
+        @include('frontend.position')
         <div class="w1190 lanmu clearfix">
             <div class="lmbanner fl">
                 <div class="w1920">

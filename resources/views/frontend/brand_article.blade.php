@@ -4,6 +4,7 @@
 @section('description')  {{$thisarticleinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
+        @include('frontend.position')
         <div class="layout2">
             <div class="brand_slide">
                 <ul class="bigImg" style="position: relative; width: 296px; height: 295px;">

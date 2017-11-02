@@ -4,6 +4,7 @@
 @section('description') {{$thisTypeinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
+        @include('frontend.position')
         <div class="address">
             <div class="choice">
                 <span class="title">您已选择：</span>

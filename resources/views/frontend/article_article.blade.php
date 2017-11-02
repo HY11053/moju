@@ -4,6 +4,7 @@
 @section('description')  {{$thisarticleinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
+        @include('frontend.position')
         <div class="center_list clearfix">
             <div class="news_center">
                 <div class="ny_message">

@@ -4,7 +4,7 @@
 @section('description') {{$thisTypeinfos->description}} @stop
 @section('maincontent')
     <div class="main clearfix">
-
+        @include('frontend.position')
         <div class="cate_sort">
             <dl>
                 <dt>已经筛选条件：</dt>
