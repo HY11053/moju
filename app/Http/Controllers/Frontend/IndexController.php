@@ -16,7 +16,7 @@ class IndexController extends Controller
     {
         //生产厂家
         $Mjcompanys=Archive::where('typeid',1)->where('mid',1)->take(9)->orderBy('click','desc')->get();
-        $feileiMojus=Archive::whereIn('typeid',Arctype::where('topid',9)->pluck('id'))->where('mid','<>',1)->take(9)->orderBy('click','desc')->get();
+        $feileiMojus=Archive::whereIn('typeid',Arctype::where('topid',9)->pluck('id'))->where('mid','<>',1)->take(9)->get();
         $hotNews=Archive::where('typeid',7)->where('mid','<>',1)->take(9)->orderBy('click','desc')->get();
         //行业频道
         $tradeTypes=Arctype::where('topid',9)->take(15)->get();

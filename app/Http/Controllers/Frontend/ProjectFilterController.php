@@ -29,6 +29,7 @@ class ProjectFilterController extends Controller
         $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
         $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
         $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $thisTypeinfos=Arctype::where('real_path',$path)->first();
         if(Arctype::where('real_path',$path)->value('id')==9)
         {
 
@@ -62,7 +63,7 @@ class ProjectFilterController extends Controller
         $moldareas=Moldarea::all();
         $moldobjects=Moldobject::all();
 
-        return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','phBrands','newsbrands','moldareas','moldobjects','syfw','zydx','city','path'));
+        return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','phBrands','newsbrands','moldareas','moldobjects','syfw','zydx','city','path','thisTypeinfos'));
     }
 
     public function MoldGroupFilterList(Request $request,$option,$city,$page=0)
@@ -71,7 +72,7 @@ class ProjectFilterController extends Controller
         $cid=$option.$city;
         $tradeTypes=Moldtype::take(9)->get();
         $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
-        $thisTypeinfos=Arctype::where('real_path',$option)->first();
+        $thisTypeinfos=Arctype::where('id',1)->first();
         $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
         $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
         $pagelists=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')
@@ -89,7 +90,7 @@ class ProjectFilterController extends Controller
         );
         $brandtypes=Arctype::where('mid',1)->get();
         $thistypeinfo=Arctype::where('real_path',$option)->first();
-        return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
+        return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','thisTypeinfos','tradeTypes','phBrands','option','city'));
 
     }
 
@@ -100,7 +101,7 @@ class ProjectFilterController extends Controller
         $cid=$option.$city;
         $tradeTypes=Moldtype::take(9)->get();
         $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
-        $thisTypeinfos=Arctype::where('real_path',$option)->first();
+        $thisTypeinfos=Arctype::where('id',5)->first();
         $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
         $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
         $pagelists=Archive::where('typeid',5)->where('mid','<>',1)->where('ismake','1')
@@ -118,7 +119,7 @@ class ProjectFilterController extends Controller
         );
         $brandtypes=Arctype::where('mid',1)->get();
         $thistypeinfo=Arctype::where('real_path',$option)->first();
-        return view('frontend.gongqiu',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments','tradeTypes','phBrands','option','city'));
+        return view('frontend.gongqiu',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','thisTypeinfos','tradeTypes','phBrands','option','city'));
 
     }
 }

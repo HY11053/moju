@@ -20,7 +20,14 @@
                             <a href="#" class="find_fws">找服务商</a>
                         </p>
                         <div class="active">
-                            <div class="time"><span>进</span><span>行</span><span>中</span></div>
+                            @if($thisarticleinfos->article->starttime > \Carbon\Carbon::now())
+                                <div class="time"><span>未</span><span>开</span><span>始</span></div>
+                                @elseif($thisarticleinfos->article->starttime < \Carbon\Carbon::now() && $thisarticleinfos->article->endtime > \Carbon\Carbon::now())
+                                <div class="time"><span>进</span><span>行</span><span>中</span></div>
+                                @else
+                                <div class="time"><span>已</span><span>结</span><span>束</span></div>
+                            @endif
+
                         </div>
                     </dd>
                 </dl>

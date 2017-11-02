@@ -17,7 +17,7 @@ class CreateAddonarticlesTable extends Migration
             $table->increments('id');
             $table->integer('typeid');
             $table->text('body')->nullable();
-            $table->string('imagepics')->nullable();
+            $table->text('imagepics')->nullable();
             $table->string('redirect')->nullable();
             $table->string('coordinate')->nullable();
             $table->string('companyname')->nullable();

@@ -51,11 +51,11 @@
             <div class="search">
                 <div class="search_tab">
                     <ul>
-                        <li class="cur">找商机</li>
-                        <li><a href="/project/0-1~5-0-0.shtml" target="_blank">5万以下</a></li>
-                        <li><a href="/project/0-5~10-0-0.shtml" target="_blank">5-10万</a></li>
-                        <li><a href="/project/0-10~20-0-0.shtml" target="_blank">10-20万</a></li>
-                        <li><a href="/project/0-20~50-0-0.shtml" target="_blank">20-50万</a></li>
+                        <li class="cur">模具厂</li>
+                        <li><a href="/mojuchang/filter/1/" target="_blank">注射成型模</a></li>
+                        <li><a href="/mojuchang/filter/4/" target="_blank">热成型模</a></li>
+                        <li><a href="/mojuchang/filter/3/" target="_blank">冲压成型模</a></li>
+                        <li><a href="/mojuchang/filter/6/" target="_blank">冲裁模</a></li>
                     </ul>
                 </div>
                 <div class="search_box">
@@ -78,7 +78,7 @@
                         <a href="/pinpai/"><i class="icon3"></i><span class="tit">品牌大全</span></a>
                     </li>
                     <li>
-                        <a href="/ask/"><i class="icon4"></i><span class="tit">加盟问答</span></a>
+                        <a href="/contact/"><i class="icon4"></i><span class="tit">联系我们</span></a>
                     </li>
                 </ul>
             </div>
@@ -143,7 +143,6 @@
             </p>
         </div>
     </div>
-    <div class="wx"><img src="/reception/images/logo_wx.jpg" alt="微信"></div>
 </div>
 </body>
 </html>

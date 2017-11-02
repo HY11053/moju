@@ -512,7 +512,7 @@
                                         ue7.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
                                     });
                                 </script>
-                                <script id="container7" name="productioncontent" type="text/plain" style="height:300px" >
+                                <script id="container7" name="creditcontent" type="text/plain" style="height:300px" >
                                     @if(isset($articleinfos->creditcontent))
                                         {!! $articleinfos->creditcontent !!}
                                     @endif

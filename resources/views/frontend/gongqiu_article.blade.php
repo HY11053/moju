@@ -6,11 +6,11 @@
     <div class="main clearfix">
         <div class="center_list clearfix">
             <div class="news_center">
-                <div class="ny_message" style="    border-bottom: 1px dotted #C0C0C0; color: #333333;">
+                <div class="ny_message" style="border-bottom: 1px dotted #C0C0C0; color: #333333;">
                     <h1> {{$thisarticleinfos->title}}</h1>
                     <div class="ny_message-js"> 时间：{{$thisarticleinfos->created_at}} <span>来源：中国模具网</span> <span>浏览：{{$thisarticleinfos->click}}</span> </div>
                 </div>
-                <div id="Business-a">
+                <div id="Business-a fenxiang">
                     <div class="productdata">
                         <div class="productimg" onmouseover="jq('.bigimg').hide();" onmouseout="jq('.bigimg').show();">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -20,18 +20,33 @@
                         </div>
                     </div>
                     <div class="parameter">
-                        供货总量：10000<br>
-                        所在区域：北京 <br>
-                        品牌：金兰<br>
-                        型号：A4<br>
-                        发布时间：2017-11-01<br>
-                        有效期：2017-11-01 -- 0000-00-00<br>
-                        浏览：0</div>
-                    <div class="product-button">
-                        <a href="http://www.uggd.com/d/file/2017/11/01/smallcd9af29a458430f6726e4d4a8ff95912.jpg" target="_blank"></a><a href="http://www.uggd.com/ug1401839/feedback-info-3392257.html" class="onmessage" target="_blank"></a>
-                    </div>
+                        <ul>
+                            @if($thisarticleinfos->mid==2)
+                            <li class="bg w1"><tt>品牌名称：</tt>{{$thisarticleinfos->article->productname}}</li>
+                            <li class="bg w2"><tt>模具规格：</tt> <span class="c_fe4 b">{{$thisarticleinfos->article->guige}}</span> </li>
+                            <li class="w1"><tt>模具类型：</tt>{{$thisarticleinfos->article->mjlx}} </li>
+                            <li class="w2"><tt>制造工艺：</tt>{{$thisarticleinfos->article->zzgy}} </li>
+                            <li class="bg w2"><tt>作用对象：</tt>{{$thisarticleinfos->article->zydx}} </li>
+                            <li class="w1"><tt>安装方式：</tt>{{$thisarticleinfos->article->azfs}} </li>
+                            <li class="w2"><tt>产品单价：</tt>{{$thisarticleinfos->article->price}} </li>
+                            <li><tt>最小起订：</tt>{{$thisarticleinfos->article->mixnum}}  </li>
+                            <li class="bg"><tt>发货期限：</tt>{{$thisarticleinfos->article->senddate}} </li>
+                            <li class="bg w1"><tt>适用范围：</tt>{{$thisarticleinfos->article->syfw}} </li>
+                            @else
+                                <li class="bg w2"><tt>模具规格：</tt> <span class="c_fe4 b">{{$thisarticleinfos->article->guige}}</span> </li>
+                                <li class="w1"><tt>模具类型：</tt>{{$thisarticleinfos->article->mjlx}} </li>
+                                <li class="w2"><tt>制造工艺：</tt>{{$thisarticleinfos->article->zzgy}} </li>
+                                <li class="bg w2"><tt>需求数量：</tt>{{$thisarticleinfos->article->xqnum}} </li>
+                                <li class="w1"><tt>安装方式：</tt>{{$thisarticleinfos->article->azfs}} </li>
+                                <li class="w2"><tt>价格要求：</tt>{{$thisarticleinfos->article->price}} </li>
+                                <li class="w2"><tt>供货地区：</tt>{{$thisarticleinfos->country}} </li>
+                                <li class="bg"><tt>有效期至：</tt>{{$thisarticleinfos->article->endtime}} </li>
+                            @endif
+                        </ul>
+                        </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
+
                 <div class="body_tit clearfix">
                     {!! $thisarticleinfos->article->body !!}
                 </div>

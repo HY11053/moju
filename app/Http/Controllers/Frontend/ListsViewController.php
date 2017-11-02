@@ -29,7 +29,8 @@ class ListsViewController extends Controller
         $topbrands=Archive::where('typeid',1)->where('mid',1)->where('ismake','1')->where('flags','like','%h%')->orderBy('click','desc')->take(9)->get();
         $thisTypeinfos=Arctype::where('real_path',$path)->first();
         $phBrands=Archive::where('mid',1)->where('ismake','1')->where('typeid',1)->orderBy('click','desc')->take(10)->get();
-        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $newsbrands=Archive::where('ismake','1')->where('typeid',7)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $gongqiuNews=Archive::where('typeid',5)->where('published_at','<=',Carbon::now())->latest()->take(10)->get();
         $option=0;
         $city=0;
         switch (Arctype::where('real_path',$path)->value('id')) {
@@ -66,7 +67,8 @@ class ListsViewController extends Controller
                     }else{
                         $sonTypeinfos=Arctype::where('topid',Arctype::where('real_path',$path)->value('topid'))->get();
                     }
-                    return view('frontend.jiaindex',compact('pagelists','topbrands','sonTypeinfos','thisTypeinfos','phBrands'));
+                    $thistypeNews=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->skip(12)->take(10)->get();
+                    return view('frontend.jiaindex',compact('pagelists','sonTypeinfos','thisTypeinfos','phBrands','thistypeNews','newsbrands','gongqiuNews'));
                 }
                 //模具分类
                 elseif (Arctype::where('real_path',$path)->value('id')==9 || Arctype::where('real_path',$path)->value('topid')==9)
@@ -87,6 +89,7 @@ class ListsViewController extends Controller
                     $moldobjects=Moldobject::all();
                     $syfw=0;
                     $zydx=0;
+                    $tradeTypes=Arctype::where('topid',9)->take(9)->get();
                     return view('frontend.mojufenlei',compact('pagelists','tradeTypes','topbrands','thisTypeinfos','phBrands','newsbrands','moldareas','moldobjects','path','syfw','zydx','city'));
                 }else{
                     $pagelists=Archive::where('typeid',Arctype::where('real_path',$path)->value('id'))->where('mid','<>',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
@@ -182,7 +185,7 @@ class ListsViewController extends Controller
             $cid,//传入分类id,
             $pagelists//传入原始分页器
         );
-        return view('frontend.zhanhui',compact('pagelists','cuid'));
+        return view('frontend.zhanhui',compact('pagelists','cuid','tradeTypes','topbrands','thisTypeinfos','phBrands','newsbrands'));
     }
 
     /**
