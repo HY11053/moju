@@ -138,7 +138,10 @@ Route::get('phone',function(){
     return view('phone');
 });
 Route::post('/phone/complate','Mobile\PhoneController@Complates');
-
+//移动端
+Route::group(['domain' => 'm.moju.com'], function () {
+    Route::get('/','Mobile\IndexController@Index');
+});
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
 Route::get('paihangbang','Frontend\ListsViewController@Paihangbang');
@@ -159,7 +162,5 @@ Route::get('{path}','Frontend\ListsViewController@ListsViewControl');
 Route::get('{path?}/page/{page}/','Frontend\ListsViewController@ListsViewControl')->name('pagelists');
 Route::get('{path?}/{id}.shtml','Frontend\BrandArticleController@BrandArticle');
 
-/*
-Route::group(['domain' => 'm.58lingshi.com'], function () {
 
-});
+
