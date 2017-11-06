@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
+namespace App\Http\Controllers\Mobile;
 
 use App\AdminModel\Addonarticle;
 use App\AdminModel\Archive;
@@ -34,7 +34,7 @@ class BrandArticleController extends Controller
                 $xgsearchs=Archive::where('ismake','1')->where('shorttitle','like','%'.$thisarticleinfos->article->brandname.'%')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
                 $published=$thisarticleinfos['attributes']['published_at'];
                 DB::table('archives')->where('id',$id)->update(['click'=>$thisarticleinfos->click+1,'published_at'=>$published]);
-                return view('frontend.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments','latesnews','xgsearchs'));
+                return view('mobile.brand_article',compact('thisarticleinfos','topbrands','latestbrands','comments','latesnews','xgsearchs'));
             }else{
                 $thisarticleinfos=Archive::findOrFail($id);
                 $topbrands=Archive::where('mid',1)->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
@@ -47,20 +47,20 @@ class BrandArticleController extends Controller
                 switch ($thisarticleinfos->arctype->id)
                 {
                     case 5:
-                        $view='frontend.gongqiu_article';
+                        $view='mobile.gongqiu_article';
                         break;
                     case 6:
-                        $view='frontend.zhanhui_article';
+                        $view='mobile.zhanhui_article';
                         break;
                     case 9:
-                        $view='frontend.fenlei_article';
+                        $view='mobile.fenlei_article';
                         break;
                     default:
                         if($thisarticleinfos->arctype->topid==9)
                         {
-                            $view='frontend.fenlei_article';
+                            $view='mobile.fenlei_article';
                         }else{
-                            $view='frontend.article_article';
+                            $view='mobile.article_article';
                         }
                 }
 

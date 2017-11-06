@@ -137,7 +137,7 @@
                                 <td class="td_style">{{$thisarticleinfos->article->companydev}}</td>
                             </tr>
                             <tr>
-                                <td class="td_color">品牌发源地</td>
+                                <td class="td_color">所在地区</td>
                                 <td class="td_style">{{$thisarticleinfos->country}}</td>
                                 <td class="td_color">联系电话</td>
                                 <td class="td_style">{{$thisarticleinfos->article->companyphone}}</td>
@@ -171,7 +171,7 @@
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['companyadvantage'] !!}
                         </div>
-                        <div class="join_tit" id="js_join_3">   @if(!empty($thisarticleinfos->article->companyareatitle))  <h2 class="tit">{{$thisarticleinfos->article->companyareatitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>经营范围</em></h2>  @endif  </div>
+                        <div class="join_tit" id="js_join_3">    @if(!empty($thisarticleinfos->article->companyareatitle))  <h2 class="tit">{{$thisarticleinfos->article->companyareatitle}}</h2> @else <h2 class="tit">【{{$thisarticleinfos->article['companyname']}}】<em>经营范围</em></h2>  @endif  </div>
                         <div class="join_intro">
                             {!! $thisarticleinfos->article['companyareacontent'] !!}
                         </div>

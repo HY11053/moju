@@ -141,6 +141,11 @@ Route::post('/phone/complate','Mobile\PhoneController@Complates');
 //移动端
 Route::group(['domain' => 'm.moju.com'], function () {
     Route::get('/','Mobile\IndexController@Index');
+    Route::get('mojuchang/filter/{option}-{city?}','Mobile\ProjectFilterController@MoldGroupFilterList');
+    Route::get('mojuchang/filter/{option}-{city?}/page/{page}/','Mobile\ProjectFilterController@MoldGroupFilterList');
+    Route::get('{path}','Mobile\ListsViewController@ListsViewControl');
+    Route::get('{path?}/page/{page}/','Mobile\ListsViewController@ListsViewControl')->name('pagelists');
+    Route::get('{path?}/{id}.shtml','Mobile\BrandArticleController@BrandArticle');
 });
 //前台界面
 Route::get('/','Frontend\IndexController@Index');
