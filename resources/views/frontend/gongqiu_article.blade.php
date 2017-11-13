@@ -13,10 +13,20 @@
                 </div>
                 <div id="Business-a fenxiang">
                     <div class="productdata">
-                        <div class="productimg" onmouseover="jq('.bigimg').hide();" onmouseout="jq('.bigimg').show();">
+                        <div class="productimg">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tbody><tr><td width="327" height="278" align="center" valign="middle"><div id="wrap" style="top:0px;z-index:1;position:relative;"><a href="http://www.uggd.com/d/file/2017/11/01/smallcd9af29a458430f6726e4d4a8ff95912.jpg" class="cloud-zoom" target="_blank" style="position: relative; display: block; width: 320px; height: 270px;"><img src="http://www.uggd.com/d/file/2017/11/01/smallcd9af29a458430f6726e4d4a8ff95912.jpg" alt="【景德镇可行性研究报告】价格、案例、多少钱、summer" align="left" onerror="this.src='http://www.uggd.com/e/space/template/comdefault/images/bigno.jpg';" style="display: block; width: 320px; height: 270px;"><div class="mousetrap" style="background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 320px; height: 270px; left: 0px; top: 0px; cursor: move;"></div></a></div></td>
-                                </tr></tbody></table>
+                                <tbody>
+                                <tr>
+                                    <td width="327" height="278" align="center" valign="middle">
+                                        <div id="wrap" style="top:0px;z-index:1;position:relative;">
+                                             <img src="{{$thisarticleinfos->litpic}}" alt="{{$thisarticleinfos->title}}" align="left"  style="display: block; width: 320px; height: 270px;">
+                                                <div class="mousetrap" style="background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 320px; height: 270px; left: 0px; top: 0px; cursor: move;">
+                                                </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                             <div class="bigimg" style="display: block;"><a href="javascript:void(0);"></a></div>
                         </div>
                     </div>

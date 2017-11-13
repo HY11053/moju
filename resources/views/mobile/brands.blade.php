@@ -3,7 +3,7 @@
 @section('keywords') {{$thisTypeinfos->keywords}} @stop
 @section('description')  {{$thisTypeinfos->description}}  @stop
 @section('maincontent')
-    <p class="bg-primary"> &nbsp;&nbsp;<a href="http://www.lingshijmls.com/">主页</a> &gt; <a href="/jmzn/">模具厂</a> &gt; </p>
+@include('mobile.position')
     <div class="index_purchaseList">
         <ul class="purchase_orders">
             <div id="twoQuotePurchaseList"></div>

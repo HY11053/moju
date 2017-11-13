@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/mobiles/css/css.css" />
 @stop
 @section('maincontent')
+    @include('mobile.position')
     <div class="brand_detail">
         <div class="hd">
             <div class="img_show"><img src="{{$thisarticleinfos->litpic}}" alt="{{$thisarticleinfos->title}}"/></div>

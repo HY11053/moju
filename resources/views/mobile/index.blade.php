@@ -3,6 +3,7 @@
 @section('keywords') {{ config('app.keywords', '中国模具网') }} @stop
 @section('description') {{ config('app.description', '中国模具网') }} @stop
 @section('maincontent')
+    @include('mobile.position')
     <div class="module" style="margin-bottom: 0;">
         <div class="index_headBtn clear">
             @foreach($allTypes as $index=>$allType)

@@ -64,7 +64,7 @@ class BrandArticleController extends Controller
                         }
                 }
 
-                return view($view,compact('thisarticleinfos','prev_article','next_article','topbrands','comments','brandnews','xgnews'));
+                return view($view,compact('thisarticleinfos','prev_article','next_article','topbrands','brandnews','xgnews'));
             }
 
         }

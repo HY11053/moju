@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 $(function(){
 //详情菜单
- $(".header .mcate b").click(function(){
+ $("#head_menu").click(function(){
 	    $('.d_nav').slideToggle();
 });
 

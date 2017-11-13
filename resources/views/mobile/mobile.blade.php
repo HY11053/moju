@@ -21,11 +21,14 @@
     <div class="header">
         <div class="head_user" id="head_user"></div>
         <div class="head_search">
-            <input type="text" id="head_plantsName" placeholder="请输入您需要的苗木或苗木标签" value="" />
+            <input type="text" id="head_plantsName" placeholder="请输入您需要的模具信息" value="" />
             <a class="h_searchBtn" href="javascript:;">搜索</a>
         </div>
         <div class="head_title">中国模具网</div>
-        <div class="head_menu" id="head_menu"></div>
+        <div class="head_menu" id="head_menu">
+
+        </div>
+        @include('mobile.header')
     </div>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -58,6 +61,7 @@
 </div>
 <script type="text/javascript" src="/mobiles/js/jquery-1.11.3.min.js" ></script>
 <script type="text/javascript" src="/mobiles/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="/mobiles/js/index.js" ></script>
 
 </body>
 </html>
